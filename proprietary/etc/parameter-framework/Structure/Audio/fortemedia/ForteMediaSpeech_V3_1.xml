@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ComponentTypeSet xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../Schemas/ComponentTypeSet.xsd">
+  <ComponentType Name="ForteMediaSpeech" Mapping="ByteControlWithLength:%1 %2 %3 params forte_media">
+    <ParameterBlock Name="Module_Configuration">
+      <IntegerParameter Name="0_OP_MODE_REG" Size="16"/>
+      <IntegerParameter Name="1_SEND_FUNC_REG" Size="16"/>
+      <IntegerParameter Name="2_RECEIVE_FUNC_REG" Size="16"/>
+      <IntegerParameter Name="3_DBG_FUNC_REG" Size="16"/>
+      <IntegerParameter Name="4_MIC_NUM" Size="16"/>
+    </ParameterBlock>
+    <ParameterBlock Name="Mic_Configuration">
+      <IntegerParameter Name="5_DIST2REF0" Size="16"/>
+      <IntegerParameter Name="6_DIST2REF1" Size="16"/>
+      <IntegerParameter Name="7_DIST2REF2" Size="16"/>
+    </ParameterBlock>
+    <ParameterBlock Name="Mic_PGA">
+      <IntegerParameter Name="8_MICPGA_GAIN1" Size="16"/>
+      <IntegerParameter Name="9_MICPGA_GAIN2" Size="16"/>
+      <IntegerParameter Name="10_MICPGA_GAIN3" Size="16"/>
+    </ParameterBlock>
+    <ParameterBlock Name="PRE_PROC">
+      <IntegerParameter Name="11_A_HP" Size="16"/>
+      <IntegerParameter Name="12_B_PE" Size="16"/>
+      <IntegerParameter Name="13_SEND_THR_PITCH_DET0" Size="16"/>
+      <IntegerParameter Name="14_SEND_THR_PITCH_DET1" Size="16"/>
+      <IntegerParameter Name="15_SEND_THR_PITCH_DET2" Size="16"/>
+    </ParameterBlock>
+    <ParameterBlock Name="AEC">
+      <IntegerParameter Name="16_MAX_TAIL_LENGTH" Size="16"/>
+      <IntegerParameter Name="17_THR_RE_EST" Size="16"/>
+      <IntegerParameter Name="18_MIN_EQ_RE_EST0" Size="16"/>
+      <IntegerParameter Name="19_MIN_EQ_RE_EST1" Size="16"/>
+      <IntegerParameter Name="20_MIN_EQ_RE_EST2" Size="16"/>
+      <IntegerParameter Name="21_MIN_EQ_RE_EST3" Size="16"/>
+      <IntegerParameter Name="22_MIN_EQ_RE_EST4" Size="16"/>
+      <IntegerParameter Name="23_MIN_EQ_RE_EST5" Size="16"/>
+      <IntegerParameter Name="24_MIN_EQ_RE_EST6" Size="16"/>
+      <IntegerParameter Name="25_MIN_EQ_RE_EST7" Size="16"/>
+      <IntegerParameter Name="26_MIN_EQ_RE_EST8" Size="16"/>
+      <IntegerParameter Name="27_MIN_EQ_RE_EST9" Size="16"/>
+      <IntegerParameter Name="28_MIN_EQ_RE_EST10" Size="16"/>
+      <IntegerParameter Name="29_MIN_EQ_RE_EST11" Size="16"/>
+      <IntegerParameter Name="30_MIN_EQ_RE_EST12" Size="16"/>
+      <IntegerParameter Name="31_SE_HOLD_N" Size="16"/>
+      <IntegerParameter Name="32_C_POST_FLT" Size="16"/>
+      <IntegerParameter Name="33_LAMBDA_CB_NLE" Size="16"/>
+      <IntegerParameter Name="34_AEC_REF_GAIN" Size="16"/>
+    </ParameterBlock>
+    <ParameterBlock Name="DT">
+      <IntegerParameter Name="35_DT_HOLD_N" Size="16"/>
+      <IntegerParameter Name="36_DTD_THR10" Size="16"/>
+      <IntegerParameter Name="37_DTD_THR11" Size="16"/>
+      <IntegerParameter Name="38_DTD_THR12" Size="16"/>
+      <IntegerParameter Name="39_DTD_THR13" Size="16"/>
+      <IntegerParameter Name="40_DTD_THR14" Size="16"/>
+      <IntegerParameter Name="41_DTD_THR15" Size="16"/>
+      <IntegerParameter Name="42_DTD_THR16" Size="16"/>
+      <IntegerParameter Name="43_DTD_THR20" Size="16"/>
+      <IntegerParameter Name="44_DTD_THR21" Size="16"/>
+      <IntegerParameter Name="45_DTD_THR22" Size="16"/>
+      <IntegerParameter Name="46_DTD_THR23" Size="16"/>
+      <IntegerParameter Name="47_DTD_THR24" Size="16"/>
+      <IntegerParameter Name="48_DTD_THR25" Size="16"/>
+      <IntegerParameter Name="49_DTD_THR26" Size="16"/>
+      <IntegerParameter Name="50_DTD_THR3" Size="16"/>
+      <IntegerParameter Name="51_SPK_CUT_K" Size="16"/>
+      <IntegerParameter Name="52_DT_CUT_K" Size="16"/>
+      <IntegerParameter Name="53_DT_CUT_THR" Size="16"/>
+    </ParameterBlock>
+    <ParameterBlock Name="NS">
+      <IntegerParameter Name="54_THR_SN_EST" Size="16"/>
+      <IntegerParameter Name="55_N1_SN_EST" Size="16"/>
+      <IntegerParameter Name="56_N2_SN_EST" Size="16"/>
+      <IntegerParameter Name="57_A_POST_FLT" Size="16"/>
+      <IntegerParameter Name="58_SN_C_F" Size="16"/>
+      <IntegerParameter Name="59_B_POST_FLT" Size="16"/>
+      <IntegerParameter Name="60_SEND_LAMBDA_PFLT" Size="16"/>
+      <IntegerParameter Name="61_NS_level_Control" Size="16"/>
+      <IntegerParameter Name="62_K_PEPPER" Size="16"/>
+      <IntegerParameter Name="63_A_PEPPER" Size="16"/>
+      <IntegerParameter Name="64_BF_SGRAD_FLG" Size="16"/>
+    </ParameterBlock>
+    <ParameterBlock Name="BFHS">
+      <IntegerParameter Name="65_RHO_UPB" Size="16"/>
+      <IntegerParameter Name="66_N_HOLD_HS" Size="16"/>
+      <IntegerParameter Name="67_LAMBDA_ARSP_EST" Size="16"/>
+      <IntegerParameter Name="68_THR_STD_Nsr" Size="16"/>
+      <IntegerParameter Name="69_STD_THR_PLH" Size="16"/>
+      <IntegerParameter Name="70_N_hold_STD" Size="16"/>
+      <IntegerParameter Name="71_THR_STD_RHO" Size="16"/>
+    </ParameterBlock>
+    <ParameterBlock Name="LOUT_EQ">
+      <IntegerParameter Name="72_FQ_EQUAL_GAIN_SEND0" Size="16"/>
+      <IntegerParameter Name="73_FQ_EQUAL_GAIN_SEND1" Size="16"/>
+      <IntegerParameter Name="74_FQ_EQUAL_GAIN_SEND2" Size="16"/>
+      <IntegerParameter Name="75_FQ_EQUAL_GAIN_SEND3" Size="16"/>
+      <IntegerParameter Name="76_FQ_EQUAL_GAIN_SEND4" Size="16"/>
+      <IntegerParameter Name="77_FQ_EQUAL_GAIN_SEND5" Size="16"/>
+    </ParameterBlock>
+    <ParameterBlock Name="Reserve1">
+      <IntegerParameter Name="78_AEC_MIC_DELAY_LENGTH" Size="16"/>
+      <IntegerParameter Name="79_AEC_REF_DELAY_LENGTH" Size="16"/>
+      <IntegerParameter Name="80_EAD_THRD" Size="16"/>
+      <IntegerParameter Name="81_RESERVE1_3" Size="16"/>
+      <IntegerParameter Name="82_RESERVE1_4" Size="16"/>
+    </ParameterBlock>
+    <ParameterBlock Name="FFP">
+      <IntegerParameter Name="83_FFP_TPKA_FP" Size="16"/>
+      <IntegerParameter Name="84_FFP_MAX_G_FP" Size="16"/>
+      <IntegerParameter Name="85_FFP_MIN_G_FP" Size="16"/>
+      <IntegerParameter Name="86_FFP_LAMBDA_PKA_FP" Size="16"/>
+    </ParameterBlock>
+    <ParameterBlock Name="Lout_DRC">
+      <IntegerParameter Name="87_SEND_DRC_QUIET_TH" Size="16"/>
+      <IntegerParameter Name="88_SEND_DRC_DECAY_TH" Size="16"/>
+      <IntegerParameter Name="89_SEND_DRC_TH1" Size="16"/>
+      <IntegerParameter Name="90_SEND_DRC_TH2" Size="16"/>
+      <IntegerParameter Name="91_SEND_DRC_SLOP1" Size="16"/>
+      <IntegerParameter Name="92_SEND_DRC_SLOP2" Size="16"/>
+      <IntegerParameter Name="93_SEND_DRC_ALPHA_UP" Size="16"/>
+      <IntegerParameter Name="94_SEND_DRC_ALPHA_DOWN" Size="16"/>
+    </ParameterBlock>
+    <ParameterBlock Name="Lout_Gain">
+      <IntegerParameter Name="95_MIC_VOLUME_GAIN" Size="16"/>
+    </ParameterBlock>
+    <ParameterBlock Name="Lout_HPF">
+      <IntegerParameter Name="96_LOUT_HPF_FILTER_INDEX" Size="16"/>
+    </ParameterBlock>
+    <ParameterBlock Name="BFHF">
+      <IntegerParameter Name="97_SRC_DOA_RNG_Low_A" Size="16"/>
+      <IntegerParameter Name="98_SRC_DOA_RNG_High_A" Size="16"/>
+      <IntegerParameter Name="99_DFLT_SRC_DOA_A" Size="16"/>
+      <IntegerParameter Name="100_DOA_VAD_THR" Size="16"/>
+      <IntegerParameter Name="101_BF_Reset_THR_HF" Size="16"/>
+      <IntegerParameter Name="102_BF_HoldOff_T" Size="16"/>
+    </ParameterBlock>
+    <ParameterBlock Name="BVE">
+      <IntegerParameter Name="103_BVE_MASK_ABILITY" Size="16"/>
+      <IntegerParameter Name="104_BVE_NND_WEIGHT" Size="16"/>
+      <IntegerParameter Name="105_BVE_MIC_CALIBRATION32" Size="16"/>
+      <IntegerParameter Name="106_BVE_MIC_CALIBRATION10" Size="16"/>
+      <IntegerParameter Name="107_BVE_MIC_PWR_BIAS32" Size="16"/>
+      <IntegerParameter Name="108_BVE_MIC_PWR_BIAS10" Size="16"/>
+      <IntegerParameter Name="109_BVE_GAIN_LIMIT32" Size="16"/>
+      <IntegerParameter Name="110_BVE_GAIN_LIMIT10" Size="16"/>
+    </ParameterBlock>
+    <ParameterBlock Name="Reserve2">
+      <IntegerParameter Name="111_SRC_DOA_RNG_Low_B" Size="16"/>
+      <IntegerParameter Name="112_SRC_DOA_RNG_High_B" Size="16"/>
+      <IntegerParameter Name="113_DFLT_SRC_DOA_B" Size="16"/>
+      <IntegerParameter Name="114_SRC_DOA_RNG_Low_C" Size="16"/>
+      <IntegerParameter Name="115_SRC_DOA_RNG_High_C" Size="16"/>
+      <IntegerParameter Name="116_DFLT_SRC_DOA_C" Size="16"/>
+      <IntegerParameter Name="117_SRC_DOA_RNG_Low_D" Size="16"/>
+      <IntegerParameter Name="118_SRC_DOA_RNG_High_D" Size="16"/>
+      <IntegerParameter Name="119_DFLT_SRC_DOA_D" Size="16"/>
+      <IntegerParameter Name="120_RESERVE2_9" Size="16"/>
+      <IntegerParameter Name="121_RESERVE2_10" Size="16"/>
+      <IntegerParameter Name="122_RESERVE2_11" Size="16"/>
+      <IntegerParameter Name="123_WNS_CORR_THR" Size="16"/>
+      <IntegerParameter Name="124_WNS_SNR_THR" Size="16"/>
+      <IntegerParameter Name="125_WNS_ENGY_THR" Size="16"/>
+      <IntegerParameter Name="126_WNS_LVL_CTRL" Size="16"/>
+      <IntegerParameter Name="127_Version_info" Size="16"/>
+    </ParameterBlock>
+    <ParameterBlock Name="Spk_GAIN">
+      <IntegerParameter Name="128_SPK_VOLUME" Size="16"/>
+    </ParameterBlock>
+    <ParameterBlock Name="RCV_PRE_PROC">
+      <IntegerParameter Name="129_SPK_A_HP" Size="16"/>
+      <IntegerParameter Name="130_SPK_B_PE" Size="16"/>
+      <IntegerParameter Name="131_RCV_THR_PITCH_DET0" Size="16"/>
+      <IntegerParameter Name="132_RCV_THR_PITCH_DET1" Size="16"/>
+      <IntegerParameter Name="133_RCV_THR_PITCH_DET2" Size="16"/>
+    </ParameterBlock>
+    <ParameterBlock Name="FENS">
+      <IntegerParameter Name="134_SPK_THR_SN_EST" Size="16"/>
+      <IntegerParameter Name="135_SPK_N1_SN_EST" Size="16"/>
+      <IntegerParameter Name="136_SPK_N2_SN_EST" Size="16"/>
+      <IntegerParameter Name="137_RCV_LAMBDA_PFLT" Size="16"/>
+      <IntegerParameter Name="138_RCV_NS_level_Control" Size="16"/>
+    </ParameterBlock>
+    <ParameterBlock Name="SPK_EQ">
+      <IntegerParameter Name="139_FQ_EQUAL_GAIN_RCV0" Size="16"/>
+      <IntegerParameter Name="140_FQ_EQUAL_GAIN_RCV1" Size="16"/>
+      <IntegerParameter Name="141_FQ_EQUAL_GAIN_RCV2" Size="16"/>
+      <IntegerParameter Name="142_FQ_EQUAL_GAIN_RCV3" Size="16"/>
+      <IntegerParameter Name="143_FQ_EQUAL_GAIN_RCV4" Size="16"/>
+      <IntegerParameter Name="144_FQ_EQUAL_GAIN_RCV5" Size="16"/>
+    </ParameterBlock>
+    <ParameterBlock Name="SPK_DRC">
+      <IntegerParameter Name="145_SPK_DRC_QUIET_TH" Size="16"/>
+      <IntegerParameter Name="146_SPK_DRC_DECAY_TH" Size="16"/>
+      <IntegerParameter Name="147_SPK_DRC_TH1" Size="16"/>
+      <IntegerParameter Name="148_SPK_DRC_TH2" Size="16"/>
+      <IntegerParameter Name="149_SPK_DRC_SLOP1" Size="16"/>
+      <IntegerParameter Name="150_SPK_DRC_SLOP2" Size="16"/>
+      <IntegerParameter Name="151_SPK_DRC_ALPHA_UP" Size="16"/>
+      <IntegerParameter Name="152_SPK_DRC_ALPHA_DOWN" Size="16"/>
+    </ParameterBlock>
+    <ParameterBlock Name="HMMC">
+      <IntegerParameter Name="153_SPK_HMNC_BOOST_GAIN" Size="16"/>
+    </ParameterBlock>
+    <ParameterBlock Name="SPK_HPF">
+      <IntegerParameter Name="154_SPKOUT_HPF_FILTER_INDEX" Size="16"/>
+    </ParameterBlock>
+    <ParameterBlock Name="SPK_ATTN">
+      <IntegerParameter Name="155_SPK_DB_DROP" Size="16"/>
+      <IntegerParameter Name="156_SPK_DB_DECAY" Size="16"/>
+      <IntegerParameter Name="157_SPK_ALPHA" Size="16"/>
+    </ParameterBlock>
+    <ParameterBlock Name="Reserve3">
+      <IntegerParameter Name="158_RESERVE3_0" Size="16"/>
+      <IntegerParameter Name="159_RESERVE3_1" Size="16"/>
+      <IntegerParameter Name="160_RESERVE3_2" Size="16"/>
+      <IntegerParameter Name="161_RESERVE3_3" Size="16"/>
+      <IntegerParameter Name="162_RESERVE3_4" Size="16"/>
+      <IntegerParameter Name="163_RESERVE3_5" Size="16"/>
+      <IntegerParameter Name="164_RESERVE3_6" Size="16"/>
+      <IntegerParameter Name="165_RESERVE3_7" Size="16"/>
+      <IntegerParameter Name="166_RESERVE3_8" Size="16"/>
+      <IntegerParameter Name="167_RESERVE3_9" Size="16"/>
+      <IntegerParameter Name="168_RESERVE3_10" Size="16"/>
+      <IntegerParameter Name="169_RESERVE3_11" Size="16"/>
+      <IntegerParameter Name="170_RESERVE3_12" Size="16"/>
+      <IntegerParameter Name="171_RESERVE3_13" Size="16"/>
+      <IntegerParameter Name="172_RESERVE3_14" Size="16"/>
+      <IntegerParameter Name="173_RESERVE3_15" Size="16"/>
+      <IntegerParameter Name="174_RESERVE3_16" Size="16"/>
+      <IntegerParameter Name="175_RESERVE3_17" Size="16"/>
+      <IntegerParameter Name="176_RESERVE3_18" Size="16"/>
+      <IntegerParameter Name="177_RESERVE3_19" Size="16"/>
+      <IntegerParameter Name="178_RESERVE3_20" Size="16"/>
+      <IntegerParameter Name="179_RESERVE3_21" Size="16"/>
+      <IntegerParameter Name="180_RESERVE3_22" Size="16"/>
+      <IntegerParameter Name="181_RESERVE3_23" Size="16"/>
+      <IntegerParameter Name="182_RESERVE3_24" Size="16"/>
+      <IntegerParameter Name="183_RESERVE3_25" Size="16"/>
+      <IntegerParameter Name="184_RESERVE3_26" Size="16"/>
+      <IntegerParameter Name="185_RESERVE3_27" Size="16"/>
+      <IntegerParameter Name="186_RESERVE3_28" Size="16"/>
+      <IntegerParameter Name="187_RESERVE3_29" Size="16"/>
+      <IntegerParameter Name="188_RESERVE3_30" Size="16"/>
+      <IntegerParameter Name="189_RESERVE3_31" Size="16"/>
+      <IntegerParameter Name="190_RESERVE3_32" Size="16"/>
+      <IntegerParameter Name="191_RESERVE3_33" Size="16"/>
+      <IntegerParameter Name="192_SEND_DEBUG_SET" Size="16"/>
+      <IntegerParameter Name="193_RCV_DEBUG_SET" Size="16"/>
+      <IntegerParameter Name="194_MAX_MIC0_READOUT" Size="16"/>
+      <IntegerParameter Name="195_MAX_MIC1_READOUT" Size="16"/>
+      <IntegerParameter Name="196_MAX_LIN_READOUT" Size="16"/>
+      <IntegerParameter Name="197_MAX_LINEOUT_READOUT" Size="16"/>
+      <IntegerParameter Name="198_MAX_SPKOUT_READOUT" Size="16"/>
+      <IntegerParameter Name="199_RESERVE3_41" Size="16"/>
+      <IntegerParameter Name="200_RESERVE3_42" Size="16"/>
+      <IntegerParameter Name="201_RESERVE3_43" Size="16"/>
+      <IntegerParameter Name="202_RESERVE3_44" Size="16"/>
+      <IntegerParameter Name="203_RESERVE3_45" Size="16"/>
+      <IntegerParameter Name="204_RESERVE3_46" Size="16"/>
+      <IntegerParameter Name="205_RESERVE3_47" Size="16"/>
+      <IntegerParameter Name="206_RESERVE3_48" Size="16"/>
+      <IntegerParameter Name="207_RESERVE3_49" Size="16"/>
+      <IntegerParameter Name="208_INBEAM_NS_LVL_CTRL_HS" Size="16"/>
+      <IntegerParameter Name="209_INBEAM_A_POST_FLT_HS" Size="16"/>
+      <IntegerParameter Name="210_INBEAM_LAMBDA_PFLT_HS" Size="16"/>
+      <IntegerParameter Name="211_NOISEDET" Size="16"/>
+      <IntegerParameter Name="212_NOISE_TH_CLEAN" Size="16"/>
+      <IntegerParameter Name="213_NOISE_TH_CAR" Size="16"/>
+      <IntegerParameter Name="214_NOISE_TH_PUB" Size="16"/>
+      <IntegerParameter Name="215_NOISE_TH_TROAD" Size="16"/>
+      <IntegerParameter Name="216_NOISE_TH_TRAIN" Size="16"/>
+      <IntegerParameter Name="217_THR_SN_EST_CAR" Size="16"/>
+      <IntegerParameter Name="218_THR_SN_EST_PUB" Size="16"/>
+      <IntegerParameter Name="219_THR_SN_EST_TROAD" Size="16"/>
+      <IntegerParameter Name="220_NS_level_Control_CAR" Size="16"/>
+      <IntegerParameter Name="221_NS_level_Control_PUB" Size="16"/>
+      <IntegerParameter Name="222_NS_level_Control_TROAD" Size="16"/>
+      <IntegerParameter Name="223_INBEAM_NS_LVL_CTRL_HS_CAR" Size="16"/>
+      <IntegerParameter Name="224_INBEAM_NS_LVL_CTRL_HS_PUB" Size="16"/>
+      <IntegerParameter Name="225_INBEAM_NS_LVL_CTRL_HS_TROAD" Size="16"/>
+      <IntegerParameter Name="226_INBEAM_A_POST_FLT_HS_CAR" Size="16"/>
+      <IntegerParameter Name="227_INBEAM_A_POST_FLT_HS_PUB" Size="16"/>
+      <IntegerParameter Name="228_INBEAM_A_POST_FLT_HS_TROAD" Size="16"/>
+      <IntegerParameter Name="229_INBEAM_LAMBDA_PFLT_HS_CAR" Size="16"/>
+      <IntegerParameter Name="230_INBEAM_LAMBDA_PFLT_HS_PUB" Size="16"/>
+      <IntegerParameter Name="231_INBEAM_LAMBDA_PFLT_HS_TROAD" Size="16"/>
+      <IntegerParameter Name="232_SNRI_SUP" Size="16"/>
+      <IntegerParameter Name="233_SNRI_SUP_CAR" Size="16"/>
+      <IntegerParameter Name="234_SNRI_SUP_PUB" Size="16"/>
+      <IntegerParameter Name="235_SNRI_SUP_TROAD" Size="16"/>
+      <IntegerParameter Name="236_NMOS_SUP" Size="16"/>
+      <IntegerParameter Name="237_MIN_E_NOISE_TH" Size="16"/>
+      <IntegerParameter Name="238_MINENOISE_MIC0_TH" Size="16"/>
+      <IntegerParameter Name="239_OUT_ENER_S_TH_CLEAN" Size="16"/>
+      <IntegerParameter Name="240_OUT_ENER_S_TH_LESSCLEAN" Size="16"/>
+      <IntegerParameter Name="241_OUT_ENER_S_TH_NOISY" Size="16"/>
+      <IntegerParameter Name="242_OUT_ENER_TH_NOISE" Size="16"/>
+      <IntegerParameter Name="243_OUT_ENER_TH_SPEECH" Size="16"/>
+      <IntegerParameter Name="244_RESERVE3_86" Size="16"/>
+      <IntegerParameter Name="245_RESERVE3_87" Size="16"/>
+      <IntegerParameter Name="246_RESERVE3_88" Size="16"/>
+      <IntegerParameter Name="247_RESERVE3_89" Size="16"/>
+      <IntegerParameter Name="248_RESERVE3_90" Size="16"/>
+      <IntegerParameter Name="249_RESERVE3_91" Size="16"/>
+      <IntegerParameter Name="250_RESERVE3_92" Size="16"/>
+      <IntegerParameter Name="251_RESERVE3_93" Size="16"/>
+      <IntegerParameter Name="252_RESERVE3_94" Size="16"/>
+      <IntegerParameter Name="253_RESERVE3_95" Size="16"/>
+      <IntegerParameter Name="254_RESERVE3_96" Size="16"/>
+      <IntegerParameter Name="255_RESERVE3_97" Size="16"/>
+    </ParameterBlock>
+  </ComponentType>
+</ComponentTypeSet>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ComponentTypeSet xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="../../../../../Schemas/ComponentTypeSet.xsd">
+    <!-- Needs Gain.xml, FbaFir_V1_1.xml and FbaIir_V1_1.xml to be included too -->
+    <ComponentType Name="EqPipeHfSns2">
+        <Component Name="gain" Type="Gain" Mapping="Amend1:hf_sns_out,Amend2:gain,Amend3:0"/>
+        <ParameterBlock Name="equalizer">
+            <Component Name="fir" Type="FbaFir" Mapping="Amend1:speech_out,Amend2:ul_module,Amend3:0,Amend4:fir_hf_sns"/>
+            <Component Name="iir" Type="FbaIir" Mapping="Amend1:speech_out,Amend2:ul_module,Amend3:0,Amend4:iir_hf_sns"/>
+        </ParameterBlock>
+    </ComponentType>
+</ComponentTypeSet>

@@ -1,0 +1,11 @@
+#JSGF V1.0;
+
+/**
+ * JSGF Grammar for Turtle example
+ */
+
+grammar GEgesture;
+
+public <gesture> = NumberOne | NumberTwo | NumberThree | NumberFour | NumberFive | NumberSix | NumberSeven | NumberEight | NumberNine | NumberZero | LetterA | LetterB | LetterC | LetterD | LetterE | LetterF | filler;
+
+

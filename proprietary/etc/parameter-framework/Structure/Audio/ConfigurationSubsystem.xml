@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Subsystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../Schemas/Subsystem.xsd" Name="CONFIGURATION" Type="Virtual" Endianness="Little">
+	<ComponentLibrary>
+		<ComponentType Name="ALSA_SETTINGS">
+			<IntegerParameter Size="16" Min="0" Max="48000" Signed="false" Name="DEFAULT_SAMPLE_RATE"/>
+		</ComponentType>
+		<ComponentType Name="ALSA_CONF">
+			<Component Name="IN" Type="ALSA_SETTINGS"/>
+			<Component Name="OUT" Type="ALSA_SETTINGS"/>
+		</ComponentType>
+	</ComponentLibrary>
+	<InstanceDefinition>
+		<Component Name="ALSA_CONF" Type="ALSA_CONF"/>
+		<StringParameter Name="VOICE_VOLUME_CTRL_PARAMETER" MaxLength="256"/>
+	</InstanceDefinition>
+</Subsystem>

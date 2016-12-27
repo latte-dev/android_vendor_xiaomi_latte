@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ProbeLayout Tags="card:0,device:4" ProbeCount="8">
+    <ProbePoint Module="modem_in_gain" Pin="out0" Path="modem_in gain" Description="modem_in gain" SampleRate="48000" SampleSize="32" ChannelCount="1"/>
+    <ProbePoint Module="modem_in_dcr" Pin="out0" Path="modem_in dcr" Description="modem_in dcr" SampleRate="48000" SampleSize="32" ChannelCount="1"/>
+    <ProbePoint Module="modem_out_gain" Pin="out0" Path="modem_out gain" Description="modem_out gain" SampleRate="48000" SampleSize="16" ChannelCount="1"/>
+    <ProbePoint Module="bt_in_gain" Pin="out0" Path="bt_in gain" Description="bt_in gain" SampleRate="8000|16000" SampleSize="32" ChannelCount="1"/>
+    <ProbePoint Module="bt_in_dcr" Pin="out0" Path="bt_in dcr" Description="bt_in dcr" SampleRate="8000|16000" SampleSize="32" ChannelCount="1"/>
+    <ProbePoint Module="bt_out_gain" Pin="out0" Path="bt_out gain" Description="bt_out gain" SampleRate="8000|16000" SampleSize="16" ChannelCount="1"/>
+    <ProbePoint Module="bt_out_gain" Pin="out0" Path="bt_out gain" Description="bt_out gain" SampleRate="8000|16000" SampleSize="16" ChannelCount="1"/>
+    <ProbePoint Module="codec0_in_gain" Pin="out0" Path="codec_in0 gain" Description="codec0_in gain" SampleRate="48000" SampleSize="32" ChannelCount="2"/>
+    <ProbePoint Module="codec0_in_dcr" Pin="out0" Path="codec_in0 dcr" Description="codec0_in dcr" SampleRate="48000" SampleSize="32" ChannelCount="2"/>
+    <ProbePoint Module="codec0_in_gain" Pin="out0" Path="codec_in0 gain" Description="codec0_in gain" SampleRate="48000" SampleSize="32" ChannelCount="2"/>
+    <ProbePoint Module="codec0_in_dcr" Pin="out0" Path="codec_in0 dcr" Description="codec0_in dcr" SampleRate="48000" SampleSize="32" ChannelCount="2"/>
+    <ProbePoint Module="codec0_out_gain" Pin="out0" Path="codec_out0 gain" Description="codec_out0 gain" SampleRate="48000" SampleSize="32" ChannelCount="2"/>
+    <ProbePoint Module="codec1_in_gain" Pin="out0" Path="codec_in1 gain" Description="codec1_in gain" SampleRate="48000" SampleSize="32" ChannelCount="2"/>
+    <ProbePoint Module="codec1_in_dcr" Pin="out0" Path="codec_in1 dcr" Description="codec1_in dcr" SampleRate="48000" SampleSize="32" ChannelCount="2"/>
+    <ProbePoint Module="codec1_out_gain" Pin="out0" Path="codec_out1 gain" Description="codec_out1 gain" SampleRate="48000" SampleSize="32" ChannelCount="2"/>
+    <ProbePoint Module="pcm_comp_gain" Pin="out0" Path="pcm0_in gain" Description="pcm0_in gain" SampleRate="48000" SampleSize="32" ChannelCount="2"/>
+    <ProbePoint Module="pcm_reg_gain" Pin="out0" Path="pcm1_in gain" Description="pcm1_in gain" SampleRate="48000" SampleSize="32" ChannelCount="2"/>
+    <ProbePoint Module="pcm_rec_mic_1_2_gain" Pin="out0" Path="pcm1_out gain" Description="pcm1_out gain" SampleRate="48000" SampleSize="32" ChannelCount="2"/>
+    <ProbePoint Module="pcm_rec_mic_3_4_gain" Pin="out0" Path="pcm3_out gain" Description="pcm3_out gain" SampleRate="48000" SampleSize="32" ChannelCount="2"/>
+    <ProbePoint Module="pcm_voip_in_gain" Pin="out0" Path="voip_in gain" Description="voip_in gain" SampleRate="8000|16000" SampleSize="32" ChannelCount="1"/>
+    <ProbePoint Module="pcm_voip_out_gain" Pin="out0" Path="voip_out gain" Description="voip_out gain" SampleRate="8000|16000" SampleSize="32" ChannelCount="1"/>
+    <ProbePoint Module="spk_prot_gain" Pin="out0" Path="sprot_loop_out gain" Description="sprot_loop_out gain" SampleRate="48000" SampleSize="32" ChannelCount="2"/>
+    <ProbePoint Module="spk_prot_lpro" Pin="out0" Path="sprot_loop_out lpro" Description="sprot_loop_out lpro" SampleRate="48000" SampleSize="32" ChannelCount="2"/>
+    <ProbePoint Module="spk_eq_equalizer" Pin="out0" Path="media_loop1_out fir_stereo" Description="media_loop1_out fir_stereo" SampleRate="48000" SampleSize="32" ChannelCount="1"/>
+    <ProbePoint Module="spk_eq_mdrc" Pin="out0" Path="media_loop1_out mdrp" Description="media_loop1_out mdrp" SampleRate="48000" SampleSize="32" ChannelCount="1"/>
+    <ProbePoint Module="spk_eq_gain" Pin="out0" Path="media_loop1_out gain" Description="media_loop1_out gain" SampleRate="48000" SampleSize="32" ChannelCount="1"/>
+    <ProbePoint Module="mic_eq_equalizer" Pin="out0" Path="media_loop2_out fir_stereo" Description="media_loop2_out fir_stereo" SampleRate="48000" SampleSize="32" ChannelCount="2"/>
+    <ProbePoint Module="mic_eq_mdrc" Pin="out0" Path="media_loop2_out mdrp" Description="media_loop2_out mdrp" SampleRate="48000" SampleSize="32" ChannelCount="2"/>
+    <ProbePoint Module="mic_eq_gain" Pin="out0" Path="media_loop2_out gain" Description="media_loop2_out gain" SampleRate="48000" SampleSize="32" ChannelCount="2"/>
+    <ProbePoint Module="aware_gain" Pin="out0" Path="aware_out gain" Description="aware_out gain" SampleRate="16000" SampleSize="16" ChannelCount="1"/>
+    <ProbePoint Module="speech_ul_hf_gain" Pin="out0" Path="hf_out gain" Description="hf_out gain" SampleRate="8000|16000" SampleSize="16" ChannelCount="1"/>
+    <ProbePoint Module="speech_ul_out_gain" Pin="out0" Path="speech_out gain" Description="speech_out gain" SampleRate="8000|16000" SampleSize="16" ChannelCount="1"/>
+    <ProbePoint Module="speech_ul_sidetone_gain" Pin="out0" Path="sidetone_in" Description="sidetone_in" SampleRate="48000" SampleSize="32" ChannelCount="1"/>
+    <ProbePoint Module="speech_ul_sidetone_equalizer" Pin="out0" Path="sidetone_in iir_stereo" Description="sidetone_in iir_stereo" SampleRate="48000" SampleSize="32" ChannelCount="1"/>
+    <ProbePoint Module="speech_ul_in_gain" Pin="out0" Path="txspeech_in gain" Description="txspeech_in gain" SampleRate="8000|16000" SampleSize="32" ChannelCount="1"/>
+    <ProbePoint Module="speech_ul_hf_sns_gain" Pin="out0" Path="voice_uplink 22" Description="voice_uplink 22" SampleRate="8000|16000" SampleSize="16" ChannelCount="1"/>
+    <ProbePoint Module="speech_dl_out_gain" Pin="out0" Path="rxspeech_out gain" Description="rxspeech_out gain" SampleRate="8000|16000" SampleSize="16" ChannelCount="1"/>
+    <ProbePoint Module="speech_dl_in_gain" Pin="out0" Path="speech_in gain" Description="speech_in gain" SampleRate="8000|16000" SampleSize="32" ChannelCount="1"/>
+</ProbeLayout>

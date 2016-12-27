@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ComponentLibrary xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="../../../Schemas/ComponentLibrary.xsd">
+    <ComponentType Name="FmVolumeControl">
+        <IntegerParameter Name="ramp_duration" Size="32" Min="5" Max="5000" Unit="ms" Mapping="Control:%1 %2 %3 rampduration"/>
+        <!-- Volume control is an array of the form [left, right] -->
+        <IntegerParameter Name="level" Size="32" ArrayLength="2" Signed="true" Min="-1440" Max="360" Mapping="Control:%1 %2 %3 volume"
+                          Description="Fm Volume Control. Min value is mapped to -24dB and max value to 0dB">
+                <LinearAdaptation SlopeNumerator="1440" SlopeDenominator="1" Offset="-1440"/>
+        </IntegerParameter>
+        <BooleanParameter Name="mute" Mapping="Control:%1 %2 %3 mute"/>
+    </ComponentType>
+
+    <ComponentType Name="FmSspInPipe" Extends="FmVolumeControl">
+        <Component Name="gain" Type="FmVolumeControl" Mapping="Amend3:0,Amend2:gain"/>
+        <Component Name="dcr" Type="Dcr" Mapping="Amend3:0"/>
+    </ComponentType>
+</ComponentLibrary>

@@ -1,0 +1,16 @@
+BACKWARD_movdetectionwindowsize=3
+BACKWARD_amplitudeAvgThresholdMoveToNotMove=100
+BACKWARD_amplitudeStdDevThresholdMoveToNotMove=-1
+BACKWARD_amplitudeAvgThresholdNotMoveToMove=-1
+BACKWARD_amplitudeStdDevThresholdNotMoveToMove=-1
+BACKWARD_aCount=-1
+BACKWARD_pCount=3
+BACKWARD_useAvg=true
+BACKWARD_useStd=false
+BACKWARD_movdetectionwindowsize_H=3
+BACKWARD_amplitudeAvgThresholdMoveToNotMove_H=100
+BACKWARD_amplitudeStdDevThresholdMoveToNotMove_H=-1
+BACKWARD_amplitudeAvgThresholdNotMoveToMove_H=-1
+BACKWARD_amplitudeStdDevThresholdNotMoveToMove_H=-1
+BACKWARD_aCount_H=-1
+BACKWARD_pCount_H=3

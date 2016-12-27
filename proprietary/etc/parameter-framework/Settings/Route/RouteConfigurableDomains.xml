@@ -1,0 +1,2776 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ConfigurableDomains xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Schemas/ConfigurableDomains.xsd" SystemClassName="Route">
+  <ConfigurableDomain Name="Calibration.HwPlatform" SequenceAware="false">
+    <Configurations>
+      <Configuration Name="Default">
+        <CompoundRule Type="All"/>
+      </Configuration>
+    </Configurations>
+    <ConfigurableElements>
+      <ConfigurableElement Path="/Route/route_mgr/routes/media/stream_duplex/playback/config/require_preenable"/>
+      <ConfigurableElement Path="/Route/route_mgr/routes/media/stream_duplex/playback/config/require_postdisable"/>
+      <ConfigurableElement Path="/Route/route_mgr/routes/media/stream_duplex/playback/config/silence_prolog_ms"/>
+      <ConfigurableElement Path="/Route/route_mgr/routes/media/stream_duplex/playback/config/channels"/>
+      <ConfigurableElement Path="/Route/route_mgr/routes/media/stream_duplex/playback/config/channels_policy"/>
+      <ConfigurableElement Path="/Route/route_mgr/routes/media/stream_duplex/playback/config/rate"/>
+      <ConfigurableElement Path="/Route/route_mgr/routes/media/stream_duplex/playback/config/format"/>
+      <ConfigurableElement Path="/Route/route_mgr/routes/media/stream_duplex/playback/config/period_size"/>
+      <ConfigurableElement Path="/Route/route_mgr/routes/media/stream_duplex/playback/config/period_count"/>
+      <ConfigurableElement Path="/Route/route_mgr/routes/media/stream_duplex/playback/config/start_threshold"/>
+      <ConfigurableElement Path="/Route/route_mgr/routes/media/stream_duplex/playback/config/stop_threshold"/>
+      <ConfigurableElement Path="/Route/route_mgr/routes/media/stream_duplex/playback/config/silence_threshold"/>
+      <ConfigurableElement Path="/Route/route_mgr/routes/media/stream_duplex/playback/config/avail_min"/>
+      <ConfigurableElement Path="/Route/route_mgr/routes/media/stream_duplex/playback/config/effects_supported"/>
+      <ConfigurableElement Path="/Route/route_mgr/routes/media/stream_duplex/playback/config/attributes/output_flags/direct"/>
+      <ConfigurableElement Path="/Route/route_mgr/routes/media/stream_duplex/playback/config/attributes/output_flags/primary"/>
+      <ConfigurableElement Path="/Route/route_mgr/routes/media/stream_duplex/playback/config/attributes/output_flags/fast"/>
+      <ConfigurableElement Path="/Route/route_mgr/routes/media/stream_duplex/playback/config/attributes/output_flags/deep_buffer"/>
+      <ConfigurableElement Path="/Route/route_mgr/routes/media/stream_duplex/playback/config/attributes/output_flags/compress_offload"/>
+      <ConfigurableElement Path="/Route/route_mgr/routes/media/stream_duplex/playback/config/attributes/output_flags/non_blocking"/>
+      <ConfigurableElement Path="/Route/route_mgr/routes/media/stream_duplex/playback/config/attributes/output_flags/hw_av_sync"/>
+      <ConfigurableElement Path="/Route/route_mgr/routes/media/stream_duplex/capture/config/require_preenable"/>
+      <ConfigurableElement Path="/Route/route_mgr/routes/media/stream_duplex/capture/config/require_postdisable"/>
+      <ConfigurableElement Path="/Route/route_mgr/routes/media/stream_duplex/capture/config/silence_prolog_ms"/>
+      <ConfigurableElement Path="/Route/route_mgr/routes/media/stream_duplex/capture/config/channels"/>
+      <ConfigurableElement Path="/Route/route_mgr/routes/media/stream_duplex/capture/config/channels_policy"/>
+      <ConfigurableElement Path="/Route/route_mgr/routes/media/stream_duplex/capture/config/rate"/>
+      <ConfigurableElement Path="/Route/route_mgr/routes/media/stream_duplex/capture/config/format"/>
+      <ConfigurableElement Path="/Route/route_mgr/routes/media/stream_duplex/capture/config/period_size"/>
+      <ConfigurableElement Path="/Route/route_mgr/routes/media/stream_duplex/capture/config/period_count"/>
+      <ConfigurableElement Path="/Route/route_mgr/routes/media/stream_duplex/capture/config/start_threshold"/>
+      <ConfigurableElement Path="/Route/route_mgr/routes/media/stream_duplex/capture/config/stop_threshold"/>
+      <ConfigurableElement Path="/Route/route_mgr/routes/media/stream_duplex/capture/config/silence_threshold"/>
+      <ConfigurableElement Path="/Route/route_mgr/routes/media/stream_duplex/capture/config/avail_min"/>
+      <ConfigurableElement Path="/Route/route_mgr/routes/media/stream_duplex/capture/config/effects_supported"/>
+      <ConfigurableElement Path="/Route/route_mgr/routes/media/stream_duplex/capture/config/attributes/input_sources/default"/>
+      <ConfigurableElement Path="/Route/route_mgr/routes/media/stream_duplex/capture/config/attributes/input_sources/mic"/>
+      <ConfigurableElement Path="/Route/route_mgr/routes/media/stream_duplex/capture/config/attributes/input_sources/voice_uplink"/>
+      <ConfigurableElement Path="/Route/route_mgr/routes/media/stream_duplex/capture/config/attributes/input_sources/voice_downlink"/>
+      <ConfigurableElement Path="/Route/route_mgr/routes/media/stream_duplex/capture/config/attributes/input_sources/voice_call"/>
+      <ConfigurableElement Path="/Route/route_mgr/routes/media/stream_duplex/capture/config/attributes/input_sources/camcorder"/>
+      <ConfigurableElement Path="/Route/route_mgr/routes/media/stream_duplex/capture/config/attributes/input_sources/voice_recognition"/>
+      <ConfigurableElement Path="/Route/route_mgr/routes/media/stream_duplex/capture/config/attributes/input_sources/voice_communication"/>
+      <ConfigurableElement Path="/Route/route_mgr/routes/media/stream_duplex/capture/config/attributes/input_sources/remote_submix"/>
+      <ConfigurableElement Path="/Route/route_mgr/routes/media/stream_duplex/capture/config/attributes/input_sources/hotword"/>
+      <ConfigurableElement Path="/Route/route_mgr/routes/voice/stream_duplex/playback/config/require_preenable"/>
+      <ConfigurableElement Path="/Route/route_mgr/routes/voice/stream_duplex/playback/config/require_postdisable"/>
+      <ConfigurableElement Path="/Route/route_mgr/routes/voice/stream_duplex/playback/config/silence_prolog_ms"/>
+      <ConfigurableElement Path="/Route/route_mgr/routes/voice/stream_duplex/playback/config/channels"/>
+      <ConfigurableElement Path="/Route/route_mgr/routes/voice/stream_duplex/playback/config/channels_policy"/>
+      <ConfigurableElement Path="/Route/route_mgr/routes/voice/stream_duplex/playback/config/rate"/>
+      <ConfigurableElement Path="/Route/route_mgr/routes/voice/stream_duplex/playback/config/format"/>
+      <ConfigurableElement Path="/Route/route_mgr/routes/voice/stream_duplex/playback/config/period_size"/>
+      <ConfigurableElement Path="/Route/route_mgr/routes/voice/stream_duplex/playback/config/period_count"/>
+      <ConfigurableElement Path="/Route/route_mgr/routes/voice/stream_duplex/playback/config/start_threshold"/>
+      <ConfigurableElement Path="/Route/route_mgr/routes/voice/stream_duplex/playback/config/stop_threshold"/>
+      <ConfigurableElement Path="/Route/route_mgr/routes/voice/stream_duplex/playback/config/silence_threshold"/>
+      <ConfigurableElement Path="/Route/route_mgr/routes/voice/stream_duplex/playback/config/avail_min"/>
+      <ConfigurableElement Path="/Route/route_mgr/routes/voice/stream_duplex/playback/config/effects_supported"/>
+      <ConfigurableElement Path="/Route/route_mgr/routes/voice/stream_duplex/playback/config/attributes/output_flags/direct"/>
+      <ConfigurableElement Path="/Route/route_mgr/routes/voice/stream_duplex/playback/config/attributes/output_flags/primary"/>
+      <ConfigurableElement Path="/Route/route_mgr/routes/voice/stream_duplex/playback/config/attributes/output_flags/fast"/>
+      <ConfigurableElement Path="/Route/route_mgr/routes/voice/stream_duplex/playback/config/attributes/output_flags/deep_buffer"/>
+      <ConfigurableElement Path="/Route/route_mgr/routes/voice/stream_duplex/playback/config/attributes/output_flags/compress_offload"/>
+      <ConfigurableElement Path="/Route/route_mgr/routes/voice/stream_duplex/playback/config/attributes/output_flags/non_blocking"/>
+      <ConfigurableElement Path="/Route/route_mgr/routes/voice/stream_duplex/playback/config/attributes/output_flags/hw_av_sync"/>
+      <ConfigurableElement Path="/Route/route_mgr/routes/voice/stream_duplex/capture/config/require_preenable"/>
+      <ConfigurableElement Path="/Route/route_mgr/routes/voice/stream_duplex/capture/config/require_postdisable"/>
+      <ConfigurableElement Path="/Route/route_mgr/routes/voice/stream_duplex/capture/config/silence_prolog_ms"/>
+      <ConfigurableElement Path="/Route/route_mgr/routes/voice/stream_duplex/capture/config/channels"/>
+      <ConfigurableElement Path="/Route/route_mgr/routes/voice/stream_duplex/capture/config/channels_policy"/>
+      <ConfigurableElement Path="/Route/route_mgr/routes/voice/stream_duplex/capture/config/rate"/>
+      <ConfigurableElement Path="/Route/route_mgr/routes/voice/stream_duplex/capture/config/format"/>
+      <ConfigurableElement Path="/Route/route_mgr/routes/voice/stream_duplex/capture/config/period_size"/>
+      <ConfigurableElement Path="/Route/route_mgr/routes/voice/stream_duplex/capture/config/period_count"/>
+      <ConfigurableElement Path="/Route/route_mgr/routes/voice/stream_duplex/capture/config/start_threshold"/>
+      <ConfigurableElement Path="/Route/route_mgr/routes/voice/stream_duplex/capture/config/stop_threshold"/>
+      <ConfigurableElement Path="/Route/route_mgr/routes/voice/stream_duplex/capture/config/silence_threshold"/>
+      <ConfigurableElement Path="/Route/route_mgr/routes/voice/stream_duplex/capture/config/avail_min"/>
+      <ConfigurableElement Path="/Route/route_mgr/routes/voice/stream_duplex/capture/config/effects_supported"/>
+      <ConfigurableElement Path="/Route/route_mgr/routes/voice/stream_duplex/capture/config/attributes/input_sources/default"/>
+      <ConfigurableElement Path="/Route/route_mgr/routes/voice/stream_duplex/capture/config/attributes/input_sources/mic"/>
+      <ConfigurableElement Path="/Route/route_mgr/routes/voice/stream_duplex/capture/config/attributes/input_sources/voice_uplink"/>
+      <ConfigurableElement Path="/Route/route_mgr/routes/voice/stream_duplex/capture/config/attributes/input_sources/voice_downlink"/>
+      <ConfigurableElement Path="/Route/route_mgr/routes/voice/stream_duplex/capture/config/attributes/input_sources/voice_call"/>
+      <ConfigurableElement Path="/Route/route_mgr/routes/voice/stream_duplex/capture/config/attributes/input_sources/camcorder"/>
+      <ConfigurableElement Path="/Route/route_mgr/routes/voice/stream_duplex/capture/config/attributes/input_sources/voice_recognition"/>
+      <ConfigurableElement Path="/Route/route_mgr/routes/voice/stream_duplex/capture/config/attributes/input_sources/voice_communication"/>
+      <ConfigurableElement Path="/Route/route_mgr/routes/voice/stream_duplex/capture/config/attributes/input_sources/remote_submix"/>
+      <ConfigurableElement Path="/Route/route_mgr/routes/voice/stream_duplex/capture/config/attributes/input_sources/hotword"/>
+      <ConfigurableElement Path="/Route/route_mgr/routes/deep_media/stream_playback/config/require_preenable"/>
+      <ConfigurableElement Path="/Route/route_mgr/routes/deep_media/stream_playback/config/require_postdisable"/>
+      <ConfigurableElement Path="/Route/route_mgr/routes/deep_media/stream_playback/config/silence_prolog_ms"/>
+      <ConfigurableElement Path="/Route/route_mgr/routes/deep_media/stream_playback/config/channels"/>
+      <ConfigurableElement Path="/Route/route_mgr/routes/deep_media/stream_playback/config/channels_policy"/>
+      <ConfigurableElement Path="/Route/route_mgr/routes/deep_media/stream_playback/config/rate"/>
+      <ConfigurableElement Path="/Route/route_mgr/routes/deep_media/stream_playback/config/format"/>
+      <ConfigurableElement Path="/Route/route_mgr/routes/deep_media/stream_playback/config/period_size"/>
+      <ConfigurableElement Path="/Route/route_mgr/routes/deep_media/stream_playback/config/period_count"/>
+      <ConfigurableElement Path="/Route/route_mgr/routes/deep_media/stream_playback/config/start_threshold"/>
+      <ConfigurableElement Path="/Route/route_mgr/routes/deep_media/stream_playback/config/stop_threshold"/>
+      <ConfigurableElement Path="/Route/route_mgr/routes/deep_media/stream_playback/config/silence_threshold"/>
+      <ConfigurableElement Path="/Route/route_mgr/routes/deep_media/stream_playback/config/avail_min"/>
+      <ConfigurableElement Path="/Route/route_mgr/routes/deep_media/stream_playback/config/effects_supported"/>
+      <ConfigurableElement Path="/Route/route_mgr/routes/deep_media/stream_playback/config/attributes/output_flags/direct"/>
+      <ConfigurableElement Path="/Route/route_mgr/routes/deep_media/stream_playback/config/attributes/output_flags/primary"/>
+      <ConfigurableElement Path="/Route/route_mgr/routes/deep_media/stream_playback/config/attributes/output_flags/fast"/>
+      <ConfigurableElement Path="/Route/route_mgr/routes/deep_media/stream_playback/config/attributes/output_flags/deep_buffer"/>
+      <ConfigurableElement Path="/Route/route_mgr/routes/deep_media/stream_playback/config/attributes/output_flags/compress_offload"/>
+      <ConfigurableElement Path="/Route/route_mgr/routes/deep_media/stream_playback/config/attributes/output_flags/non_blocking"/>
+      <ConfigurableElement Path="/Route/route_mgr/routes/deep_media/stream_playback/config/attributes/output_flags/hw_av_sync"/>
+      <ConfigurableElement Path="/Route/route_mgr/routes/low_latency/stream_playback/config/require_preenable"/>
+      <ConfigurableElement Path="/Route/route_mgr/routes/low_latency/stream_playback/config/require_postdisable"/>
+      <ConfigurableElement Path="/Route/route_mgr/routes/low_latency/stream_playback/config/silence_prolog_ms"/>
+      <ConfigurableElement Path="/Route/route_mgr/routes/low_latency/stream_playback/config/channels"/>
+      <ConfigurableElement Path="/Route/route_mgr/routes/low_latency/stream_playback/config/channels_policy"/>
+      <ConfigurableElement Path="/Route/route_mgr/routes/low_latency/stream_playback/config/rate"/>
+      <ConfigurableElement Path="/Route/route_mgr/routes/low_latency/stream_playback/config/format"/>
+      <ConfigurableElement Path="/Route/route_mgr/routes/low_latency/stream_playback/config/period_size"/>
+      <ConfigurableElement Path="/Route/route_mgr/routes/low_latency/stream_playback/config/period_count"/>
+      <ConfigurableElement Path="/Route/route_mgr/routes/low_latency/stream_playback/config/start_threshold"/>
+      <ConfigurableElement Path="/Route/route_mgr/routes/low_latency/stream_playback/config/stop_threshold"/>
+      <ConfigurableElement Path="/Route/route_mgr/routes/low_latency/stream_playback/config/silence_threshold"/>
+      <ConfigurableElement Path="/Route/route_mgr/routes/low_latency/stream_playback/config/avail_min"/>
+      <ConfigurableElement Path="/Route/route_mgr/routes/low_latency/stream_playback/config/effects_supported"/>
+      <ConfigurableElement Path="/Route/route_mgr/routes/low_latency/stream_playback/config/attributes/output_flags/direct"/>
+      <ConfigurableElement Path="/Route/route_mgr/routes/low_latency/stream_playback/config/attributes/output_flags/primary"/>
+      <ConfigurableElement Path="/Route/route_mgr/routes/low_latency/stream_playback/config/attributes/output_flags/fast"/>
+      <ConfigurableElement Path="/Route/route_mgr/routes/low_latency/stream_playback/config/attributes/output_flags/deep_buffer"/>
+      <ConfigurableElement Path="/Route/route_mgr/routes/low_latency/stream_playback/config/attributes/output_flags/compress_offload"/>
+      <ConfigurableElement Path="/Route/route_mgr/routes/low_latency/stream_playback/config/attributes/output_flags/non_blocking"/>
+      <ConfigurableElement Path="/Route/route_mgr/routes/low_latency/stream_playback/config/attributes/output_flags/hw_av_sync"/>
+      <ConfigurableElement Path="/Route/route_mgr/routes/modem_ia/route_duplex/playback/status/need_reconfigure"/>
+      <ConfigurableElement Path="/Route/route_mgr/routes/bt_ia/route_duplex/playback/status/need_reconfigure"/>
+      <ConfigurableElement Path="/Route/route_mgr/routes/bt_ia/route_duplex/capture/status/need_reconfigure"/>
+      <ConfigurableElement Path="/Route/route_mgr/routes/bt_hfp/route_duplex/playback/status/need_reconfigure"/>
+      <ConfigurableElement Path="/Route/route_mgr/routes/bt_hfp/route_duplex/capture/status/need_reconfigure"/>
+    </ConfigurableElements>
+    <Settings>
+      <Configuration Name="Default">
+        <ConfigurableElement Path="/Route/route_mgr/routes/media/stream_duplex/playback/config/require_preenable">
+          <BooleanParameter Name="require_preenable">0</BooleanParameter>
+        </ConfigurableElement>
+        <ConfigurableElement Path="/Route/route_mgr/routes/media/stream_duplex/playback/config/require_postdisable">
+          <BooleanParameter Name="require_postdisable">0</BooleanParameter>
+        </ConfigurableElement>
+        <ConfigurableElement Path="/Route/route_mgr/routes/media/stream_duplex/playback/config/silence_prolog_ms">
+          <IntegerParameter Name="silence_prolog_ms">5</IntegerParameter>
+        </ConfigurableElement>
+        <ConfigurableElement Path="/Route/route_mgr/routes/media/stream_duplex/playback/config/channels">
+          <IntegerParameter Name="channels">2</IntegerParameter>
+        </ConfigurableElement>
+        <ConfigurableElement Path="/Route/route_mgr/routes/media/stream_duplex/playback/config/channels_policy">
+          <StringParameter Name="channels_policy">copy,copy</StringParameter>
+        </ConfigurableElement>
+        <ConfigurableElement Path="/Route/route_mgr/routes/media/stream_duplex/playback/config/rate">
+          <IntegerParameter Name="rate">48000</IntegerParameter>
+        </ConfigurableElement>
+        <ConfigurableElement Path="/Route/route_mgr/routes/media/stream_duplex/playback/config/format">
+          <EnumParameter Name="format">Pcm16Bit</EnumParameter>
+        </ConfigurableElement>
+        <ConfigurableElement Path="/Route/route_mgr/routes/media/stream_duplex/playback/config/period_size">
+          <IntegerParameter Name="period_size">1152</IntegerParameter>
+        </ConfigurableElement>
+        <ConfigurableElement Path="/Route/route_mgr/routes/media/stream_duplex/playback/config/period_count">
+          <IntegerParameter Name="period_count">4</IntegerParameter>
+        </ConfigurableElement>
+        <ConfigurableElement Path="/Route/route_mgr/routes/media/stream_duplex/playback/config/start_threshold">
+          <IntegerParameter Name="start_threshold">1151</IntegerParameter>
+        </ConfigurableElement>
+        <ConfigurableElement Path="/Route/route_mgr/routes/media/stream_duplex/playback/config/stop_threshold">
+          <IntegerParameter Name="stop_threshold">4608</IntegerParameter>
+        </ConfigurableElement>
+        <ConfigurableElement Path="/Route/route_mgr/routes/media/stream_duplex/playback/config/silence_threshold">
+          <IntegerParameter Name="silence_threshold">0</IntegerParameter>
+        </ConfigurableElement>
+        <ConfigurableElement Path="/Route/route_mgr/routes/media/stream_duplex/playback/config/avail_min">
+          <IntegerParameter Name="avail_min">1152</IntegerParameter>
+        </ConfigurableElement>
+        <ConfigurableElement Path="/Route/route_mgr/routes/media/stream_duplex/playback/config/effects_supported">
+          <StringParameter Name="effects_supported"></StringParameter>
+        </ConfigurableElement>
+        <ConfigurableElement Path="/Route/route_mgr/routes/media/stream_duplex/playback/config/attributes/output_flags/direct">
+          <BitParameter Name="direct">0</BitParameter>
+        </ConfigurableElement>
+        <ConfigurableElement Path="/Route/route_mgr/routes/media/stream_duplex/playback/config/attributes/output_flags/primary">
+          <BitParameter Name="primary">1</BitParameter>
+        </ConfigurableElement>
+        <ConfigurableElement Path="/Route/route_mgr/routes/media/stream_duplex/playback/config/attributes/output_flags/fast">
+          <BitParameter Name="fast">0</BitParameter>
+        </ConfigurableElement>
+        <ConfigurableElement Path="/Route/route_mgr/routes/media/stream_duplex/playback/config/attributes/output_flags/deep_buffer">
+          <BitParameter Name="deep_buffer">0</BitParameter>
+        </ConfigurableElement>
+        <ConfigurableElement Path="/Route/route_mgr/routes/media/stream_duplex/playback/config/attributes/output_flags/compress_offload">
+          <BitParameter Name="compress_offload">0</BitParameter>
+        </ConfigurableElement>
+        <ConfigurableElement Path="/Route/route_mgr/routes/media/stream_duplex/playback/config/attributes/output_flags/non_blocking">
+          <BitParameter Name="non_blocking">0</BitParameter>
+        </ConfigurableElement>
+        <ConfigurableElement Path="/Route/route_mgr/routes/media/stream_duplex/playback/config/attributes/output_flags/hw_av_sync">
+          <BitParameter Name="hw_av_sync">0</BitParameter>
+        </ConfigurableElement>
+        <ConfigurableElement Path="/Route/route_mgr/routes/media/stream_duplex/capture/config/require_preenable">
+          <BooleanParameter Name="require_preenable">0</BooleanParameter>
+        </ConfigurableElement>
+        <ConfigurableElement Path="/Route/route_mgr/routes/media/stream_duplex/capture/config/require_postdisable">
+          <BooleanParameter Name="require_postdisable">0</BooleanParameter>
+        </ConfigurableElement>
+        <ConfigurableElement Path="/Route/route_mgr/routes/media/stream_duplex/capture/config/silence_prolog_ms">
+          <IntegerParameter Name="silence_prolog_ms">5</IntegerParameter>
+        </ConfigurableElement>
+        <ConfigurableElement Path="/Route/route_mgr/routes/media/stream_duplex/capture/config/channels">
+          <IntegerParameter Name="channels">2</IntegerParameter>
+        </ConfigurableElement>
+        <ConfigurableElement Path="/Route/route_mgr/routes/media/stream_duplex/capture/config/channels_policy">
+          <StringParameter Name="channels_policy">copy,copy</StringParameter>
+        </ConfigurableElement>
+        <ConfigurableElement Path="/Route/route_mgr/routes/media/stream_duplex/capture/config/rate">
+          <IntegerParameter Name="rate">48000</IntegerParameter>
+        </ConfigurableElement>
+        <ConfigurableElement Path="/Route/route_mgr/routes/media/stream_duplex/capture/config/format">
+          <EnumParameter Name="format">Pcm16Bit</EnumParameter>
+        </ConfigurableElement>
+        <ConfigurableElement Path="/Route/route_mgr/routes/media/stream_duplex/capture/config/period_size">
+          <IntegerParameter Name="period_size">960</IntegerParameter>
+        </ConfigurableElement>
+        <ConfigurableElement Path="/Route/route_mgr/routes/media/stream_duplex/capture/config/period_count">
+          <IntegerParameter Name="period_count">4</IntegerParameter>
+        </ConfigurableElement>
+        <ConfigurableElement Path="/Route/route_mgr/routes/media/stream_duplex/capture/config/start_threshold">
+          <IntegerParameter Name="start_threshold">1</IntegerParameter>
+        </ConfigurableElement>
+        <ConfigurableElement Path="/Route/route_mgr/routes/media/stream_duplex/capture/config/stop_threshold">
+          <IntegerParameter Name="stop_threshold">3840</IntegerParameter>
+        </ConfigurableElement>
+        <ConfigurableElement Path="/Route/route_mgr/routes/media/stream_duplex/capture/config/silence_threshold">
+          <IntegerParameter Name="silence_threshold">0</IntegerParameter>
+        </ConfigurableElement>
+        <ConfigurableElement Path="/Route/route_mgr/routes/media/stream_duplex/capture/config/avail_min">
+          <IntegerParameter Name="avail_min">960</IntegerParameter>
+        </ConfigurableElement>
+        <ConfigurableElement Path="/Route/route_mgr/routes/media/stream_duplex/capture/config/effects_supported">
+          <StringParameter Name="effects_supported">Automatic Gain Control,Noise Suppression,Beam Forming,Wind Noise Reduction</StringParameter>
+        </ConfigurableElement>
+        <ConfigurableElement Path="/Route/route_mgr/routes/media/stream_duplex/capture/config/attributes/input_sources/default">
+          <BitParameter Name="default">1</BitParameter>
+        </ConfigurableElement>
+        <ConfigurableElement Path="/Route/route_mgr/routes/media/stream_duplex/capture/config/attributes/input_sources/mic">
+          <BitParameter Name="mic">1</BitParameter>
+        </ConfigurableElement>
+        <ConfigurableElement Path="/Route/route_mgr/routes/media/stream_duplex/capture/config/attributes/input_sources/voice_uplink">
+          <BitParameter Name="voice_uplink">1</BitParameter>
+        </ConfigurableElement>
+        <ConfigurableElement Path="/Route/route_mgr/routes/media/stream_duplex/capture/config/attributes/input_sources/voice_downlink">
+          <BitParameter Name="voice_downlink">1</BitParameter>
+        </ConfigurableElement>
+        <ConfigurableElement Path="/Route/route_mgr/routes/media/stream_duplex/capture/config/attributes/input_sources/voice_call">
+          <BitParameter Name="voice_call">1</BitParameter>
+        </ConfigurableElement>
+        <ConfigurableElement Path="/Route/route_mgr/routes/media/stream_duplex/capture/config/attributes/input_sources/camcorder">
+          <BitParameter Name="camcorder">1</BitParameter>
+        </ConfigurableElement>
+        <ConfigurableElement Path="/Route/route_mgr/routes/media/stream_duplex/capture/config/attributes/input_sources/voice_recognition">
+          <BitParameter Name="voice_recognition">1</BitParameter>
+        </ConfigurableElement>
+        <ConfigurableElement Path="/Route/route_mgr/routes/media/stream_duplex/capture/config/attributes/input_sources/voice_communication">
+          <BitParameter Name="voice_communication">0</BitParameter>
+        </ConfigurableElement>
+        <ConfigurableElement Path="/Route/route_mgr/routes/media/stream_duplex/capture/config/attributes/input_sources/remote_submix">
+          <BitParameter Name="remote_submix">0</BitParameter>
+        </ConfigurableElement>
+        <ConfigurableElement Path="/Route/route_mgr/routes/media/stream_duplex/capture/config/attributes/input_sources/hotword">
+          <BitParameter Name="hotword">1</BitParameter>
+        </ConfigurableElement>
+        <ConfigurableElement Path="/Route/route_mgr/routes/voice/stream_duplex/playback/config/require_preenable">
+          <BooleanParameter Name="require_preenable">0</BooleanParameter>
+        </ConfigurableElement>
+        <ConfigurableElement Path="/Route/route_mgr/routes/voice/stream_duplex/playback/config/require_postdisable">
+          <BooleanParameter Name="require_postdisable">0</BooleanParameter>
+        </ConfigurableElement>
+        <ConfigurableElement Path="/Route/route_mgr/routes/voice/stream_duplex/playback/config/silence_prolog_ms">
+          <IntegerParameter Name="silence_prolog_ms">5</IntegerParameter>
+        </ConfigurableElement>
+        <ConfigurableElement Path="/Route/route_mgr/routes/voice/stream_duplex/playback/config/channels">
+          <IntegerParameter Name="channels">2</IntegerParameter>
+        </ConfigurableElement>
+        <ConfigurableElement Path="/Route/route_mgr/routes/voice/stream_duplex/playback/config/channels_policy">
+          <StringParameter Name="channels_policy">copy,copy</StringParameter>
+        </ConfigurableElement>
+        <ConfigurableElement Path="/Route/route_mgr/routes/voice/stream_duplex/playback/config/rate">
+          <IntegerParameter Name="rate">16000</IntegerParameter>
+        </ConfigurableElement>
+        <ConfigurableElement Path="/Route/route_mgr/routes/voice/stream_duplex/playback/config/format">
+          <EnumParameter Name="format">Pcm16Bit</EnumParameter>
+        </ConfigurableElement>
+        <ConfigurableElement Path="/Route/route_mgr/routes/voice/stream_duplex/playback/config/period_size">
+          <IntegerParameter Name="period_size">320</IntegerParameter>
+        </ConfigurableElement>
+        <ConfigurableElement Path="/Route/route_mgr/routes/voice/stream_duplex/playback/config/period_count">
+          <IntegerParameter Name="period_count">4</IntegerParameter>
+        </ConfigurableElement>
+        <ConfigurableElement Path="/Route/route_mgr/routes/voice/stream_duplex/playback/config/start_threshold">
+          <IntegerParameter Name="start_threshold">319</IntegerParameter>
+        </ConfigurableElement>
+        <ConfigurableElement Path="/Route/route_mgr/routes/voice/stream_duplex/playback/config/stop_threshold">
+          <IntegerParameter Name="stop_threshold">1280</IntegerParameter>
+        </ConfigurableElement>
+        <ConfigurableElement Path="/Route/route_mgr/routes/voice/stream_duplex/playback/config/silence_threshold">
+          <IntegerParameter Name="silence_threshold">0</IntegerParameter>
+        </ConfigurableElement>
+        <ConfigurableElement Path="/Route/route_mgr/routes/voice/stream_duplex/playback/config/avail_min">
+          <IntegerParameter Name="avail_min">320</IntegerParameter>
+        </ConfigurableElement>
+        <ConfigurableElement Path="/Route/route_mgr/routes/voice/stream_duplex/playback/config/effects_supported">
+          <StringParameter Name="effects_supported"></StringParameter>
+        </ConfigurableElement>
+        <ConfigurableElement Path="/Route/route_mgr/routes/voice/stream_duplex/playback/config/attributes/output_flags/direct">
+          <BitParameter Name="direct">0</BitParameter>
+        </ConfigurableElement>
+        <ConfigurableElement Path="/Route/route_mgr/routes/voice/stream_duplex/playback/config/attributes/output_flags/primary">
+          <BitParameter Name="primary">1</BitParameter>
+        </ConfigurableElement>
+        <ConfigurableElement Path="/Route/route_mgr/routes/voice/stream_duplex/playback/config/attributes/output_flags/fast">
+          <BitParameter Name="fast">0</BitParameter>
+        </ConfigurableElement>
+        <ConfigurableElement Path="/Route/route_mgr/routes/voice/stream_duplex/playback/config/attributes/output_flags/deep_buffer">
+          <BitParameter Name="deep_buffer">0</BitParameter>
+        </ConfigurableElement>
+        <ConfigurableElement Path="/Route/route_mgr/routes/voice/stream_duplex/playback/config/attributes/output_flags/compress_offload">
+          <BitParameter Name="compress_offload">0</BitParameter>
+        </ConfigurableElement>
+        <ConfigurableElement Path="/Route/route_mgr/routes/voice/stream_duplex/playback/config/attributes/output_flags/non_blocking">
+          <BitParameter Name="non_blocking">0</BitParameter>
+        </ConfigurableElement>
+        <ConfigurableElement Path="/Route/route_mgr/routes/voice/stream_duplex/playback/config/attributes/output_flags/hw_av_sync">
+          <BitParameter Name="hw_av_sync">0</BitParameter>
+        </ConfigurableElement>
+        <ConfigurableElement Path="/Route/route_mgr/routes/voice/stream_duplex/capture/config/require_preenable">
+          <BooleanParameter Name="require_preenable">0</BooleanParameter>
+        </ConfigurableElement>
+        <ConfigurableElement Path="/Route/route_mgr/routes/voice/stream_duplex/capture/config/require_postdisable">
+          <BooleanParameter Name="require_postdisable">0</BooleanParameter>
+        </ConfigurableElement>
+        <ConfigurableElement Path="/Route/route_mgr/routes/voice/stream_duplex/capture/config/silence_prolog_ms">
+          <IntegerParameter Name="silence_prolog_ms">5</IntegerParameter>
+        </ConfigurableElement>
+        <ConfigurableElement Path="/Route/route_mgr/routes/voice/stream_duplex/capture/config/channels">
+          <IntegerParameter Name="channels">2</IntegerParameter>
+        </ConfigurableElement>
+        <ConfigurableElement Path="/Route/route_mgr/routes/voice/stream_duplex/capture/config/channels_policy">
+          <StringParameter Name="channels_policy">copy,copy</StringParameter>
+        </ConfigurableElement>
+        <ConfigurableElement Path="/Route/route_mgr/routes/voice/stream_duplex/capture/config/rate">
+          <IntegerParameter Name="rate">16000</IntegerParameter>
+        </ConfigurableElement>
+        <ConfigurableElement Path="/Route/route_mgr/routes/voice/stream_duplex/capture/config/format">
+          <EnumParameter Name="format">Pcm16Bit</EnumParameter>
+        </ConfigurableElement>
+        <ConfigurableElement Path="/Route/route_mgr/routes/voice/stream_duplex/capture/config/period_size">
+          <IntegerParameter Name="period_size">320</IntegerParameter>
+        </ConfigurableElement>
+        <ConfigurableElement Path="/Route/route_mgr/routes/voice/stream_duplex/capture/config/period_count">
+          <IntegerParameter Name="period_count">4</IntegerParameter>
+        </ConfigurableElement>
+        <ConfigurableElement Path="/Route/route_mgr/routes/voice/stream_duplex/capture/config/start_threshold">
+          <IntegerParameter Name="start_threshold">1</IntegerParameter>
+        </ConfigurableElement>
+        <ConfigurableElement Path="/Route/route_mgr/routes/voice/stream_duplex/capture/config/stop_threshold">
+          <IntegerParameter Name="stop_threshold">1280</IntegerParameter>
+        </ConfigurableElement>
+        <ConfigurableElement Path="/Route/route_mgr/routes/voice/stream_duplex/capture/config/silence_threshold">
+          <IntegerParameter Name="silence_threshold">0</IntegerParameter>
+        </ConfigurableElement>
+        <ConfigurableElement Path="/Route/route_mgr/routes/voice/stream_duplex/capture/config/avail_min">
+          <IntegerParameter Name="avail_min">320</IntegerParameter>
+        </ConfigurableElement>
+        <ConfigurableElement Path="/Route/route_mgr/routes/voice/stream_duplex/capture/config/effects_supported">
+          <StringParameter Name="effects_supported">Automatic Gain Control,Noise Suppression,Acoustic Echo Canceller,Beam Forming,Wind Noise Reduction</StringParameter>
+        </ConfigurableElement>
+        <ConfigurableElement Path="/Route/route_mgr/routes/voice/stream_duplex/capture/config/attributes/input_sources/default">
+          <BitParameter Name="default">0</BitParameter>
+        </ConfigurableElement>
+        <ConfigurableElement Path="/Route/route_mgr/routes/voice/stream_duplex/capture/config/attributes/input_sources/mic">
+          <BitParameter Name="mic">1</BitParameter>
+        </ConfigurableElement>
+        <ConfigurableElement Path="/Route/route_mgr/routes/voice/stream_duplex/capture/config/attributes/input_sources/voice_uplink">
+          <BitParameter Name="voice_uplink">0</BitParameter>
+        </ConfigurableElement>
+        <ConfigurableElement Path="/Route/route_mgr/routes/voice/stream_duplex/capture/config/attributes/input_sources/voice_downlink">
+          <BitParameter Name="voice_downlink">0</BitParameter>
+        </ConfigurableElement>
+        <ConfigurableElement Path="/Route/route_mgr/routes/voice/stream_duplex/capture/config/attributes/input_sources/voice_call">
+          <BitParameter Name="voice_call">0</BitParameter>
+        </ConfigurableElement>
+        <ConfigurableElement Path="/Route/route_mgr/routes/voice/stream_duplex/capture/config/attributes/input_sources/camcorder">
+          <BitParameter Name="camcorder">0</BitParameter>
+        </ConfigurableElement>
+        <ConfigurableElement Path="/Route/route_mgr/routes/voice/stream_duplex/capture/config/attributes/input_sources/voice_recognition">
+          <BitParameter Name="voice_recognition">1</BitParameter>
+        </ConfigurableElement>
+        <ConfigurableElement Path="/Route/route_mgr/routes/voice/stream_duplex/capture/config/attributes/input_sources/voice_communication">
+          <BitParameter Name="voice_communication">1</BitParameter>
+        </ConfigurableElement>
+        <ConfigurableElement Path="/Route/route_mgr/routes/voice/stream_duplex/capture/config/attributes/input_sources/remote_submix">
+          <BitParameter Name="remote_submix">0</BitParameter>
+        </ConfigurableElement>
+        <ConfigurableElement Path="/Route/route_mgr/routes/voice/stream_duplex/capture/config/attributes/input_sources/hotword">
+          <BitParameter Name="hotword">0</BitParameter>
+        </ConfigurableElement>
+        <ConfigurableElement Path="/Route/route_mgr/routes/deep_media/stream_playback/config/require_preenable">
+          <BooleanParameter Name="require_preenable">0</BooleanParameter>
+        </ConfigurableElement>
+        <ConfigurableElement Path="/Route/route_mgr/routes/deep_media/stream_playback/config/require_postdisable">
+          <BooleanParameter Name="require_postdisable">0</BooleanParameter>
+        </ConfigurableElement>
+        <ConfigurableElement Path="/Route/route_mgr/routes/deep_media/stream_playback/config/silence_prolog_ms">
+          <IntegerParameter Name="silence_prolog_ms">5</IntegerParameter>
+        </ConfigurableElement>
+        <ConfigurableElement Path="/Route/route_mgr/routes/deep_media/stream_playback/config/channels">
+          <IntegerParameter Name="channels">2</IntegerParameter>
+        </ConfigurableElement>
+        <ConfigurableElement Path="/Route/route_mgr/routes/deep_media/stream_playback/config/channels_policy">
+          <StringParameter Name="channels_policy">copy,copy</StringParameter>
+        </ConfigurableElement>
+        <ConfigurableElement Path="/Route/route_mgr/routes/deep_media/stream_playback/config/rate">
+          <IntegerParameter Name="rate">48000</IntegerParameter>
+        </ConfigurableElement>
+        <ConfigurableElement Path="/Route/route_mgr/routes/deep_media/stream_playback/config/format">
+          <EnumParameter Name="format">Pcm16Bit</EnumParameter>
+        </ConfigurableElement>
+        <ConfigurableElement Path="/Route/route_mgr/routes/deep_media/stream_playback/config/period_size">
+          <IntegerParameter Name="period_size">4608</IntegerParameter>
+        </ConfigurableElement>
+        <ConfigurableElement Path="/Route/route_mgr/routes/deep_media/stream_playback/config/period_count">
+          <IntegerParameter Name="period_count">4</IntegerParameter>
+        </ConfigurableElement>
+        <ConfigurableElement Path="/Route/route_mgr/routes/deep_media/stream_playback/config/start_threshold">
+          <IntegerParameter Name="start_threshold">4607</IntegerParameter>
+        </ConfigurableElement>
+        <ConfigurableElement Path="/Route/route_mgr/routes/deep_media/stream_playback/config/stop_threshold">
+          <IntegerParameter Name="stop_threshold">18432</IntegerParameter>
+        </ConfigurableElement>
+        <ConfigurableElement Path="/Route/route_mgr/routes/deep_media/stream_playback/config/silence_threshold">
+          <IntegerParameter Name="silence_threshold">0</IntegerParameter>
+        </ConfigurableElement>
+        <ConfigurableElement Path="/Route/route_mgr/routes/deep_media/stream_playback/config/avail_min">
+          <IntegerParameter Name="avail_min">4608</IntegerParameter>
+        </ConfigurableElement>
+        <ConfigurableElement Path="/Route/route_mgr/routes/deep_media/stream_playback/config/effects_supported">
+          <StringParameter Name="effects_supported"></StringParameter>
+        </ConfigurableElement>
+        <ConfigurableElement Path="/Route/route_mgr/routes/deep_media/stream_playback/config/attributes/output_flags/direct">
+          <BitParameter Name="direct">0</BitParameter>
+        </ConfigurableElement>
+        <ConfigurableElement Path="/Route/route_mgr/routes/deep_media/stream_playback/config/attributes/output_flags/primary">
+          <BitParameter Name="primary">0</BitParameter>
+        </ConfigurableElement>
+        <ConfigurableElement Path="/Route/route_mgr/routes/deep_media/stream_playback/config/attributes/output_flags/fast">
+          <BitParameter Name="fast">0</BitParameter>
+        </ConfigurableElement>
+        <ConfigurableElement Path="/Route/route_mgr/routes/deep_media/stream_playback/config/attributes/output_flags/deep_buffer">
+          <BitParameter Name="deep_buffer">1</BitParameter>
+        </ConfigurableElement>
+        <ConfigurableElement Path="/Route/route_mgr/routes/deep_media/stream_playback/config/attributes/output_flags/compress_offload">
+          <BitParameter Name="compress_offload">0</BitParameter>
+        </ConfigurableElement>
+        <ConfigurableElement Path="/Route/route_mgr/routes/deep_media/stream_playback/config/attributes/output_flags/non_blocking">
+          <BitParameter Name="non_blocking">0</BitParameter>
+        </ConfigurableElement>
+        <ConfigurableElement Path="/Route/route_mgr/routes/deep_media/stream_playback/config/attributes/output_flags/hw_av_sync">
+          <BitParameter Name="hw_av_sync">0</BitParameter>
+        </ConfigurableElement>
+        <ConfigurableElement Path="/Route/route_mgr/routes/low_latency/stream_playback/config/require_preenable">
+          <BooleanParameter Name="require_preenable">0</BooleanParameter>
+        </ConfigurableElement>
+        <ConfigurableElement Path="/Route/route_mgr/routes/low_latency/stream_playback/config/require_postdisable">
+          <BooleanParameter Name="require_postdisable">0</BooleanParameter>
+        </ConfigurableElement>
+        <ConfigurableElement Path="/Route/route_mgr/routes/low_latency/stream_playback/config/silence_prolog_ms">
+          <IntegerParameter Name="silence_prolog_ms">5</IntegerParameter>
+        </ConfigurableElement>
+        <ConfigurableElement Path="/Route/route_mgr/routes/low_latency/stream_playback/config/channels">
+          <IntegerParameter Name="channels">2</IntegerParameter>
+        </ConfigurableElement>
+        <ConfigurableElement Path="/Route/route_mgr/routes/low_latency/stream_playback/config/channels_policy">
+          <StringParameter Name="channels_policy">copy,copy</StringParameter>
+        </ConfigurableElement>
+        <ConfigurableElement Path="/Route/route_mgr/routes/low_latency/stream_playback/config/rate">
+          <IntegerParameter Name="rate">48000</IntegerParameter>
+        </ConfigurableElement>
+        <ConfigurableElement Path="/Route/route_mgr/routes/low_latency/stream_playback/config/format">
+          <EnumParameter Name="format">Pcm16Bit</EnumParameter>
+        </ConfigurableElement>
+        <ConfigurableElement Path="/Route/route_mgr/routes/low_latency/stream_playback/config/period_size">
+          <IntegerParameter Name="period_size">240</IntegerParameter>
+        </ConfigurableElement>
+        <ConfigurableElement Path="/Route/route_mgr/routes/low_latency/stream_playback/config/period_count">
+          <IntegerParameter Name="period_count">4</IntegerParameter>
+        </ConfigurableElement>
+        <ConfigurableElement Path="/Route/route_mgr/routes/low_latency/stream_playback/config/start_threshold">
+          <IntegerParameter Name="start_threshold">239</IntegerParameter>
+        </ConfigurableElement>
+        <ConfigurableElement Path="/Route/route_mgr/routes/low_latency/stream_playback/config/stop_threshold">
+          <IntegerParameter Name="stop_threshold">1280</IntegerParameter>
+        </ConfigurableElement>
+        <ConfigurableElement Path="/Route/route_mgr/routes/low_latency/stream_playback/config/silence_threshold">
+          <IntegerParameter Name="silence_threshold">0</IntegerParameter>
+        </ConfigurableElement>
+        <ConfigurableElement Path="/Route/route_mgr/routes/low_latency/stream_playback/config/avail_min">
+          <IntegerParameter Name="avail_min">240</IntegerParameter>
+        </ConfigurableElement>
+        <ConfigurableElement Path="/Route/route_mgr/routes/low_latency/stream_playback/config/effects_supported">
+          <StringParameter Name="effects_supported"></StringParameter>
+        </ConfigurableElement>
+        <ConfigurableElement Path="/Route/route_mgr/routes/low_latency/stream_playback/config/attributes/output_flags/direct">
+          <BitParameter Name="direct">0</BitParameter>
+        </ConfigurableElement>
+        <ConfigurableElement Path="/Route/route_mgr/routes/low_latency/stream_playback/config/attributes/output_flags/primary">
+          <BitParameter Name="primary">0</BitParameter>
+        </ConfigurableElement>
+        <ConfigurableElement Path="/Route/route_mgr/routes/low_latency/stream_playback/config/attributes/output_flags/fast">
+          <BitParameter Name="fast">1</BitParameter>
+        </ConfigurableElement>
+        <ConfigurableElement Path="/Route/route_mgr/routes/low_latency/stream_playback/config/attributes/output_flags/deep_buffer">
+          <BitParameter Name="deep_buffer">0</BitParameter>
+        </ConfigurableElement>
+        <ConfigurableElement Path="/Route/route_mgr/routes/low_latency/stream_playback/config/attributes/output_flags/compress_offload">
+          <BitParameter Name="compress_offload">0</BitParameter>
+        </ConfigurableElement>
+        <ConfigurableElement Path="/Route/route_mgr/routes/low_latency/stream_playback/config/attributes/output_flags/non_blocking">
+          <BitParameter Name="non_blocking">0</BitParameter>
+        </ConfigurableElement>
+        <ConfigurableElement Path="/Route/route_mgr/routes/low_latency/stream_playback/config/attributes/output_flags/hw_av_sync">
+          <BitParameter Name="hw_av_sync">0</BitParameter>
+        </ConfigurableElement>
+        <ConfigurableElement Path="/Route/route_mgr/routes/modem_ia/route_duplex/playback/status/need_reconfigure">
+          <BooleanParameter Name="need_reconfigure">0</BooleanParameter>
+        </ConfigurableElement>
+        <ConfigurableElement Path="/Route/route_mgr/routes/bt_ia/route_duplex/playback/status/need_reconfigure">
+          <BooleanParameter Name="need_reconfigure">0</BooleanParameter>
+        </ConfigurableElement>
+        <ConfigurableElement Path="/Route/route_mgr/routes/bt_ia/route_duplex/capture/status/need_reconfigure">
+          <BooleanParameter Name="need_reconfigure">0</BooleanParameter>
+        </ConfigurableElement>
+        <ConfigurableElement Path="/Route/route_mgr/routes/bt_hfp/route_duplex/playback/status/need_reconfigure">
+          <BooleanParameter Name="need_reconfigure">0</BooleanParameter>
+        </ConfigurableElement>
+        <ConfigurableElement Path="/Route/route_mgr/routes/bt_hfp/route_duplex/capture/status/need_reconfigure">
+          <BooleanParameter Name="need_reconfigure">0</BooleanParameter>
+        </ConfigurableElement>
+      </Configuration>
+    </Settings>
+  </ConfigurableDomain>
+  <ConfigurableDomain Name="Calibration.DebugFilesPath" SequenceAware="false">
+    <Configurations>
+      <Configuration Name="Default">
+        <CompoundRule Type="All"/>
+      </Configuration>
+    </Configurations>
+    <ConfigurableElements>
+      <ConfigurableElement Path="/Route/debug_fs/debug_files/path_list"/>
+    </ConfigurableElements>
+    <Settings>
+      <Configuration Name="Default">
+        <ConfigurableElement Path="/Route/debug_fs/debug_files/path_list">
+          <StringParameter Name="path_list">/d/sst/shim_dump /d/sst/sram_lpe_checkpoint /d/sst/sram_lpe_ia_mailbox /d/sst/sram_ia_lpe_mailbox /d/sst/fw_ssp_reg</StringParameter>
+        </ConfigurableElement>
+      </Configuration>
+    </Settings>
+  </ConfigurableDomain>
+  <ConfigurableDomain Name="StreamRoute.Media.Playback" SequenceAware="false">
+    <Configurations>
+      <Configuration Name="Applicable">
+        <CompoundRule Type="All">
+          <CompoundRule Type="Any">
+            <SelectionCriterionRule SelectionCriterion="SelectedOutputDevices" MatchesWhen="Includes" Value="Earpiece"/>
+            <SelectionCriterionRule SelectionCriterion="SelectedOutputDevices" MatchesWhen="Includes" Value="Ihf"/>
+            <SelectionCriterionRule SelectionCriterion="SelectedOutputDevices" MatchesWhen="Includes" Value="Headset"/>
+            <SelectionCriterionRule SelectionCriterion="SelectedOutputDevices" MatchesWhen="Includes" Value="Headphones"/>
+            <SelectionCriterionRule SelectionCriterion="SelectedOutputDevices" MatchesWhen="Includes" Value="Sco"/>
+            <SelectionCriterionRule SelectionCriterion="SelectedOutputDevices" MatchesWhen="Includes" Value="ScoHeadset"/>
+            <SelectionCriterionRule SelectionCriterion="SelectedOutputDevices" MatchesWhen="Includes" Value="ScoCarkit"/>
+          </CompoundRule>
+          <CompoundRule Type="Any">
+            <SelectionCriterionRule SelectionCriterion="Mode" MatchesWhen="Is" Value="Normal"/>
+            <SelectionCriterionRule SelectionCriterion="Mode" MatchesWhen="Is" Value="RingTone"/>
+            <SelectionCriterionRule SelectionCriterion="Mode" MatchesWhen="Is" Value="InCsvCall"/>
+            <CompoundRule Type="All">
+              <SelectionCriterionRule SelectionCriterion="Mode" MatchesWhen="Is" Value="InVoipCall"/>
+              <SelectionCriterionRule SelectionCriterion="PreProcEnabled" MatchesWhen="Excludes" Value="Aec"/>
+              <SelectionCriterionRule SelectionCriterion="PreProcEnabled" MatchesWhen="Excludes" Value="Ns"/>
+              <SelectionCriterionRule SelectionCriterion="PreProcEnabled" MatchesWhen="Excludes" Value="Agc"/>
+            </CompoundRule>
+          </CompoundRule>
+          <SelectionCriterionRule SelectionCriterion="OutputFlags" MatchesWhen="Includes" Value="Primary"/>
+        </CompoundRule>
+      </Configuration>
+      <Configuration Name="NotApplicable">
+        <CompoundRule Type="All"/>
+      </Configuration>
+    </Configurations>
+    <ConfigurableElements>
+      <ConfigurableElement Path="/Route/route_mgr/routes/media/stream_duplex/playback/status/applicable"/>
+    </ConfigurableElements>
+    <Settings>
+      <Configuration Name="Applicable">
+        <ConfigurableElement Path="/Route/route_mgr/routes/media/stream_duplex/playback/status/applicable">
+          <BooleanParameter Name="applicable">1</BooleanParameter>
+        </ConfigurableElement>
+      </Configuration>
+      <Configuration Name="NotApplicable">
+        <ConfigurableElement Path="/Route/route_mgr/routes/media/stream_duplex/playback/status/applicable">
+          <BooleanParameter Name="applicable">0</BooleanParameter>
+        </ConfigurableElement>
+      </Configuration>
+    </Settings>
+  </ConfigurableDomain>
+  <ConfigurableDomain Name="StreamRoute.Media.Capture" SequenceAware="false">
+    <Configurations>
+      <Configuration Name="Applicable">
+        <CompoundRule Type="All">
+          <SelectionCriterionRule SelectionCriterion="PreProcEnabled" MatchesWhen="Excludes" Value="Aec"/>
+          <SelectionCriterionRule SelectionCriterion="PreProcEnabled" MatchesWhen="Excludes" Value="Ns"/>
+          <SelectionCriterionRule SelectionCriterion="PreProcEnabled" MatchesWhen="Excludes" Value="Agc"/>
+          <CompoundRule Type="Any">
+            <SelectionCriterionRule SelectionCriterion="SelectedInputDevices" MatchesWhen="Includes" Value="ScoHeadset"/>
+            <SelectionCriterionRule SelectionCriterion="SelectedInputDevices" MatchesWhen="Includes" Value="Main"/>
+            <SelectionCriterionRule SelectionCriterion="SelectedInputDevices" MatchesWhen="Includes" Value="Headset"/>
+            <SelectionCriterionRule SelectionCriterion="SelectedInputDevices" MatchesWhen="Includes" Value="Back"/>
+            <SelectionCriterionRule SelectionCriterion="SelectedInputDevices" MatchesWhen="Includes" Value="FmTuner"/>
+            <CompoundRule Type="All">
+              <SelectionCriterionRule SelectionCriterion="SelectedInputDevices" MatchesWhen="Includes" Value="VoiceCall"/>
+              <SelectionCriterionRule SelectionCriterion="Mode" MatchesWhen="Is" Value="InCsvCall"/>
+              <SelectionCriterionRule SelectionCriterion="ModemAudioAvailable" MatchesWhen="Is" Value="True"/>
+            </CompoundRule>
+          </CompoundRule>
+          <CompoundRule Type="Any">
+            <SelectionCriterionRule SelectionCriterion="InputSources" MatchesWhen="Includes" Value="Camcorder"/>
+            <SelectionCriterionRule SelectionCriterion="InputSources" MatchesWhen="Includes" Value="VoiceRecognition"/>
+            <SelectionCriterionRule SelectionCriterion="InputSources" MatchesWhen="Includes" Value="VoiceDownlink"/>
+            <SelectionCriterionRule SelectionCriterion="InputSources" MatchesWhen="Includes" Value="VoiceCall"/>
+            <SelectionCriterionRule SelectionCriterion="InputSources" MatchesWhen="Includes" Value="Hotword"/>
+            <SelectionCriterionRule SelectionCriterion="InputSources" MatchesWhen="Includes" Value="FmTuner"/>
+            <CompoundRule Type="All">
+              <SelectionCriterionRule SelectionCriterion="InputSources" MatchesWhen="Includes" Value="VoiceUplink"/>
+              <SelectionCriterionRule SelectionCriterion="MicMuted" MatchesWhen="Is" Value="False"/>
+            </CompoundRule>
+            <CompoundRule Type="All">
+              <SelectionCriterionRule SelectionCriterion="InputSources" MatchesWhen="Includes" Value="Mic"/>
+              <SelectionCriterionRule SelectionCriterion="Mode" MatchesWhen="IsNot" Value="InVoipCall"/>
+            </CompoundRule>
+          </CompoundRule>
+        </CompoundRule>
+      </Configuration>
+      <Configuration Name="NotApplicable">
+        <CompoundRule Type="All"/>
+      </Configuration>
+    </Configurations>
+    <ConfigurableElements>
+      <ConfigurableElement Path="/Route/route_mgr/routes/media/stream_duplex/capture/status/applicable"/>
+    </ConfigurableElements>
+    <Settings>
+      <Configuration Name="Applicable">
+        <ConfigurableElement Path="/Route/route_mgr/routes/media/stream_duplex/capture/status/applicable">
+          <BooleanParameter Name="applicable">1</BooleanParameter>
+        </ConfigurableElement>
+      </Configuration>
+      <Configuration Name="NotApplicable">
+        <ConfigurableElement Path="/Route/route_mgr/routes/media/stream_duplex/capture/status/applicable">
+          <BooleanParameter Name="applicable">0</BooleanParameter>
+        </ConfigurableElement>
+      </Configuration>
+    </Settings>
+  </ConfigurableDomain>
+  <ConfigurableDomain Name="StreamRoute.Media.NeedReroute" SequenceAware="false">
+    <Configurations>
+      <Configuration Name="Yes">
+        <CompoundRule Type="All">
+          <SelectionCriterionRule SelectionCriterion="StatesChanged" MatchesWhen="Includes" Value="SelectedInputDevices"/>
+        </CompoundRule>
+      </Configuration>
+      <Configuration Name="No">
+        <CompoundRule Type="All"/>
+      </Configuration>
+    </Configurations>
+    <ConfigurableElements>
+      <ConfigurableElement Path="/Route/route_mgr/routes/media/stream_duplex/capture/status/need_reroute"/>
+    </ConfigurableElements>
+    <Settings>
+      <Configuration Name="Yes">
+        <ConfigurableElement Path="/Route/route_mgr/routes/media/stream_duplex/capture/status/need_reroute">
+          <BooleanParameter Name="need_reroute">1</BooleanParameter>
+        </ConfigurableElement>
+      </Configuration>
+      <Configuration Name="No">
+        <ConfigurableElement Path="/Route/route_mgr/routes/media/stream_duplex/capture/status/need_reroute">
+          <BooleanParameter Name="need_reroute">0</BooleanParameter>
+        </ConfigurableElement>
+      </Configuration>
+    </Settings>
+  </ConfigurableDomain>
+  <ConfigurableDomain Name="StreamRoute.Voice.Capture.Applicable" SequenceAware="false">
+    <Configurations>
+      <Configuration Name="Yes">
+        <CompoundRule Type="All">
+          <CompoundRule Type="Any">
+            <SelectionCriterionRule SelectionCriterion="SelectedInputDevices" MatchesWhen="Includes" Value="ScoHeadset"/>
+            <SelectionCriterionRule SelectionCriterion="SelectedInputDevices" MatchesWhen="Includes" Value="Main"/>
+            <SelectionCriterionRule SelectionCriterion="SelectedInputDevices" MatchesWhen="Includes" Value="Headset"/>
+            <SelectionCriterionRule SelectionCriterion="SelectedInputDevices" MatchesWhen="Includes" Value="Back"/>
+          </CompoundRule>
+          <CompoundRule Type="Any">
+            <SelectionCriterionRule SelectionCriterion="InputSources" MatchesWhen="Includes" Value="VoiceCommunication"/>
+            <CompoundRule Type="All">
+              <CompoundRule Type="Any">
+                <SelectionCriterionRule SelectionCriterion="InputSources" MatchesWhen="Includes" Value="Mic"/>
+                <SelectionCriterionRule SelectionCriterion="InputSources" MatchesWhen="Includes" Value="VoiceRecognition"/>
+              </CompoundRule>
+              <CompoundRule Type="Any">
+                <SelectionCriterionRule SelectionCriterion="Mode" MatchesWhen="Is" Value="InVoipCall"/>
+                <SelectionCriterionRule SelectionCriterion="PreProcEnabled" MatchesWhen="Includes" Value="Aec"/>
+                <SelectionCriterionRule SelectionCriterion="PreProcEnabled" MatchesWhen="Includes" Value="Agc"/>
+                <SelectionCriterionRule SelectionCriterion="PreProcEnabled" MatchesWhen="Includes" Value="Ns"/>
+              </CompoundRule>
+            </CompoundRule>
+          </CompoundRule>
+        </CompoundRule>
+      </Configuration>
+      <Configuration Name="No">
+        <CompoundRule Type="All"/>
+      </Configuration>
+    </Configurations>
+    <ConfigurableElements>
+      <ConfigurableElement Path="/Route/route_mgr/routes/voice/stream_duplex/capture/status/applicable"/>
+    </ConfigurableElements>
+    <Settings>
+      <Configuration Name="Yes">
+        <ConfigurableElement Path="/Route/route_mgr/routes/voice/stream_duplex/capture/status/applicable">
+          <BooleanParameter Name="applicable">1</BooleanParameter>
+        </ConfigurableElement>
+      </Configuration>
+      <Configuration Name="No">
+        <ConfigurableElement Path="/Route/route_mgr/routes/voice/stream_duplex/capture/status/applicable">
+          <BooleanParameter Name="applicable">0</BooleanParameter>
+        </ConfigurableElement>
+      </Configuration>
+    </Settings>
+  </ConfigurableDomain>
+  <ConfigurableDomain Name="StreamRoute.Voice.Capture.NeedReconfigure" SequenceAware="false">
+    <Configurations>
+      <Configuration Name="Yes">
+        <CompoundRule Type="All">
+          <CompoundRule Type="All">
+            <CompoundRule Type="Any">
+              <SelectionCriterionRule SelectionCriterion="SelectedInputDevices" MatchesWhen="Includes" Value="ScoHeadset"/>
+              <SelectionCriterionRule SelectionCriterion="SelectedInputDevices" MatchesWhen="Includes" Value="Main"/>
+              <SelectionCriterionRule SelectionCriterion="SelectedInputDevices" MatchesWhen="Includes" Value="Headset"/>
+              <SelectionCriterionRule SelectionCriterion="SelectedInputDevices" MatchesWhen="Includes" Value="Back"/>
+            </CompoundRule>
+            <CompoundRule Type="Any">
+              <SelectionCriterionRule SelectionCriterion="InputSources" MatchesWhen="Includes" Value="VoiceCommunication"/>
+              <CompoundRule Type="All">
+                <CompoundRule Type="Any">
+                  <SelectionCriterionRule SelectionCriterion="InputSources" MatchesWhen="Includes" Value="Mic"/>
+                  <SelectionCriterionRule SelectionCriterion="InputSources" MatchesWhen="Includes" Value="VoiceRecognition"/>
+                </CompoundRule>
+                <CompoundRule Type="Any">
+                  <SelectionCriterionRule SelectionCriterion="Mode" MatchesWhen="Is" Value="InVoipCall"/>
+                  <SelectionCriterionRule SelectionCriterion="PreProcEnabled" MatchesWhen="Includes" Value="Aec"/>
+                  <SelectionCriterionRule SelectionCriterion="PreProcEnabled" MatchesWhen="Includes" Value="Agc"/>
+                  <SelectionCriterionRule SelectionCriterion="PreProcEnabled" MatchesWhen="Includes" Value="Ns"/>
+                </CompoundRule>
+              </CompoundRule>
+            </CompoundRule>
+          </CompoundRule>
+          <CompoundRule Type="Any">
+            <SelectionCriterionRule SelectionCriterion="StatesChanged" MatchesWhen="Includes" Value="SelectedInputDevices"/>
+            <SelectionCriterionRule SelectionCriterion="StatesChanged" MatchesWhen="Includes" Value="MicMuted"/>
+            <SelectionCriterionRule SelectionCriterion="StatesChanged" MatchesWhen="Includes" Value="PreProcEnabled"/>
+          </CompoundRule>
+        </CompoundRule>
+      </Configuration>
+      <Configuration Name="No">
+        <CompoundRule Type="All"/>
+      </Configuration>
+    </Configurations>
+    <ConfigurableElements>
+      <ConfigurableElement Path="/Route/route_mgr/routes/voice/stream_duplex/capture/status/need_reconfigure"/>
+    </ConfigurableElements>
+    <Settings>
+      <Configuration Name="Yes">
+        <ConfigurableElement Path="/Route/route_mgr/routes/voice/stream_duplex/capture/status/need_reconfigure">
+          <BooleanParameter Name="need_reconfigure">1</BooleanParameter>
+        </ConfigurableElement>
+      </Configuration>
+      <Configuration Name="No">
+        <ConfigurableElement Path="/Route/route_mgr/routes/voice/stream_duplex/capture/status/need_reconfigure">
+          <BooleanParameter Name="need_reconfigure">0</BooleanParameter>
+        </ConfigurableElement>
+      </Configuration>
+    </Settings>
+  </ConfigurableDomain>
+  <ConfigurableDomain Name="StreamRoute.Voice.Capture.NeedReroute" SequenceAware="false">
+    <Configurations>
+      <Configuration Name="Yes">
+        <CompoundRule Type="All">
+          <CompoundRule Type="All">
+            <CompoundRule Type="Any">
+              <SelectionCriterionRule SelectionCriterion="SelectedInputDevices" MatchesWhen="Includes" Value="ScoHeadset"/>
+              <SelectionCriterionRule SelectionCriterion="SelectedInputDevices" MatchesWhen="Includes" Value="Main"/>
+              <SelectionCriterionRule SelectionCriterion="SelectedInputDevices" MatchesWhen="Includes" Value="Headset"/>
+              <SelectionCriterionRule SelectionCriterion="SelectedInputDevices" MatchesWhen="Includes" Value="Back"/>
+            </CompoundRule>
+            <CompoundRule Type="Any">
+              <SelectionCriterionRule SelectionCriterion="InputSources" MatchesWhen="Includes" Value="VoiceCommunication"/>
+              <CompoundRule Type="All">
+                <CompoundRule Type="Any">
+                  <SelectionCriterionRule SelectionCriterion="InputSources" MatchesWhen="Includes" Value="Mic"/>
+                  <SelectionCriterionRule SelectionCriterion="InputSources" MatchesWhen="Includes" Value="VoiceRecognition"/>
+                </CompoundRule>
+                <CompoundRule Type="Any">
+                  <SelectionCriterionRule SelectionCriterion="Mode" MatchesWhen="Is" Value="InVoipCall"/>
+                  <SelectionCriterionRule SelectionCriterion="PreProcEnabled" MatchesWhen="Includes" Value="Aec"/>
+                  <SelectionCriterionRule SelectionCriterion="PreProcEnabled" MatchesWhen="Includes" Value="Agc"/>
+                  <SelectionCriterionRule SelectionCriterion="PreProcEnabled" MatchesWhen="Includes" Value="Ns"/>
+                </CompoundRule>
+              </CompoundRule>
+            </CompoundRule>
+          </CompoundRule>
+          <CompoundRule Type="Any">
+            <SelectionCriterionRule SelectionCriterion="StatesChanged" MatchesWhen="Includes" Value="Mode"/>
+            <SelectionCriterionRule SelectionCriterion="StatesChanged" MatchesWhen="Includes" Value="VoIPBandType"/>
+            <SelectionCriterionRule SelectionCriterion="StatesChanged" MatchesWhen="Includes" Value="BtHeadsetBandType"/>
+          </CompoundRule>
+        </CompoundRule>
+      </Configuration>
+      <Configuration Name="No">
+        <CompoundRule Type="All"/>
+      </Configuration>
+    </Configurations>
+    <ConfigurableElements>
+      <ConfigurableElement Path="/Route/route_mgr/routes/voice/stream_duplex/capture/status/need_reroute"/>
+    </ConfigurableElements>
+    <Settings>
+      <Configuration Name="Yes">
+        <ConfigurableElement Path="/Route/route_mgr/routes/voice/stream_duplex/capture/status/need_reroute">
+          <BooleanParameter Name="need_reroute">1</BooleanParameter>
+        </ConfigurableElement>
+      </Configuration>
+      <Configuration Name="No">
+        <ConfigurableElement Path="/Route/route_mgr/routes/voice/stream_duplex/capture/status/need_reroute">
+          <BooleanParameter Name="need_reroute">0</BooleanParameter>
+        </ConfigurableElement>
+      </Configuration>
+    </Settings>
+  </ConfigurableDomain>
+  <ConfigurableDomain Name="StreamRoute.Voice.Playback.Applicable" SequenceAware="false">
+    <Configurations>
+      <Configuration Name="Yes">
+        <CompoundRule Type="All">
+          <CompoundRule Type="Any">
+            <SelectionCriterionRule SelectionCriterion="SelectedOutputDevices" MatchesWhen="Includes" Value="Earpiece"/>
+            <SelectionCriterionRule SelectionCriterion="SelectedOutputDevices" MatchesWhen="Includes" Value="Ihf"/>
+            <SelectionCriterionRule SelectionCriterion="SelectedOutputDevices" MatchesWhen="Includes" Value="Headset"/>
+            <SelectionCriterionRule SelectionCriterion="SelectedOutputDevices" MatchesWhen="Includes" Value="Headphones"/>
+            <CompoundRule Type="Any">
+              <SelectionCriterionRule SelectionCriterion="SelectedOutputDevices" MatchesWhen="Includes" Value="Sco"/>
+              <SelectionCriterionRule SelectionCriterion="SelectedOutputDevices" MatchesWhen="Includes" Value="ScoHeadset"/>
+              <SelectionCriterionRule SelectionCriterion="SelectedOutputDevices" MatchesWhen="Includes" Value="ScoCarkit"/>
+            </CompoundRule>
+          </CompoundRule>
+          <CompoundRule Type="Any">
+            <SelectionCriterionRule SelectionCriterion="PreProcEnabled" MatchesWhen="Includes" Value="Aec"/>
+            <SelectionCriterionRule SelectionCriterion="PreProcEnabled" MatchesWhen="Includes" Value="Agc"/>
+            <SelectionCriterionRule SelectionCriterion="PreProcEnabled" MatchesWhen="Includes" Value="Ns"/>
+          </CompoundRule>
+          <SelectionCriterionRule SelectionCriterion="Mode" MatchesWhen="Is" Value="InVoipCall"/>
+          <SelectionCriterionRule SelectionCriterion="OutputFlags" MatchesWhen="Includes" Value="Primary"/>
+        </CompoundRule>
+      </Configuration>
+      <Configuration Name="No">
+        <CompoundRule Type="All"/>
+      </Configuration>
+    </Configurations>
+    <ConfigurableElements>
+      <ConfigurableElement Path="/Route/route_mgr/routes/voice/stream_duplex/playback/status/applicable"/>
+    </ConfigurableElements>
+    <Settings>
+      <Configuration Name="Yes">
+        <ConfigurableElement Path="/Route/route_mgr/routes/voice/stream_duplex/playback/status/applicable">
+          <BooleanParameter Name="applicable">1</BooleanParameter>
+        </ConfigurableElement>
+      </Configuration>
+      <Configuration Name="No">
+        <ConfigurableElement Path="/Route/route_mgr/routes/voice/stream_duplex/playback/status/applicable">
+          <BooleanParameter Name="applicable">0</BooleanParameter>
+        </ConfigurableElement>
+      </Configuration>
+    </Settings>
+  </ConfigurableDomain>
+  <ConfigurableDomain Name="StreamRoute.Voice.Playback.NeedReconfigure" SequenceAware="false">
+    <Configurations>
+      <Configuration Name="Yes">
+        <CompoundRule Type="All">
+          <CompoundRule Type="All">
+            <CompoundRule Type="Any">
+              <SelectionCriterionRule SelectionCriterion="SelectedOutputDevices" MatchesWhen="Includes" Value="Earpiece"/>
+              <SelectionCriterionRule SelectionCriterion="SelectedOutputDevices" MatchesWhen="Includes" Value="Ihf"/>
+              <SelectionCriterionRule SelectionCriterion="SelectedOutputDevices" MatchesWhen="Includes" Value="Headset"/>
+              <SelectionCriterionRule SelectionCriterion="SelectedOutputDevices" MatchesWhen="Includes" Value="Headphones"/>
+              <CompoundRule Type="Any">
+                <SelectionCriterionRule SelectionCriterion="SelectedOutputDevices" MatchesWhen="Includes" Value="Sco"/>
+                <SelectionCriterionRule SelectionCriterion="SelectedOutputDevices" MatchesWhen="Includes" Value="ScoHeadset"/>
+                <SelectionCriterionRule SelectionCriterion="SelectedOutputDevices" MatchesWhen="Includes" Value="ScoCarkit"/>
+              </CompoundRule>
+            </CompoundRule>
+            <CompoundRule Type="Any">
+              <SelectionCriterionRule SelectionCriterion="PreProcEnabled" MatchesWhen="Includes" Value="Aec"/>
+              <SelectionCriterionRule SelectionCriterion="PreProcEnabled" MatchesWhen="Includes" Value="Agc"/>
+              <SelectionCriterionRule SelectionCriterion="PreProcEnabled" MatchesWhen="Includes" Value="Ns"/>
+            </CompoundRule>
+            <SelectionCriterionRule SelectionCriterion="Mode" MatchesWhen="Is" Value="InVoipCall"/>
+            <SelectionCriterionRule SelectionCriterion="OutputFlags" MatchesWhen="Includes" Value="Primary"/>
+          </CompoundRule>
+          <SelectionCriterionRule SelectionCriterion="StatesChanged" MatchesWhen="Includes" Value="SelectedOutputDevices"/>
+        </CompoundRule>
+      </Configuration>
+      <Configuration Name="No">
+        <CompoundRule Type="All"/>
+      </Configuration>
+    </Configurations>
+    <ConfigurableElements>
+      <ConfigurableElement Path="/Route/route_mgr/routes/voice/stream_duplex/playback/status/need_reconfigure"/>
+    </ConfigurableElements>
+    <Settings>
+      <Configuration Name="Yes">
+        <ConfigurableElement Path="/Route/route_mgr/routes/voice/stream_duplex/playback/status/need_reconfigure">
+          <BooleanParameter Name="need_reconfigure">1</BooleanParameter>
+        </ConfigurableElement>
+      </Configuration>
+      <Configuration Name="No">
+        <ConfigurableElement Path="/Route/route_mgr/routes/voice/stream_duplex/playback/status/need_reconfigure">
+          <BooleanParameter Name="need_reconfigure">0</BooleanParameter>
+        </ConfigurableElement>
+      </Configuration>
+    </Settings>
+  </ConfigurableDomain>
+  <ConfigurableDomain Name="StreamRoute.LowLatency.Playback" SequenceAware="false">
+    <Configurations>
+      <Configuration Name="Applicable">
+        <CompoundRule Type="All">
+          <CompoundRule Type="Any">
+            <SelectionCriterionRule SelectionCriterion="SelectedOutputDevices" MatchesWhen="Includes" Value="Earpiece"/>
+            <SelectionCriterionRule SelectionCriterion="SelectedOutputDevices" MatchesWhen="Includes" Value="Ihf"/>
+            <SelectionCriterionRule SelectionCriterion="SelectedOutputDevices" MatchesWhen="Includes" Value="Headset"/>
+            <SelectionCriterionRule SelectionCriterion="SelectedOutputDevices" MatchesWhen="Includes" Value="Headphones"/>
+            <SelectionCriterionRule SelectionCriterion="SelectedOutputDevices" MatchesWhen="Includes" Value="Sco"/>
+            <SelectionCriterionRule SelectionCriterion="SelectedOutputDevices" MatchesWhen="Includes" Value="ScoHeadset"/>
+            <SelectionCriterionRule SelectionCriterion="SelectedOutputDevices" MatchesWhen="Includes" Value="ScoCarkit"/>
+          </CompoundRule>
+          <CompoundRule Type="Any">
+            <SelectionCriterionRule SelectionCriterion="Mode" MatchesWhen="Is" Value="Normal"/>
+            <SelectionCriterionRule SelectionCriterion="Mode" MatchesWhen="Is" Value="RingTone"/>
+          </CompoundRule>
+          <SelectionCriterionRule SelectionCriterion="OutputFlags" MatchesWhen="Includes" Value="Fast"/>
+        </CompoundRule>
+      </Configuration>
+      <Configuration Name="NotApplicable">
+        <CompoundRule Type="All"/>
+      </Configuration>
+    </Configurations>
+    <ConfigurableElements>
+      <ConfigurableElement Path="/Route/route_mgr/routes/low_latency/stream_playback/status/applicable"/>
+    </ConfigurableElements>
+    <Settings>
+      <Configuration Name="Applicable">
+        <ConfigurableElement Path="/Route/route_mgr/routes/low_latency/stream_playback/status/applicable">
+          <BooleanParameter Name="applicable">1</BooleanParameter>
+        </ConfigurableElement>
+      </Configuration>
+      <Configuration Name="NotApplicable">
+        <ConfigurableElement Path="/Route/route_mgr/routes/low_latency/stream_playback/status/applicable">
+          <BooleanParameter Name="applicable">0</BooleanParameter>
+        </ConfigurableElement>
+      </Configuration>
+    </Settings>
+  </ConfigurableDomain>
+  <ConfigurableDomain Name="StreamRoute.DeepBuffer.Playback" SequenceAware="false">
+    <Configurations>
+      <Configuration Name="Applicable">
+        <CompoundRule Type="All">
+          <CompoundRule Type="Any">
+            <SelectionCriterionRule SelectionCriterion="SelectedOutputDevices" MatchesWhen="Includes" Value="Earpiece"/>
+            <SelectionCriterionRule SelectionCriterion="SelectedOutputDevices" MatchesWhen="Includes" Value="Ihf"/>
+            <SelectionCriterionRule SelectionCriterion="SelectedOutputDevices" MatchesWhen="Includes" Value="Headset"/>
+            <SelectionCriterionRule SelectionCriterion="SelectedOutputDevices" MatchesWhen="Includes" Value="Headphones"/>
+            <SelectionCriterionRule SelectionCriterion="SelectedOutputDevices" MatchesWhen="Includes" Value="Sco"/>
+            <SelectionCriterionRule SelectionCriterion="SelectedOutputDevices" MatchesWhen="Includes" Value="ScoHeadset"/>
+            <SelectionCriterionRule SelectionCriterion="SelectedOutputDevices" MatchesWhen="Includes" Value="ScoCarkit"/>
+          </CompoundRule>
+          <CompoundRule Type="Any">
+            <SelectionCriterionRule SelectionCriterion="Mode" MatchesWhen="Is" Value="Normal"/>
+            <SelectionCriterionRule SelectionCriterion="Mode" MatchesWhen="Is" Value="RingTone"/>
+            <SelectionCriterionRule SelectionCriterion="Mode" MatchesWhen="Is" Value="InVoipCall"/>
+          </CompoundRule>
+          <SelectionCriterionRule SelectionCriterion="OutputFlags" MatchesWhen="Includes" Value="Deep"/>
+        </CompoundRule>
+      </Configuration>
+      <Configuration Name="NotApplicable">
+        <CompoundRule Type="All"/>
+      </Configuration>
+    </Configurations>
+    <ConfigurableElements>
+      <ConfigurableElement Path="/Route/route_mgr/routes/deep_media/stream_playback/status/applicable"/>
+    </ConfigurableElements>
+    <Settings>
+      <Configuration Name="Applicable">
+        <ConfigurableElement Path="/Route/route_mgr/routes/deep_media/stream_playback/status/applicable">
+          <BooleanParameter Name="applicable">1</BooleanParameter>
+        </ConfigurableElement>
+      </Configuration>
+      <Configuration Name="NotApplicable">
+        <ConfigurableElement Path="/Route/route_mgr/routes/deep_media/stream_playback/status/applicable">
+          <BooleanParameter Name="applicable">0</BooleanParameter>
+        </ConfigurableElement>
+      </Configuration>
+    </Settings>
+  </ConfigurableDomain>
+  <ConfigurableDomain Name="StreamRoute.NeedReconfigure.Playback" SequenceAware="false">
+    <Configurations>
+      <Configuration Name="Yes">
+        <CompoundRule Type="All">
+          <SelectionCriterionRule SelectionCriterion="StatesChanged" MatchesWhen="Includes" Value="SelectedOutputDevices"/>
+        </CompoundRule>
+      </Configuration>
+      <Configuration Name="No">
+        <CompoundRule Type="All"/>
+      </Configuration>
+    </Configurations>
+    <ConfigurableElements>
+      <ConfigurableElement Path="/Route/route_mgr/routes/media/stream_duplex/playback/status/need_reconfigure"/>
+      <ConfigurableElement Path="/Route/route_mgr/routes/deep_media/stream_playback/status/need_reconfigure"/>
+    </ConfigurableElements>
+    <Settings>
+      <Configuration Name="Yes">
+        <ConfigurableElement Path="/Route/route_mgr/routes/media/stream_duplex/playback/status/need_reconfigure">
+          <BooleanParameter Name="need_reconfigure">1</BooleanParameter>
+        </ConfigurableElement>
+        <ConfigurableElement Path="/Route/route_mgr/routes/deep_media/stream_playback/status/need_reconfigure">
+          <BooleanParameter Name="need_reconfigure">1</BooleanParameter>
+        </ConfigurableElement>
+      </Configuration>
+      <Configuration Name="No">
+        <ConfigurableElement Path="/Route/route_mgr/routes/media/stream_duplex/playback/status/need_reconfigure">
+          <BooleanParameter Name="need_reconfigure">0</BooleanParameter>
+        </ConfigurableElement>
+        <ConfigurableElement Path="/Route/route_mgr/routes/deep_media/stream_playback/status/need_reconfigure">
+          <BooleanParameter Name="need_reconfigure">0</BooleanParameter>
+        </ConfigurableElement>
+      </Configuration>
+    </Settings>
+  </ConfigurableDomain>
+  <ConfigurableDomain Name="StreamRoute.NeedReconfigure.Capture" SequenceAware="false">
+    <Configurations>
+      <Configuration Name="Yes">
+        <CompoundRule Type="All">
+          <SelectionCriterionRule SelectionCriterion="StatesChanged" MatchesWhen="Includes" Value="PreProcEnabled"/>
+        </CompoundRule>
+      </Configuration>
+      <Configuration Name="No">
+        <CompoundRule Type="All"/>
+      </Configuration>
+    </Configurations>
+    <ConfigurableElements>
+      <ConfigurableElement Path="/Route/route_mgr/routes/media/stream_duplex/capture/status/need_reconfigure"/>
+    </ConfigurableElements>
+    <Settings>
+      <Configuration Name="Yes">
+        <ConfigurableElement Path="/Route/route_mgr/routes/media/stream_duplex/capture/status/need_reconfigure">
+          <BooleanParameter Name="need_reconfigure">1</BooleanParameter>
+        </ConfigurableElement>
+      </Configuration>
+      <Configuration Name="No">
+        <ConfigurableElement Path="/Route/route_mgr/routes/media/stream_duplex/capture/status/need_reconfigure">
+          <BooleanParameter Name="need_reconfigure">0</BooleanParameter>
+        </ConfigurableElement>
+      </Configuration>
+    </Settings>
+  </ConfigurableDomain>
+  <ConfigurableDomain Name="Route.CompressedMedia.Playback" SequenceAware="false">
+    <Configurations>
+      <Configuration Name="Applicable">
+        <CompoundRule Type="All">
+          <SelectionCriterionRule SelectionCriterion="DirectStream" MatchesWhen="Is" Value="True"/>
+        </CompoundRule>
+      </Configuration>
+      <Configuration Name="NotApplicable">
+        <CompoundRule Type="All"/>
+      </Configuration>
+    </Configurations>
+    <ConfigurableElements>
+      <ConfigurableElement Path="/Route/route_mgr/routes/compressed_media/route_playback/status/applicable"/>
+    </ConfigurableElements>
+    <Settings>
+      <Configuration Name="Applicable">
+        <ConfigurableElement Path="/Route/route_mgr/routes/compressed_media/route_playback/status/applicable">
+          <BooleanParameter Name="applicable">1</BooleanParameter>
+        </ConfigurableElement>
+      </Configuration>
+      <Configuration Name="NotApplicable">
+        <ConfigurableElement Path="/Route/route_mgr/routes/compressed_media/route_playback/status/applicable">
+          <BooleanParameter Name="applicable">0</BooleanParameter>
+        </ConfigurableElement>
+      </Configuration>
+    </Settings>
+  </ConfigurableDomain>
+  <ConfigurableDomain Name="Route.HwCodec0IA.Playback.Applicable" SequenceAware="false">
+    <Configurations>
+      <Configuration Name="Yes">
+        <CompoundRule Type="Any">
+          <CompoundRule Type="All">
+            <SelectionCriterionRule SelectionCriterion="Mode" MatchesWhen="Is" Value="InCsvCall"/>
+            <SelectionCriterionRule SelectionCriterion="ModemAudioAvailable" MatchesWhen="Is" Value="True"/>
+            <SelectionCriterionRule SelectionCriterion="TtyDirection" MatchesWhen="Is" Value="Uplink"/>
+            <SelectionCriterionRule SelectionCriterion="SelectedOutputDevices" MatchesWhen="Includes" Value="Headset"/>
+          </CompoundRule>
+          <CompoundRule Type="All">
+            <CompoundRule Type="Any">
+              <SelectionCriterionRule SelectionCriterion="FmOutputDevices" MatchesWhen="Is" Value="Ihf"/>
+              <SelectionCriterionRule SelectionCriterion="SelectedOutputDevices" MatchesWhen="Includes" Value="Earpiece"/>
+              <SelectionCriterionRule SelectionCriterion="SelectedOutputDevices" MatchesWhen="Includes" Value="Ihf"/>
+            </CompoundRule>
+            <CompoundRule Type="Any">
+              <SelectionCriterionRule SelectionCriterion="OutputFlags" MatchesWhen="Includes" Value="Primary"/>
+              <SelectionCriterionRule SelectionCriterion="OutputFlags" MatchesWhen="Includes" Value="Fast"/>
+              <SelectionCriterionRule SelectionCriterion="OutputFlags" MatchesWhen="Includes" Value="Deep"/>
+              <SelectionCriterionRule SelectionCriterion="DirectStream" MatchesWhen="Is" Value="True"/>
+              <SelectionCriterionRule SelectionCriterion="FmOutputDevices" MatchesWhen="Is" Value="Ihf"/>
+              <SelectionCriterionRule SelectionCriterion="ModemAudioAvailable" MatchesWhen="Is" Value="True"/>
+              <SelectionCriterionRule SelectionCriterion="HfpClientEnable" MatchesWhen="Is" Value="True"/>
+            </CompoundRule>
+          </CompoundRule>
+        </CompoundRule>
+      </Configuration>
+      <Configuration Name="No">
+        <CompoundRule Type="All"/>
+      </Configuration>
+    </Configurations>
+    <ConfigurableElements>
+      <ConfigurableElement Path="/Route/route_mgr/routes/hwcodec0_ia/route_duplex/playback/status/applicable"/>
+    </ConfigurableElements>
+    <Settings>
+      <Configuration Name="Yes">
+        <ConfigurableElement Path="/Route/route_mgr/routes/hwcodec0_ia/route_duplex/playback/status/applicable">
+          <BooleanParameter Name="applicable">1</BooleanParameter>
+        </ConfigurableElement>
+      </Configuration>
+      <Configuration Name="No">
+        <ConfigurableElement Path="/Route/route_mgr/routes/hwcodec0_ia/route_duplex/playback/status/applicable">
+          <BooleanParameter Name="applicable">0</BooleanParameter>
+        </ConfigurableElement>
+      </Configuration>
+    </Settings>
+  </ConfigurableDomain>
+  <ConfigurableDomain Name="Route.HwCodec0IA.Playback.NeedReconfigure" SequenceAware="false">
+    <Configurations>
+      <Configuration Name="Yes">
+        <CompoundRule Type="All">
+          <CompoundRule Type="Any">
+            <CompoundRule Type="All">
+              <SelectionCriterionRule SelectionCriterion="Mode" MatchesWhen="Is" Value="InCsvCall"/>
+              <SelectionCriterionRule SelectionCriterion="ModemAudioAvailable" MatchesWhen="Is" Value="True"/>
+              <SelectionCriterionRule SelectionCriterion="TtyDirection" MatchesWhen="Is" Value="Uplink"/>
+              <SelectionCriterionRule SelectionCriterion="SelectedOutputDevices" MatchesWhen="Includes" Value="Headset"/>
+            </CompoundRule>
+            <CompoundRule Type="All">
+              <CompoundRule Type="Any">
+                <SelectionCriterionRule SelectionCriterion="FmOutputDevices" MatchesWhen="Is" Value="Ihf"/>
+                <SelectionCriterionRule SelectionCriterion="SelectedOutputDevices" MatchesWhen="Includes" Value="Earpiece"/>
+                <SelectionCriterionRule SelectionCriterion="SelectedOutputDevices" MatchesWhen="Includes" Value="Ihf"/>
+              </CompoundRule>
+              <CompoundRule Type="Any">
+                <SelectionCriterionRule SelectionCriterion="OutputFlags" MatchesWhen="Includes" Value="Primary"/>
+                <SelectionCriterionRule SelectionCriterion="OutputFlags" MatchesWhen="Includes" Value="Fast"/>
+                <SelectionCriterionRule SelectionCriterion="OutputFlags" MatchesWhen="Includes" Value="Deep"/>
+                <SelectionCriterionRule SelectionCriterion="DirectStream" MatchesWhen="Is" Value="True"/>
+                <SelectionCriterionRule SelectionCriterion="FmOutputDevices" MatchesWhen="Is" Value="Ihf"/>
+                <SelectionCriterionRule SelectionCriterion="ModemAudioAvailable" MatchesWhen="Is" Value="True"/>
+                <SelectionCriterionRule SelectionCriterion="HfpClientEnable" MatchesWhen="Is" Value="True"/>
+              </CompoundRule>
+            </CompoundRule>
+          </CompoundRule>
+          <CompoundRule Type="Any">
+            <SelectionCriterionRule SelectionCriterion="StatesChanged" MatchesWhen="Includes" Value="HacSelected"/>
+            <SelectionCriterionRule SelectionCriterion="StatesChanged" MatchesWhen="Includes" Value="TtyDirection"/>
+            <SelectionCriterionRule SelectionCriterion="StatesChanged" MatchesWhen="Includes" Value="Mode"/>
+            <SelectionCriterionRule SelectionCriterion="StatesChanged" MatchesWhen="Includes" Value="CsvBandType"/>
+            <SelectionCriterionRule SelectionCriterion="StatesChanged" MatchesWhen="Includes" Value="VoIPBandType"/>
+            <SelectionCriterionRule SelectionCriterion="StatesChanged" MatchesWhen="Includes" Value="SelectedOutputDevices"/>
+            <SelectionCriterionRule SelectionCriterion="StatesChanged" MatchesWhen="Includes" Value="BwxActivated"/>
+            <SelectionCriterionRule SelectionCriterion="StatesChanged" MatchesWhen="Includes" Value="HfpClientEnable"/>
+            <SelectionCriterionRule SelectionCriterion="StatesChanged" MatchesWhen="Includes" Value="HfpClientBandType"/>
+            <SelectionCriterionRule SelectionCriterion="StatesChanged" MatchesWhen="Includes" Value="FmOutputDevices"/>
+          </CompoundRule>
+        </CompoundRule>
+      </Configuration>
+      <Configuration Name="No">
+        <CompoundRule Type="All"/>
+      </Configuration>
+    </Configurations>
+    <ConfigurableElements>
+      <ConfigurableElement Path="/Route/route_mgr/routes/hwcodec0_ia/route_duplex/playback/status/need_reconfigure"/>
+    </ConfigurableElements>
+    <Settings>
+      <Configuration Name="Yes">
+        <ConfigurableElement Path="/Route/route_mgr/routes/hwcodec0_ia/route_duplex/playback/status/need_reconfigure">
+          <BooleanParameter Name="need_reconfigure">1</BooleanParameter>
+        </ConfigurableElement>
+      </Configuration>
+      <Configuration Name="No">
+        <ConfigurableElement Path="/Route/route_mgr/routes/hwcodec0_ia/route_duplex/playback/status/need_reconfigure">
+          <BooleanParameter Name="need_reconfigure">0</BooleanParameter>
+        </ConfigurableElement>
+      </Configuration>
+    </Settings>
+  </ConfigurableDomain>
+  <ConfigurableDomain Name="Route.HwCodec0IA.Capture.Applicable" SequenceAware="false">
+    <Configurations>
+      <Configuration Name="Yes">
+        <CompoundRule Type="Any">
+          <SelectionCriterionRule SelectionCriterion="ContextAwareness" MatchesWhen="Is" Value="True"/>
+          <CompoundRule Type="All">
+            <SelectionCriterionRule SelectionCriterion="Mode" MatchesWhen="Is" Value="InCsvCall"/>
+            <SelectionCriterionRule SelectionCriterion="ModemAudioAvailable" MatchesWhen="Is" Value="True"/>
+            <CompoundRule Type="Any">
+              <SelectionCriterionRule SelectionCriterion="SelectedOutputDevices" MatchesWhen="Includes" Value="Earpiece"/>
+              <SelectionCriterionRule SelectionCriterion="SelectedOutputDevices" MatchesWhen="Includes" Value="Ihf"/>
+              <SelectionCriterionRule SelectionCriterion="SelectedOutputDevices" MatchesWhen="Includes" Value="Headphones"/>
+              <CompoundRule Type="All">
+                <SelectionCriterionRule SelectionCriterion="SelectedOutputDevices" MatchesWhen="Includes" Value="Headset"/>
+                <SelectionCriterionRule SelectionCriterion="TtyDirection" MatchesWhen="Is" Value="Downlink"/>
+              </CompoundRule>
+            </CompoundRule>
+          </CompoundRule>
+          <CompoundRule Type="All">
+            <CompoundRule Type="Any">
+              <SelectionCriterionRule SelectionCriterion="SelectedInputDevices" MatchesWhen="Includes" Value="Back"/>
+              <SelectionCriterionRule SelectionCriterion="SelectedInputDevices" MatchesWhen="Includes" Value="Main"/>
+            </CompoundRule>
+            <CompoundRule Type="Any">
+              <SelectionCriterionRule SelectionCriterion="InputSources" MatchesWhen="Includes" Value="Mic"/>
+              <SelectionCriterionRule SelectionCriterion="InputSources" MatchesWhen="Includes" Value="Camcorder"/>
+              <SelectionCriterionRule SelectionCriterion="InputSources" MatchesWhen="Includes" Value="VoiceRecognition"/>
+              <SelectionCriterionRule SelectionCriterion="InputSources" MatchesWhen="Includes" Value="VoiceCommunication"/>
+              <SelectionCriterionRule SelectionCriterion="InputSources" MatchesWhen="Includes" Value="Hotword"/>
+              <SelectionCriterionRule SelectionCriterion="HfpClientEnable" MatchesWhen="Is" Value="True"/>
+            </CompoundRule>
+          </CompoundRule>
+          <CompoundRule Type="All">
+            <SelectionCriterionRule SelectionCriterion="LpalDevice" MatchesWhen="Is" Value="Main"/>
+            <SelectionCriterionRule SelectionCriterion="AlwaysListening" MatchesWhen="Is" Value="True"/>
+            <CompoundRule Type="Any">
+              <SelectionCriterionRule SelectionCriterion="Mode" MatchesWhen="Is" Value="Normal"/>
+              <SelectionCriterionRule SelectionCriterion="Mode" MatchesWhen="Is" Value="RingTone"/>
+            </CompoundRule>
+          </CompoundRule>
+        </CompoundRule>
+      </Configuration>
+      <Configuration Name="No">
+        <CompoundRule Type="All"/>
+      </Configuration>
+    </Configurations>
+    <ConfigurableElements>
+      <ConfigurableElement Path="/Route/route_mgr/routes/hwcodec0_ia/route_duplex/capture/status/applicable"/>
+    </ConfigurableElements>
+    <Settings>
+      <Configuration Name="Yes">
+        <ConfigurableElement Path="/Route/route_mgr/routes/hwcodec0_ia/route_duplex/capture/status/applicable">
+          <BooleanParameter Name="applicable">1</BooleanParameter>
+        </ConfigurableElement>
+      </Configuration>
+      <Configuration Name="No">
+        <ConfigurableElement Path="/Route/route_mgr/routes/hwcodec0_ia/route_duplex/capture/status/applicable">
+          <BooleanParameter Name="applicable">0</BooleanParameter>
+        </ConfigurableElement>
+      </Configuration>
+    </Settings>
+  </ConfigurableDomain>
+  <ConfigurableDomain Name="Route.HwCodec0IA.Capture.NeedReconfigure" SequenceAware="false">
+    <Configurations>
+      <Configuration Name="Yes">
+        <CompoundRule Type="All">
+          <CompoundRule Type="Any">
+            <SelectionCriterionRule SelectionCriterion="ContextAwareness" MatchesWhen="Is" Value="True"/>
+            <CompoundRule Type="All">
+              <SelectionCriterionRule SelectionCriterion="Mode" MatchesWhen="Is" Value="InCsvCall"/>
+              <SelectionCriterionRule SelectionCriterion="ModemAudioAvailable" MatchesWhen="Is" Value="True"/>
+              <CompoundRule Type="Any">
+                <SelectionCriterionRule SelectionCriterion="SelectedOutputDevices" MatchesWhen="Includes" Value="Earpiece"/>
+                <SelectionCriterionRule SelectionCriterion="SelectedOutputDevices" MatchesWhen="Includes" Value="Ihf"/>
+                <SelectionCriterionRule SelectionCriterion="SelectedOutputDevices" MatchesWhen="Includes" Value="Headphones"/>
+                <CompoundRule Type="All">
+                  <SelectionCriterionRule SelectionCriterion="SelectedOutputDevices" MatchesWhen="Includes" Value="Headset"/>
+                  <SelectionCriterionRule SelectionCriterion="TtyDirection" MatchesWhen="Is" Value="Downlink"/>
+                </CompoundRule>
+              </CompoundRule>
+            </CompoundRule>
+            <CompoundRule Type="All">
+              <CompoundRule Type="Any">
+                <SelectionCriterionRule SelectionCriterion="SelectedInputDevices" MatchesWhen="Includes" Value="Back"/>
+                <SelectionCriterionRule SelectionCriterion="SelectedInputDevices" MatchesWhen="Includes" Value="Main"/>
+              </CompoundRule>
+              <CompoundRule Type="Any">
+                <SelectionCriterionRule SelectionCriterion="InputSources" MatchesWhen="Includes" Value="Mic"/>
+                <SelectionCriterionRule SelectionCriterion="InputSources" MatchesWhen="Includes" Value="Camcorder"/>
+                <SelectionCriterionRule SelectionCriterion="InputSources" MatchesWhen="Includes" Value="VoiceRecognition"/>
+                <SelectionCriterionRule SelectionCriterion="InputSources" MatchesWhen="Includes" Value="VoiceCommunication"/>
+                <SelectionCriterionRule SelectionCriterion="InputSources" MatchesWhen="Includes" Value="Hotword"/>
+                <SelectionCriterionRule SelectionCriterion="HfpClientEnable" MatchesWhen="Is" Value="True"/>
+              </CompoundRule>
+            </CompoundRule>
+            <CompoundRule Type="All">
+              <SelectionCriterionRule SelectionCriterion="LpalDevice" MatchesWhen="Is" Value="Main"/>
+              <SelectionCriterionRule SelectionCriterion="AlwaysListening" MatchesWhen="Is" Value="True"/>
+              <CompoundRule Type="Any">
+                <SelectionCriterionRule SelectionCriterion="Mode" MatchesWhen="Is" Value="Normal"/>
+                <SelectionCriterionRule SelectionCriterion="Mode" MatchesWhen="Is" Value="RingTone"/>
+              </CompoundRule>
+            </CompoundRule>
+          </CompoundRule>
+          <CompoundRule Type="Any">
+            <SelectionCriterionRule SelectionCriterion="StatesChanged" MatchesWhen="Includes" Value="HacSelected"/>
+            <SelectionCriterionRule SelectionCriterion="StatesChanged" MatchesWhen="Includes" Value="TtyDirection"/>
+            <SelectionCriterionRule SelectionCriterion="StatesChanged" MatchesWhen="Includes" Value="Mode"/>
+            <SelectionCriterionRule SelectionCriterion="StatesChanged" MatchesWhen="Includes" Value="CsvBandType"/>
+            <SelectionCriterionRule SelectionCriterion="StatesChanged" MatchesWhen="Includes" Value="VoIPBandType"/>
+            <SelectionCriterionRule SelectionCriterion="StatesChanged" MatchesWhen="Includes" Value="SelectedInputDevices"/>
+            <SelectionCriterionRule SelectionCriterion="StatesChanged" MatchesWhen="Includes" Value="MicMuted"/>
+            <SelectionCriterionRule SelectionCriterion="StatesChanged" MatchesWhen="Includes" Value="BwxActivated"/>
+            <SelectionCriterionRule SelectionCriterion="StatesChanged" MatchesWhen="Includes" Value="HfpClientEnable"/>
+            <SelectionCriterionRule SelectionCriterion="StatesChanged" MatchesWhen="Includes" Value="HfpClientBandType"/>
+          </CompoundRule>
+        </CompoundRule>
+      </Configuration>
+      <Configuration Name="No">
+        <CompoundRule Type="All"/>
+      </Configuration>
+    </Configurations>
+    <ConfigurableElements>
+      <ConfigurableElement Path="/Route/route_mgr/routes/hwcodec0_ia/route_duplex/capture/status/need_reconfigure"/>
+    </ConfigurableElements>
+    <Settings>
+      <Configuration Name="Yes">
+        <ConfigurableElement Path="/Route/route_mgr/routes/hwcodec0_ia/route_duplex/capture/status/need_reconfigure">
+          <BooleanParameter Name="need_reconfigure">1</BooleanParameter>
+        </ConfigurableElement>
+      </Configuration>
+      <Configuration Name="No">
+        <ConfigurableElement Path="/Route/route_mgr/routes/hwcodec0_ia/route_duplex/capture/status/need_reconfigure">
+          <BooleanParameter Name="need_reconfigure">0</BooleanParameter>
+        </ConfigurableElement>
+      </Configuration>
+    </Settings>
+  </ConfigurableDomain>
+  <ConfigurableDomain Name="Route.HwCodec1IA.Playback.Applicable" SequenceAware="false">
+    <Configurations>
+      <Configuration Name="Yes">
+        <CompoundRule Type="All">
+          <CompoundRule Type="Any">
+            <SelectionCriterionRule SelectionCriterion="FmOutputDevices" MatchesWhen="Is" Value="Headset"/>
+            <SelectionCriterionRule SelectionCriterion="SelectedOutputDevices" MatchesWhen="Includes" Value="Headset"/>
+            <SelectionCriterionRule SelectionCriterion="SelectedOutputDevices" MatchesWhen="Includes" Value="Headphones"/>
+          </CompoundRule>
+          <CompoundRule Type="Any">
+            <SelectionCriterionRule SelectionCriterion="OutputFlags" MatchesWhen="Includes" Value="Primary"/>
+            <SelectionCriterionRule SelectionCriterion="OutputFlags" MatchesWhen="Includes" Value="Fast"/>
+            <SelectionCriterionRule SelectionCriterion="OutputFlags" MatchesWhen="Includes" Value="Deep"/>
+            <SelectionCriterionRule SelectionCriterion="DirectStream" MatchesWhen="Is" Value="True"/>
+            <SelectionCriterionRule SelectionCriterion="ModemAudioAvailable" MatchesWhen="Is" Value="True"/>
+            <SelectionCriterionRule SelectionCriterion="HfpClientEnable" MatchesWhen="Is" Value="True"/>
+            <SelectionCriterionRule SelectionCriterion="FmOutputDevices" MatchesWhen="Is" Value="Headset"/>
+          </CompoundRule>
+        </CompoundRule>
+      </Configuration>
+      <Configuration Name="No">
+        <CompoundRule Type="All"/>
+      </Configuration>
+    </Configurations>
+    <ConfigurableElements>
+      <ConfigurableElement Path="/Route/route_mgr/routes/hwcodec1_ia/route_duplex/playback/status/applicable"/>
+    </ConfigurableElements>
+    <Settings>
+      <Configuration Name="Yes">
+        <ConfigurableElement Path="/Route/route_mgr/routes/hwcodec1_ia/route_duplex/playback/status/applicable">
+          <BooleanParameter Name="applicable">1</BooleanParameter>
+        </ConfigurableElement>
+      </Configuration>
+      <Configuration Name="No">
+        <ConfigurableElement Path="/Route/route_mgr/routes/hwcodec1_ia/route_duplex/playback/status/applicable">
+          <BooleanParameter Name="applicable">0</BooleanParameter>
+        </ConfigurableElement>
+      </Configuration>
+    </Settings>
+  </ConfigurableDomain>
+  <ConfigurableDomain Name="Route.HwCodec1IA.Playback.NeedReconfigure" SequenceAware="false">
+    <Configurations>
+      <Configuration Name="Yes">
+        <CompoundRule Type="All">
+          <CompoundRule Type="All">
+            <CompoundRule Type="Any">
+              <SelectionCriterionRule SelectionCriterion="FmOutputDevices" MatchesWhen="Is" Value="Headset"/>
+              <SelectionCriterionRule SelectionCriterion="SelectedOutputDevices" MatchesWhen="Includes" Value="Headset"/>
+              <SelectionCriterionRule SelectionCriterion="SelectedOutputDevices" MatchesWhen="Includes" Value="Headphones"/>
+            </CompoundRule>
+            <CompoundRule Type="Any">
+              <SelectionCriterionRule SelectionCriterion="OutputFlags" MatchesWhen="Includes" Value="Primary"/>
+              <SelectionCriterionRule SelectionCriterion="OutputFlags" MatchesWhen="Includes" Value="Fast"/>
+              <SelectionCriterionRule SelectionCriterion="OutputFlags" MatchesWhen="Includes" Value="Deep"/>
+              <SelectionCriterionRule SelectionCriterion="DirectStream" MatchesWhen="Is" Value="True"/>
+              <SelectionCriterionRule SelectionCriterion="ModemAudioAvailable" MatchesWhen="Is" Value="True"/>
+              <SelectionCriterionRule SelectionCriterion="HfpClientEnable" MatchesWhen="Is" Value="True"/>
+              <SelectionCriterionRule SelectionCriterion="FmOutputDevices" MatchesWhen="Is" Value="Headset"/>
+            </CompoundRule>
+          </CompoundRule>
+          <CompoundRule Type="Any">
+            <SelectionCriterionRule SelectionCriterion="StatesChanged" MatchesWhen="Includes" Value="HacSelected"/>
+            <SelectionCriterionRule SelectionCriterion="StatesChanged" MatchesWhen="Includes" Value="TtyDirection"/>
+            <SelectionCriterionRule SelectionCriterion="StatesChanged" MatchesWhen="Includes" Value="Mode"/>
+            <SelectionCriterionRule SelectionCriterion="StatesChanged" MatchesWhen="Includes" Value="CsvBandType"/>
+            <SelectionCriterionRule SelectionCriterion="StatesChanged" MatchesWhen="Includes" Value="VoIPBandType"/>
+            <SelectionCriterionRule SelectionCriterion="StatesChanged" MatchesWhen="Includes" Value="SelectedOutputDevices"/>
+            <SelectionCriterionRule SelectionCriterion="StatesChanged" MatchesWhen="Includes" Value="BwxActivated"/>
+            <SelectionCriterionRule SelectionCriterion="StatesChanged" MatchesWhen="Includes" Value="HfpClientEnable"/>
+            <SelectionCriterionRule SelectionCriterion="StatesChanged" MatchesWhen="Includes" Value="HfpClientBandType"/>
+            <SelectionCriterionRule SelectionCriterion="StatesChanged" MatchesWhen="Includes" Value="FmOutputDevices"/>
+          </CompoundRule>
+        </CompoundRule>
+      </Configuration>
+      <Configuration Name="No">
+        <CompoundRule Type="All"/>
+      </Configuration>
+    </Configurations>
+    <ConfigurableElements>
+      <ConfigurableElement Path="/Route/route_mgr/routes/hwcodec1_ia/route_duplex/playback/status/need_reconfigure"/>
+    </ConfigurableElements>
+    <Settings>
+      <Configuration Name="Yes">
+        <ConfigurableElement Path="/Route/route_mgr/routes/hwcodec1_ia/route_duplex/playback/status/need_reconfigure">
+          <BooleanParameter Name="need_reconfigure">1</BooleanParameter>
+        </ConfigurableElement>
+      </Configuration>
+      <Configuration Name="No">
+        <ConfigurableElement Path="/Route/route_mgr/routes/hwcodec1_ia/route_duplex/playback/status/need_reconfigure">
+          <BooleanParameter Name="need_reconfigure">0</BooleanParameter>
+        </ConfigurableElement>
+      </Configuration>
+    </Settings>
+  </ConfigurableDomain>
+  <ConfigurableDomain Name="Route.HwCodec1IA.Capture.Applicable" SequenceAware="false">
+    <Configurations>
+      <Configuration Name="Yes">
+        <CompoundRule Type="Any">
+          <CompoundRule Type="All">
+            <SelectionCriterionRule SelectionCriterion="SelectedInputDevices" MatchesWhen="Includes" Value="Headset"/>
+            <CompoundRule Type="Any">
+              <SelectionCriterionRule SelectionCriterion="InputSources" MatchesWhen="Includes" Value="Mic"/>
+              <SelectionCriterionRule SelectionCriterion="InputSources" MatchesWhen="Includes" Value="Camcorder"/>
+              <SelectionCriterionRule SelectionCriterion="InputSources" MatchesWhen="Includes" Value="VoiceRecognition"/>
+              <SelectionCriterionRule SelectionCriterion="InputSources" MatchesWhen="Includes" Value="VoiceCommunication"/>
+              <SelectionCriterionRule SelectionCriterion="InputSources" MatchesWhen="Includes" Value="Hotword"/>
+              <SelectionCriterionRule SelectionCriterion="HfpClientEnable" MatchesWhen="Is" Value="True"/>
+            </CompoundRule>
+          </CompoundRule>
+          <CompoundRule Type="All">
+            <SelectionCriterionRule SelectionCriterion="SelectedOutputDevices" MatchesWhen="Includes" Value="Headset"/>
+            <SelectionCriterionRule SelectionCriterion="Mode" MatchesWhen="Is" Value="InCsvCall"/>
+            <SelectionCriterionRule SelectionCriterion="ModemAudioAvailable" MatchesWhen="Is" Value="True"/>
+          </CompoundRule>
+          <CompoundRule Type="All">
+            <SelectionCriterionRule SelectionCriterion="LpalDevice" MatchesWhen="Is" Value="Headset"/>
+            <SelectionCriterionRule SelectionCriterion="AlwaysListening" MatchesWhen="Is" Value="True"/>
+            <CompoundRule Type="Any">
+              <SelectionCriterionRule SelectionCriterion="Mode" MatchesWhen="Is" Value="Normal"/>
+              <SelectionCriterionRule SelectionCriterion="Mode" MatchesWhen="Is" Value="RingTone"/>
+            </CompoundRule>
+          </CompoundRule>
+        </CompoundRule>
+      </Configuration>
+      <Configuration Name="No">
+        <CompoundRule Type="All"/>
+      </Configuration>
+    </Configurations>
+    <ConfigurableElements>
+      <ConfigurableElement Path="/Route/route_mgr/routes/hwcodec1_ia/route_duplex/capture/status/applicable"/>
+    </ConfigurableElements>
+    <Settings>
+      <Configuration Name="Yes">
+        <ConfigurableElement Path="/Route/route_mgr/routes/hwcodec1_ia/route_duplex/capture/status/applicable">
+          <BooleanParameter Name="applicable">1</BooleanParameter>
+        </ConfigurableElement>
+      </Configuration>
+      <Configuration Name="No">
+        <ConfigurableElement Path="/Route/route_mgr/routes/hwcodec1_ia/route_duplex/capture/status/applicable">
+          <BooleanParameter Name="applicable">0</BooleanParameter>
+        </ConfigurableElement>
+      </Configuration>
+    </Settings>
+  </ConfigurableDomain>
+  <ConfigurableDomain Name="Route.HwCodec1IA.Capture.NeedReconfigure" SequenceAware="false">
+    <Configurations>
+      <Configuration Name="Yes">
+        <CompoundRule Type="All">
+          <CompoundRule Type="Any">
+            <CompoundRule Type="All">
+              <SelectionCriterionRule SelectionCriterion="SelectedInputDevices" MatchesWhen="Includes" Value="Headset"/>
+              <CompoundRule Type="Any">
+                <SelectionCriterionRule SelectionCriterion="InputSources" MatchesWhen="Includes" Value="Mic"/>
+                <SelectionCriterionRule SelectionCriterion="InputSources" MatchesWhen="Includes" Value="Camcorder"/>
+                <SelectionCriterionRule SelectionCriterion="InputSources" MatchesWhen="Includes" Value="VoiceRecognition"/>
+                <SelectionCriterionRule SelectionCriterion="InputSources" MatchesWhen="Includes" Value="VoiceCommunication"/>
+                <SelectionCriterionRule SelectionCriterion="InputSources" MatchesWhen="Includes" Value="Hotword"/>
+                <SelectionCriterionRule SelectionCriterion="HfpClientEnable" MatchesWhen="Is" Value="True"/>
+              </CompoundRule>
+            </CompoundRule>
+            <CompoundRule Type="All">
+              <SelectionCriterionRule SelectionCriterion="SelectedOutputDevices" MatchesWhen="Includes" Value="Headset"/>
+              <SelectionCriterionRule SelectionCriterion="Mode" MatchesWhen="Is" Value="InCsvCall"/>
+              <SelectionCriterionRule SelectionCriterion="ModemAudioAvailable" MatchesWhen="Is" Value="True"/>
+            </CompoundRule>
+            <CompoundRule Type="All">
+              <SelectionCriterionRule SelectionCriterion="LpalDevice" MatchesWhen="Is" Value="Headset"/>
+              <SelectionCriterionRule SelectionCriterion="AlwaysListening" MatchesWhen="Is" Value="True"/>
+              <CompoundRule Type="Any">
+                <SelectionCriterionRule SelectionCriterion="Mode" MatchesWhen="Is" Value="Normal"/>
+                <SelectionCriterionRule SelectionCriterion="Mode" MatchesWhen="Is" Value="RingTone"/>
+              </CompoundRule>
+            </CompoundRule>
+          </CompoundRule>
+          <CompoundRule Type="Any">
+            <SelectionCriterionRule SelectionCriterion="StatesChanged" MatchesWhen="Includes" Value="HacSelected"/>
+            <SelectionCriterionRule SelectionCriterion="StatesChanged" MatchesWhen="Includes" Value="TtyDirection"/>
+            <SelectionCriterionRule SelectionCriterion="StatesChanged" MatchesWhen="Includes" Value="Mode"/>
+            <SelectionCriterionRule SelectionCriterion="StatesChanged" MatchesWhen="Includes" Value="CsvBandType"/>
+            <SelectionCriterionRule SelectionCriterion="StatesChanged" MatchesWhen="Includes" Value="VoIPBandType"/>
+            <SelectionCriterionRule SelectionCriterion="StatesChanged" MatchesWhen="Includes" Value="SelectedInputDevices"/>
+            <SelectionCriterionRule SelectionCriterion="StatesChanged" MatchesWhen="Includes" Value="MicMuted"/>
+            <SelectionCriterionRule SelectionCriterion="StatesChanged" MatchesWhen="Includes" Value="BwxActivated"/>
+            <SelectionCriterionRule SelectionCriterion="StatesChanged" MatchesWhen="Includes" Value="HfpClientEnable"/>
+            <SelectionCriterionRule SelectionCriterion="StatesChanged" MatchesWhen="Includes" Value="HfpClientBandType"/>
+          </CompoundRule>
+        </CompoundRule>
+      </Configuration>
+      <Configuration Name="No">
+        <CompoundRule Type="All"/>
+      </Configuration>
+    </Configurations>
+    <ConfigurableElements>
+      <ConfigurableElement Path="/Route/route_mgr/routes/hwcodec1_ia/route_duplex/capture/status/need_reconfigure"/>
+    </ConfigurableElements>
+    <Settings>
+      <Configuration Name="Yes">
+        <ConfigurableElement Path="/Route/route_mgr/routes/hwcodec1_ia/route_duplex/capture/status/need_reconfigure">
+          <BooleanParameter Name="need_reconfigure">1</BooleanParameter>
+        </ConfigurableElement>
+      </Configuration>
+      <Configuration Name="No">
+        <ConfigurableElement Path="/Route/route_mgr/routes/hwcodec1_ia/route_duplex/capture/status/need_reconfigure">
+          <BooleanParameter Name="need_reconfigure">0</BooleanParameter>
+        </ConfigurableElement>
+      </Configuration>
+    </Settings>
+  </ConfigurableDomain>
+  <ConfigurableDomain Name="Route.ModemIA.PlaybackCapture.Applicable" SequenceAware="false">
+    <Configurations>
+      <Configuration Name="Yes">
+        <CompoundRule Type="All">
+          <SelectionCriterionRule SelectionCriterion="Mode" MatchesWhen="Is" Value="InCsvCall"/>
+          <SelectionCriterionRule SelectionCriterion="ModemAudioAvailable" MatchesWhen="Is" Value="True"/>
+        </CompoundRule>
+      </Configuration>
+      <Configuration Name="No">
+        <CompoundRule Type="All"/>
+      </Configuration>
+    </Configurations>
+    <ConfigurableElements>
+      <ConfigurableElement Path="/Route/route_mgr/routes/modem_ia/route_duplex/playback/status/applicable"/>
+      <ConfigurableElement Path="/Route/route_mgr/routes/modem_ia/route_duplex/capture/status/applicable"/>
+    </ConfigurableElements>
+    <Settings>
+      <Configuration Name="Yes">
+        <ConfigurableElement Path="/Route/route_mgr/routes/modem_ia/route_duplex/playback/status/applicable">
+          <BooleanParameter Name="applicable">1</BooleanParameter>
+        </ConfigurableElement>
+        <ConfigurableElement Path="/Route/route_mgr/routes/modem_ia/route_duplex/capture/status/applicable">
+          <BooleanParameter Name="applicable">1</BooleanParameter>
+        </ConfigurableElement>
+      </Configuration>
+      <Configuration Name="No">
+        <ConfigurableElement Path="/Route/route_mgr/routes/modem_ia/route_duplex/playback/status/applicable">
+          <BooleanParameter Name="applicable">0</BooleanParameter>
+        </ConfigurableElement>
+        <ConfigurableElement Path="/Route/route_mgr/routes/modem_ia/route_duplex/capture/status/applicable">
+          <BooleanParameter Name="applicable">0</BooleanParameter>
+        </ConfigurableElement>
+      </Configuration>
+    </Settings>
+  </ConfigurableDomain>
+  <ConfigurableDomain Name="Route.ModemIA.PlaybackCapture.NeedReconfigure" SequenceAware="false">
+    <Configurations>
+      <Configuration Name="Yes">
+        <CompoundRule Type="All">
+          <CompoundRule Type="All">
+            <SelectionCriterionRule SelectionCriterion="Mode" MatchesWhen="Is" Value="InCsvCall"/>
+            <SelectionCriterionRule SelectionCriterion="ModemAudioAvailable" MatchesWhen="Is" Value="True"/>
+          </CompoundRule>
+          <CompoundRule Type="Any">
+            <SelectionCriterionRule SelectionCriterion="StatesChanged" MatchesWhen="Includes" Value="MicMuted"/>
+            <SelectionCriterionRule SelectionCriterion="StatesChanged" MatchesWhen="Includes" Value="SelectedOutputDevices"/>
+          </CompoundRule>
+        </CompoundRule>
+      </Configuration>
+      <Configuration Name="No">
+        <CompoundRule Type="All"/>
+      </Configuration>
+    </Configurations>
+    <ConfigurableElements>
+      <ConfigurableElement Path="/Route/route_mgr/routes/modem_ia/route_duplex/playback/status/need_reconfigure"/>
+    </ConfigurableElements>
+    <Settings>
+      <Configuration Name="Yes">
+        <ConfigurableElement Path="/Route/route_mgr/routes/modem_ia/route_duplex/playback/status/need_reconfigure">
+          <BooleanParameter Name="need_reconfigure">1</BooleanParameter>
+        </ConfigurableElement>
+      </Configuration>
+      <Configuration Name="No">
+        <ConfigurableElement Path="/Route/route_mgr/routes/modem_ia/route_duplex/playback/status/need_reconfigure">
+          <BooleanParameter Name="need_reconfigure">0</BooleanParameter>
+        </ConfigurableElement>
+      </Configuration>
+    </Settings>
+  </ConfigurableDomain>
+  <ConfigurableDomain Name="Route.BtIA.Playback.Applicable" SequenceAware="false">
+    <Configurations>
+      <Configuration Name="Yes">
+        <CompoundRule Type="All">
+          <SelectionCriterionRule SelectionCriterion="HfpClientEnable" MatchesWhen="Is" Value="False"/>
+          <CompoundRule Type="Any">
+            <SelectionCriterionRule SelectionCriterion="SelectedOutputDevices" MatchesWhen="Includes" Value="Sco"/>
+            <SelectionCriterionRule SelectionCriterion="SelectedOutputDevices" MatchesWhen="Includes" Value="ScoHeadset"/>
+            <SelectionCriterionRule SelectionCriterion="SelectedOutputDevices" MatchesWhen="Includes" Value="ScoCarkit"/>
+          </CompoundRule>
+          <CompoundRule Type="Any">
+            <SelectionCriterionRule SelectionCriterion="OutputFlags" MatchesWhen="Includes" Value="Primary"/>
+            <SelectionCriterionRule SelectionCriterion="OutputFlags" MatchesWhen="Includes" Value="Fast"/>
+            <SelectionCriterionRule SelectionCriterion="OutputFlags" MatchesWhen="Includes" Value="Deep"/>
+            <SelectionCriterionRule SelectionCriterion="DirectStream" MatchesWhen="Is" Value="True"/>
+            <CompoundRule Type="All">
+              <SelectionCriterionRule SelectionCriterion="Mode" MatchesWhen="Is" Value="InCsvCall"/>
+              <SelectionCriterionRule SelectionCriterion="ModemAudioAvailable" MatchesWhen="Is" Value="True"/>
+            </CompoundRule>
+          </CompoundRule>
+        </CompoundRule>
+      </Configuration>
+      <Configuration Name="No">
+        <CompoundRule Type="All"/>
+      </Configuration>
+    </Configurations>
+    <ConfigurableElements>
+      <ConfigurableElement Path="/Route/route_mgr/routes/bt_ia/route_duplex/playback/status/applicable"/>
+    </ConfigurableElements>
+    <Settings>
+      <Configuration Name="Yes">
+        <ConfigurableElement Path="/Route/route_mgr/routes/bt_ia/route_duplex/playback/status/applicable">
+          <BooleanParameter Name="applicable">1</BooleanParameter>
+        </ConfigurableElement>
+      </Configuration>
+      <Configuration Name="No">
+        <ConfigurableElement Path="/Route/route_mgr/routes/bt_ia/route_duplex/playback/status/applicable">
+          <BooleanParameter Name="applicable">0</BooleanParameter>
+        </ConfigurableElement>
+      </Configuration>
+    </Settings>
+  </ConfigurableDomain>
+  <ConfigurableDomain Name="Route.BtIA.Playback.NeedReconfigure" SequenceAware="false">
+    <Configurations>
+      <Configuration Name="Yes">
+        <CompoundRule Type="All">
+          <CompoundRule Type="All">
+            <SelectionCriterionRule SelectionCriterion="HfpClientEnable" MatchesWhen="Is" Value="False"/>
+            <CompoundRule Type="Any">
+              <SelectionCriterionRule SelectionCriterion="SelectedOutputDevices" MatchesWhen="Includes" Value="Sco"/>
+              <SelectionCriterionRule SelectionCriterion="SelectedOutputDevices" MatchesWhen="Includes" Value="ScoHeadset"/>
+              <SelectionCriterionRule SelectionCriterion="SelectedOutputDevices" MatchesWhen="Includes" Value="ScoCarkit"/>
+            </CompoundRule>
+            <CompoundRule Type="Any">
+              <SelectionCriterionRule SelectionCriterion="OutputFlags" MatchesWhen="Includes" Value="Primary"/>
+              <SelectionCriterionRule SelectionCriterion="OutputFlags" MatchesWhen="Includes" Value="Fast"/>
+              <SelectionCriterionRule SelectionCriterion="OutputFlags" MatchesWhen="Includes" Value="Deep"/>
+              <SelectionCriterionRule SelectionCriterion="DirectStream" MatchesWhen="Is" Value="True"/>
+              <CompoundRule Type="All">
+                <SelectionCriterionRule SelectionCriterion="Mode" MatchesWhen="Is" Value="InCsvCall"/>
+                <SelectionCriterionRule SelectionCriterion="ModemAudioAvailable" MatchesWhen="Is" Value="True"/>
+              </CompoundRule>
+            </CompoundRule>
+          </CompoundRule>
+          <CompoundRule Type="Any">
+            <SelectionCriterionRule SelectionCriterion="StatesChanged" MatchesWhen="Includes" Value="BtHeadsetBandType"/>
+            <SelectionCriterionRule SelectionCriterion="StatesChanged" MatchesWhen="Includes" Value="CsvBandType"/>
+            <SelectionCriterionRule SelectionCriterion="StatesChanged" MatchesWhen="Includes" Value="VoIPBandType"/>
+            <SelectionCriterionRule SelectionCriterion="StatesChanged" MatchesWhen="Includes" Value="BwxActivated"/>
+          </CompoundRule>
+        </CompoundRule>
+      </Configuration>
+      <Configuration Name="No">
+        <CompoundRule Type="All"/>
+      </Configuration>
+    </Configurations>
+    <ConfigurableElements>
+      <ConfigurableElement Path="/Route/route_mgr/routes/bt_ia/route_duplex/playback/status/need_reconfigure"/>
+    </ConfigurableElements>
+    <Settings>
+      <Configuration Name="Yes">
+        <ConfigurableElement Path="/Route/route_mgr/routes/bt_ia/route_duplex/playback/status/need_reconfigure">
+          <BooleanParameter Name="need_reconfigure">1</BooleanParameter>
+        </ConfigurableElement>
+      </Configuration>
+      <Configuration Name="No">
+        <ConfigurableElement Path="/Route/route_mgr/routes/bt_ia/route_duplex/playback/status/need_reconfigure">
+          <BooleanParameter Name="need_reconfigure">0</BooleanParameter>
+        </ConfigurableElement>
+      </Configuration>
+    </Settings>
+  </ConfigurableDomain>
+  <ConfigurableDomain Name="Route.BtIA.Capture.Applicable" SequenceAware="false">
+    <Configurations>
+      <Configuration Name="Yes">
+        <CompoundRule Type="All">
+          <SelectionCriterionRule SelectionCriterion="HfpClientEnable" MatchesWhen="Is" Value="False"/>
+          <CompoundRule Type="Any">
+            <CompoundRule Type="All">
+              <SelectionCriterionRule SelectionCriterion="Mode" MatchesWhen="Is" Value="InCsvCall"/>
+              <SelectionCriterionRule SelectionCriterion="ModemAudioAvailable" MatchesWhen="Is" Value="True"/>
+              <CompoundRule Type="Any">
+                <SelectionCriterionRule SelectionCriterion="SelectedOutputDevices" MatchesWhen="Includes" Value="Sco"/>
+                <SelectionCriterionRule SelectionCriterion="SelectedOutputDevices" MatchesWhen="Includes" Value="ScoHeadset"/>
+                <SelectionCriterionRule SelectionCriterion="SelectedOutputDevices" MatchesWhen="Includes" Value="ScoCarkit"/>
+              </CompoundRule>
+            </CompoundRule>
+            <CompoundRule Type="All">
+              <SelectionCriterionRule SelectionCriterion="SelectedInputDevices" MatchesWhen="Includes" Value="ScoHeadset"/>
+              <CompoundRule Type="Any">
+                <SelectionCriterionRule SelectionCriterion="InputSources" MatchesWhen="Includes" Value="Mic"/>
+                <SelectionCriterionRule SelectionCriterion="InputSources" MatchesWhen="Includes" Value="Camcorder"/>
+                <SelectionCriterionRule SelectionCriterion="InputSources" MatchesWhen="Includes" Value="VoiceRecognition"/>
+                <SelectionCriterionRule SelectionCriterion="InputSources" MatchesWhen="Includes" Value="VoiceCommunication"/>
+                <SelectionCriterionRule SelectionCriterion="InputSources" MatchesWhen="Includes" Value="Hotword"/>
+              </CompoundRule>
+            </CompoundRule>
+            <CompoundRule Type="All">
+              <SelectionCriterionRule SelectionCriterion="LpalDevice" MatchesWhen="Is" Value="ScoHeadset"/>
+              <SelectionCriterionRule SelectionCriterion="AlwaysListening" MatchesWhen="Is" Value="True"/>
+            </CompoundRule>
+          </CompoundRule>
+        </CompoundRule>
+      </Configuration>
+      <Configuration Name="No">
+        <CompoundRule Type="All"/>
+      </Configuration>
+    </Configurations>
+    <ConfigurableElements>
+      <ConfigurableElement Path="/Route/route_mgr/routes/bt_ia/route_duplex/capture/status/applicable"/>
+    </ConfigurableElements>
+    <Settings>
+      <Configuration Name="Yes">
+        <ConfigurableElement Path="/Route/route_mgr/routes/bt_ia/route_duplex/capture/status/applicable">
+          <BooleanParameter Name="applicable">1</BooleanParameter>
+        </ConfigurableElement>
+      </Configuration>
+      <Configuration Name="No">
+        <ConfigurableElement Path="/Route/route_mgr/routes/bt_ia/route_duplex/capture/status/applicable">
+          <BooleanParameter Name="applicable">0</BooleanParameter>
+        </ConfigurableElement>
+      </Configuration>
+    </Settings>
+  </ConfigurableDomain>
+  <ConfigurableDomain Name="Route.BtIA.Capture.NeedReconfigure" SequenceAware="false">
+    <Configurations>
+      <Configuration Name="Yes">
+        <CompoundRule Type="All">
+          <SelectionCriterionRule SelectionCriterion="HfpClientEnable" MatchesWhen="Is" Value="False"/>
+          <CompoundRule Type="Any">
+            <CompoundRule Type="All">
+              <SelectionCriterionRule SelectionCriterion="Mode" MatchesWhen="Is" Value="InCsvCall"/>
+              <SelectionCriterionRule SelectionCriterion="ModemAudioAvailable" MatchesWhen="Is" Value="True"/>
+              <CompoundRule Type="Any">
+                <SelectionCriterionRule SelectionCriterion="SelectedOutputDevices" MatchesWhen="Includes" Value="Sco"/>
+                <SelectionCriterionRule SelectionCriterion="SelectedOutputDevices" MatchesWhen="Includes" Value="ScoHeadset"/>
+                <SelectionCriterionRule SelectionCriterion="SelectedOutputDevices" MatchesWhen="Includes" Value="ScoCarkit"/>
+              </CompoundRule>
+            </CompoundRule>
+            <CompoundRule Type="All">
+              <SelectionCriterionRule SelectionCriterion="SelectedInputDevices" MatchesWhen="Includes" Value="ScoHeadset"/>
+              <CompoundRule Type="Any">
+                <SelectionCriterionRule SelectionCriterion="InputSources" MatchesWhen="Includes" Value="Mic"/>
+                <SelectionCriterionRule SelectionCriterion="InputSources" MatchesWhen="Includes" Value="Camcorder"/>
+                <SelectionCriterionRule SelectionCriterion="InputSources" MatchesWhen="Includes" Value="VoiceRecognition"/>
+                <SelectionCriterionRule SelectionCriterion="InputSources" MatchesWhen="Includes" Value="VoiceCommunication"/>
+                <SelectionCriterionRule SelectionCriterion="InputSources" MatchesWhen="Includes" Value="Hotword"/>
+              </CompoundRule>
+            </CompoundRule>
+            <CompoundRule Type="All">
+              <SelectionCriterionRule SelectionCriterion="LpalDevice" MatchesWhen="Is" Value="ScoHeadset"/>
+              <SelectionCriterionRule SelectionCriterion="AlwaysListening" MatchesWhen="Is" Value="True"/>
+            </CompoundRule>
+          </CompoundRule>
+          <CompoundRule Type="Any">
+            <SelectionCriterionRule SelectionCriterion="StatesChanged" MatchesWhen="Includes" Value="BtHeadsetBandType"/>
+            <SelectionCriterionRule SelectionCriterion="StatesChanged" MatchesWhen="Includes" Value="CsvBandType"/>
+            <SelectionCriterionRule SelectionCriterion="StatesChanged" MatchesWhen="Includes" Value="VoIPBandType"/>
+            <SelectionCriterionRule SelectionCriterion="StatesChanged" MatchesWhen="Includes" Value="MicMuted"/>
+            <SelectionCriterionRule SelectionCriterion="StatesChanged" MatchesWhen="Includes" Value="BwxActivated"/>
+          </CompoundRule>
+        </CompoundRule>
+      </Configuration>
+      <Configuration Name="No">
+        <CompoundRule Type="All"/>
+      </Configuration>
+    </Configurations>
+    <ConfigurableElements>
+      <ConfigurableElement Path="/Route/route_mgr/routes/bt_ia/route_duplex/capture/status/need_reconfigure"/>
+    </ConfigurableElements>
+    <Settings>
+      <Configuration Name="Yes">
+        <ConfigurableElement Path="/Route/route_mgr/routes/bt_ia/route_duplex/capture/status/need_reconfigure">
+          <BooleanParameter Name="need_reconfigure">1</BooleanParameter>
+        </ConfigurableElement>
+      </Configuration>
+      <Configuration Name="No">
+        <ConfigurableElement Path="/Route/route_mgr/routes/bt_ia/route_duplex/capture/status/need_reconfigure">
+          <BooleanParameter Name="need_reconfigure">0</BooleanParameter>
+        </ConfigurableElement>
+      </Configuration>
+    </Settings>
+  </ConfigurableDomain>
+  <ConfigurableDomain Name="Route.FMIA.Capture" SequenceAware="false">
+    <Configurations>
+      <Configuration Name="Applicable">
+        <CompoundRule Type="All">
+          <SelectionCriterionRule SelectionCriterion="FmOutputDevices" MatchesWhen="IsNot" Value=""/>
+        </CompoundRule>
+      </Configuration>
+      <Configuration Name="NotApplicable">
+        <CompoundRule Type="All"/>
+      </Configuration>
+    </Configurations>
+    <ConfigurableElements>
+      <ConfigurableElement Path="/Route/route_mgr/routes/fm_ia/route_duplex/capture/status/applicable"/>
+    </ConfigurableElements>
+    <Settings>
+      <Configuration Name="Applicable">
+        <ConfigurableElement Path="/Route/route_mgr/routes/fm_ia/route_duplex/capture/status/applicable">
+          <BooleanParameter Name="applicable">1</BooleanParameter>
+        </ConfigurableElement>
+      </Configuration>
+      <Configuration Name="NotApplicable">
+        <ConfigurableElement Path="/Route/route_mgr/routes/fm_ia/route_duplex/capture/status/applicable">
+          <BooleanParameter Name="applicable">0</BooleanParameter>
+        </ConfigurableElement>
+      </Configuration>
+    </Settings>
+  </ConfigurableDomain>
+  <ConfigurableDomain Name="Route.ContextAwareness.Capture" SequenceAware="false">
+    <Configurations>
+      <Configuration Name="Applicable">
+        <CompoundRule Type="All">
+          <SelectionCriterionRule SelectionCriterion="ContextAwareness" MatchesWhen="Is" Value="True"/>
+          <CompoundRule Type="Any">
+            <SelectionCriterionRule SelectionCriterion="Mode" MatchesWhen="Is" Value="Normal"/>
+            <SelectionCriterionRule SelectionCriterion="Mode" MatchesWhen="Is" Value="RingTone"/>
+          </CompoundRule>
+          <SelectionCriterionRule SelectionCriterion="InputSources" MatchesWhen="Is" Value=""/>
+        </CompoundRule>
+      </Configuration>
+      <Configuration Name="NotApplicable">
+        <CompoundRule Type="All"/>
+      </Configuration>
+    </Configurations>
+    <ConfigurableElements>
+      <ConfigurableElement Path="/Route/route_mgr/routes/context_awareness/route_capture/status/applicable"/>
+    </ConfigurableElements>
+    <Settings>
+      <Configuration Name="Applicable">
+        <ConfigurableElement Path="/Route/route_mgr/routes/context_awareness/route_capture/status/applicable">
+          <BooleanParameter Name="applicable">1</BooleanParameter>
+        </ConfigurableElement>
+      </Configuration>
+      <Configuration Name="NotApplicable">
+        <ConfigurableElement Path="/Route/route_mgr/routes/context_awareness/route_capture/status/applicable">
+          <BooleanParameter Name="applicable">0</BooleanParameter>
+        </ConfigurableElement>
+      </Configuration>
+    </Settings>
+  </ConfigurableDomain>
+  <ConfigurableDomain Name="Route.AlwaysListening.Capture.Applicable" SequenceAware="false">
+    <Configurations>
+      <Configuration Name="Yes">
+        <CompoundRule Type="All">
+          <SelectionCriterionRule SelectionCriterion="AlwaysListening" MatchesWhen="Is" Value="True"/>
+          <CompoundRule Type="Any">
+            <SelectionCriterionRule SelectionCriterion="Mode" MatchesWhen="Is" Value="Normal"/>
+            <SelectionCriterionRule SelectionCriterion="Mode" MatchesWhen="Is" Value="RingTone"/>
+          </CompoundRule>
+        </CompoundRule>
+      </Configuration>
+      <Configuration Name="No">
+        <CompoundRule Type="All"/>
+      </Configuration>
+    </Configurations>
+    <ConfigurableElements>
+      <ConfigurableElement Path="/Route/route_mgr/routes/always_listening/route_capture/status/applicable"/>
+    </ConfigurableElements>
+    <Settings>
+      <Configuration Name="Yes">
+        <ConfigurableElement Path="/Route/route_mgr/routes/always_listening/route_capture/status/applicable">
+          <BooleanParameter Name="applicable">1</BooleanParameter>
+        </ConfigurableElement>
+      </Configuration>
+      <Configuration Name="No">
+        <ConfigurableElement Path="/Route/route_mgr/routes/always_listening/route_capture/status/applicable">
+          <BooleanParameter Name="applicable">0</BooleanParameter>
+        </ConfigurableElement>
+      </Configuration>
+    </Settings>
+  </ConfigurableDomain>
+  <ConfigurableDomain Name="Route.AlwaysListening.Capture.NeedReconfigure" SequenceAware="false">
+    <Configurations>
+      <Configuration Name="Yes">
+        <CompoundRule Type="All">
+          <CompoundRule Type="All">
+            <SelectionCriterionRule SelectionCriterion="AlwaysListening" MatchesWhen="Is" Value="True"/>
+            <CompoundRule Type="Any">
+              <SelectionCriterionRule SelectionCriterion="Mode" MatchesWhen="Is" Value="Normal"/>
+              <SelectionCriterionRule SelectionCriterion="Mode" MatchesWhen="Is" Value="RingTone"/>
+            </CompoundRule>
+          </CompoundRule>
+          <SelectionCriterionRule SelectionCriterion="StatesChanged" MatchesWhen="Includes" Value="LpalDevice"/>
+        </CompoundRule>
+      </Configuration>
+      <Configuration Name="No">
+        <CompoundRule Type="All"/>
+      </Configuration>
+    </Configurations>
+    <ConfigurableElements>
+      <ConfigurableElement Path="/Route/route_mgr/routes/always_listening/route_capture/status/need_reconfigure"/>
+    </ConfigurableElements>
+    <Settings>
+      <Configuration Name="Yes">
+        <ConfigurableElement Path="/Route/route_mgr/routes/always_listening/route_capture/status/need_reconfigure">
+          <BooleanParameter Name="need_reconfigure">1</BooleanParameter>
+        </ConfigurableElement>
+      </Configuration>
+      <Configuration Name="No">
+        <ConfigurableElement Path="/Route/route_mgr/routes/always_listening/route_capture/status/need_reconfigure">
+          <BooleanParameter Name="need_reconfigure">0</BooleanParameter>
+        </ConfigurableElement>
+      </Configuration>
+    </Settings>
+  </ConfigurableDomain>
+  <ConfigurableDomain Name="Route.BtHfp.PlaybackCapture.Applicable" SequenceAware="false">
+    <Configurations>
+      <Configuration Name="Yes">
+        <CompoundRule Type="All">
+          <SelectionCriterionRule SelectionCriterion="HfpClientEnable" MatchesWhen="Is" Value="True"/>
+        </CompoundRule>
+      </Configuration>
+      <Configuration Name="No">
+        <CompoundRule Type="All"/>
+      </Configuration>
+    </Configurations>
+    <ConfigurableElements>
+      <ConfigurableElement Path="/Route/route_mgr/routes/bt_hfp/route_duplex/playback/status/applicable"/>
+      <ConfigurableElement Path="/Route/route_mgr/routes/bt_hfp/route_duplex/capture/status/applicable"/>
+    </ConfigurableElements>
+    <Settings>
+      <Configuration Name="Yes">
+        <ConfigurableElement Path="/Route/route_mgr/routes/bt_hfp/route_duplex/playback/status/applicable">
+          <BooleanParameter Name="applicable">1</BooleanParameter>
+        </ConfigurableElement>
+        <ConfigurableElement Path="/Route/route_mgr/routes/bt_hfp/route_duplex/capture/status/applicable">
+          <BooleanParameter Name="applicable">1</BooleanParameter>
+        </ConfigurableElement>
+      </Configuration>
+      <Configuration Name="No">
+        <ConfigurableElement Path="/Route/route_mgr/routes/bt_hfp/route_duplex/playback/status/applicable">
+          <BooleanParameter Name="applicable">0</BooleanParameter>
+        </ConfigurableElement>
+        <ConfigurableElement Path="/Route/route_mgr/routes/bt_hfp/route_duplex/capture/status/applicable">
+          <BooleanParameter Name="applicable">0</BooleanParameter>
+        </ConfigurableElement>
+      </Configuration>
+    </Settings>
+  </ConfigurableDomain>
+  <ConfigurableDomain Name="Route.BtHfp.PlaybackCapture.NeedReconfigure" SequenceAware="false">
+    <Configurations>
+      <Configuration Name="Yes">
+        <CompoundRule Type="All">
+          <SelectionCriterionRule SelectionCriterion="HfpClientEnable" MatchesWhen="Is" Value="True"/>
+          <CompoundRule Type="Any">
+            <SelectionCriterionRule SelectionCriterion="StatesChanged" MatchesWhen="Includes" Value="HfpClientBandType"/>
+          </CompoundRule>
+        </CompoundRule>
+      </Configuration>
+      <Configuration Name="No">
+        <CompoundRule Type="All"/>
+      </Configuration>
+    </Configurations>
+    <ConfigurableElements>
+      <ConfigurableElement Path="/Route/route_mgr/routes/bt_hfp/route_duplex/playback/status/need_reconfigure"/>
+      <ConfigurableElement Path="/Route/route_mgr/routes/bt_hfp/route_duplex/capture/status/need_reconfigure"/>
+    </ConfigurableElements>
+    <Settings>
+      <Configuration Name="Yes">
+        <ConfigurableElement Path="/Route/route_mgr/routes/bt_hfp/route_duplex/playback/status/need_reconfigure">
+          <BooleanParameter Name="need_reconfigure">1</BooleanParameter>
+        </ConfigurableElement>
+        <ConfigurableElement Path="/Route/route_mgr/routes/bt_hfp/route_duplex/capture/status/need_reconfigure">
+          <BooleanParameter Name="need_reconfigure">1</BooleanParameter>
+        </ConfigurableElement>
+      </Configuration>
+      <Configuration Name="No">
+        <ConfigurableElement Path="/Route/route_mgr/routes/bt_hfp/route_duplex/playback/status/need_reconfigure">
+          <BooleanParameter Name="need_reconfigure">0</BooleanParameter>
+        </ConfigurableElement>
+        <ConfigurableElement Path="/Route/route_mgr/routes/bt_hfp/route_duplex/capture/status/need_reconfigure">
+          <BooleanParameter Name="need_reconfigure">0</BooleanParameter>
+        </ConfigurableElement>
+      </Configuration>
+    </Settings>
+  </ConfigurableDomain>
+  <ConfigurableDomain Name="Parameter.InputDevice.Main" SequenceAware="false">
+    <Configurations>
+      <Configuration Name="Selected">
+        <CompoundRule Type="Any">
+          <CompoundRule Type="All">
+            <SelectionCriterionRule SelectionCriterion="SelectedOutputDevices" MatchesWhen="Includes" Value="Earpiece"/>
+            <CompoundRule Type="Any">
+              <SelectionCriterionRule SelectionCriterion="Mode" MatchesWhen="Is" Value="InVoipCall"/>
+              <CompoundRule Type="All">
+                <SelectionCriterionRule SelectionCriterion="Mode" MatchesWhen="Is" Value="InCsvCall"/>
+                <SelectionCriterionRule SelectionCriterion="ModemAudioAvailable" MatchesWhen="Is" Value="True"/>
+              </CompoundRule>
+            </CompoundRule>
+          </CompoundRule>
+          <CompoundRule Type="All">
+            <SelectionCriterionRule SelectionCriterion="AlwaysListening" MatchesWhen="Is" Value="True"/>
+            <SelectionCriterionRule SelectionCriterion="LpalDevice" MatchesWhen="Is" Value="Main"/>
+          </CompoundRule>
+          <CompoundRule Type="All">
+            <SelectionCriterionRule SelectionCriterion="SelectedInputDevices" MatchesWhen="Includes" Value="Main"/>
+            <CompoundRule Type="Any">
+              <SelectionCriterionRule SelectionCriterion="Mode" MatchesWhen="Is" Value="Normal"/>
+              <SelectionCriterionRule SelectionCriterion="Mode" MatchesWhen="Is" Value="RingTone"/>
+            </CompoundRule>
+          </CompoundRule>
+        </CompoundRule>
+      </Configuration>
+      <Configuration Name="NotSelected">
+        <CompoundRule Type="All"/>
+      </Configuration>
+    </Configurations>
+    <ConfigurableElements>
+      <ConfigurableElement Path="/Route/route_mgr/criteria/input_devices/mask/Main"/>
+    </ConfigurableElements>
+    <Settings>
+      <Configuration Name="Selected">
+        <ConfigurableElement Path="/Route/route_mgr/criteria/input_devices/mask/Main">
+          <BitParameter Name="Main">1</BitParameter>
+        </ConfigurableElement>
+      </Configuration>
+      <Configuration Name="NotSelected">
+        <ConfigurableElement Path="/Route/route_mgr/criteria/input_devices/mask/Main">
+          <BitParameter Name="Main">0</BitParameter>
+        </ConfigurableElement>
+      </Configuration>
+    </Settings>
+  </ConfigurableDomain>
+  <ConfigurableDomain Name="Parameter.InputDevice.ScoHeadset" SequenceAware="false">
+    <Configurations>
+      <Configuration Name="Selected">
+        <CompoundRule Type="Any">
+          <CompoundRule Type="All">
+            <SelectionCriterionRule SelectionCriterion="Mode" MatchesWhen="Is" Value="InCsvCall"/>
+            <SelectionCriterionRule SelectionCriterion="ModemAudioAvailable" MatchesWhen="Is" Value="True"/>
+            <CompoundRule Type="Any">
+              <SelectionCriterionRule SelectionCriterion="SelectedOutputDevices" MatchesWhen="Includes" Value="Sco"/>
+              <SelectionCriterionRule SelectionCriterion="SelectedOutputDevices" MatchesWhen="Includes" Value="ScoHeadset"/>
+              <SelectionCriterionRule SelectionCriterion="SelectedOutputDevices" MatchesWhen="Includes" Value="ScoCarkit"/>
+            </CompoundRule>
+          </CompoundRule>
+          <CompoundRule Type="All">
+            <SelectionCriterionRule SelectionCriterion="SelectedInputDevices" MatchesWhen="Includes" Value="ScoHeadset"/>
+            <CompoundRule Type="Any">
+              <SelectionCriterionRule SelectionCriterion="Mode" MatchesWhen="Is" Value="Normal"/>
+              <SelectionCriterionRule SelectionCriterion="Mode" MatchesWhen="Is" Value="RingTone"/>
+              <SelectionCriterionRule SelectionCriterion="Mode" MatchesWhen="Is" Value="InVoipCall"/>
+            </CompoundRule>
+          </CompoundRule>
+          <CompoundRule Type="All">
+            <SelectionCriterionRule SelectionCriterion="AlwaysListening" MatchesWhen="Is" Value="True"/>
+            <SelectionCriterionRule SelectionCriterion="LpalDevice" MatchesWhen="Is" Value="ScoHeadset"/>
+          </CompoundRule>
+        </CompoundRule>
+      </Configuration>
+      <Configuration Name="NotSelected">
+        <CompoundRule Type="All"/>
+      </Configuration>
+    </Configurations>
+    <ConfigurableElements>
+      <ConfigurableElement Path="/Route/route_mgr/criteria/input_devices/mask/ScoHeadset"/>
+    </ConfigurableElements>
+    <Settings>
+      <Configuration Name="Selected">
+        <ConfigurableElement Path="/Route/route_mgr/criteria/input_devices/mask/ScoHeadset">
+          <BitParameter Name="ScoHeadset">1</BitParameter>
+        </ConfigurableElement>
+      </Configuration>
+      <Configuration Name="NotSelected">
+        <ConfigurableElement Path="/Route/route_mgr/criteria/input_devices/mask/ScoHeadset">
+          <BitParameter Name="ScoHeadset">0</BitParameter>
+        </ConfigurableElement>
+      </Configuration>
+    </Settings>
+  </ConfigurableDomain>
+  <ConfigurableDomain Name="Parameter.InputDevice.Headset" SequenceAware="false">
+    <Configurations>
+      <Configuration Name="Selected">
+        <CompoundRule Type="Any">
+          <CompoundRule Type="All">
+            <SelectionCriterionRule SelectionCriterion="Mode" MatchesWhen="Is" Value="InCsvCall"/>
+            <SelectionCriterionRule SelectionCriterion="ModemAudioAvailable" MatchesWhen="Is" Value="True"/>
+            <SelectionCriterionRule SelectionCriterion="SelectedOutputDevices" MatchesWhen="Includes" Value="Headset"/>
+          </CompoundRule>
+          <CompoundRule Type="All">
+            <SelectionCriterionRule SelectionCriterion="SelectedInputDevices" MatchesWhen="Includes" Value="Headset"/>
+            <CompoundRule Type="Any">
+              <SelectionCriterionRule SelectionCriterion="Mode" MatchesWhen="Is" Value="Normal"/>
+              <SelectionCriterionRule SelectionCriterion="Mode" MatchesWhen="Is" Value="RingTone"/>
+              <SelectionCriterionRule SelectionCriterion="Mode" MatchesWhen="Is" Value="InVoipCall"/>
+            </CompoundRule>
+          </CompoundRule>
+          <CompoundRule Type="All">
+            <SelectionCriterionRule SelectionCriterion="AlwaysListening" MatchesWhen="Is" Value="True"/>
+            <SelectionCriterionRule SelectionCriterion="LpalDevice" MatchesWhen="Is" Value="Headset"/>
+          </CompoundRule>
+        </CompoundRule>
+      </Configuration>
+      <Configuration Name="NotSelected">
+        <CompoundRule Type="All"/>
+      </Configuration>
+    </Configurations>
+    <ConfigurableElements>
+      <ConfigurableElement Path="/Route/route_mgr/criteria/input_devices/mask/Headset"/>
+    </ConfigurableElements>
+    <Settings>
+      <Configuration Name="Selected">
+        <ConfigurableElement Path="/Route/route_mgr/criteria/input_devices/mask/Headset">
+          <BitParameter Name="Headset">1</BitParameter>
+        </ConfigurableElement>
+      </Configuration>
+      <Configuration Name="NotSelected">
+        <ConfigurableElement Path="/Route/route_mgr/criteria/input_devices/mask/Headset">
+          <BitParameter Name="Headset">0</BitParameter>
+        </ConfigurableElement>
+      </Configuration>
+    </Settings>
+  </ConfigurableDomain>
+  <ConfigurableDomain Name="Parameter.InputDevice.VoiceCall" SequenceAware="false">
+    <Configurations>
+      <Configuration Name="Selected">
+        <CompoundRule Type="All">
+          <SelectionCriterionRule SelectionCriterion="SelectedInputDevices" MatchesWhen="Includes" Value="VoiceCall"/>
+        </CompoundRule>
+      </Configuration>
+      <Configuration Name="NotSelected">
+        <CompoundRule Type="All"/>
+      </Configuration>
+    </Configurations>
+    <ConfigurableElements>
+      <ConfigurableElement Path="/Route/route_mgr/criteria/input_devices/mask/VoiceCall"/>
+    </ConfigurableElements>
+    <Settings>
+      <Configuration Name="Selected">
+        <ConfigurableElement Path="/Route/route_mgr/criteria/input_devices/mask/VoiceCall">
+          <BitParameter Name="VoiceCall">1</BitParameter>
+        </ConfigurableElement>
+      </Configuration>
+      <Configuration Name="NotSelected">
+        <ConfigurableElement Path="/Route/route_mgr/criteria/input_devices/mask/VoiceCall">
+          <BitParameter Name="VoiceCall">0</BitParameter>
+        </ConfigurableElement>
+      </Configuration>
+    </Settings>
+  </ConfigurableDomain>
+  <ConfigurableDomain Name="Parameter.InputDevice.Back" SequenceAware="false">
+    <Configurations>
+      <Configuration Name="Selected">
+        <CompoundRule Type="Any">
+          <CompoundRule Type="All">
+            <CompoundRule Type="Any">
+              <SelectionCriterionRule SelectionCriterion="Mode" MatchesWhen="Is" Value="InVoipCall"/>
+              <CompoundRule Type="All">
+                <SelectionCriterionRule SelectionCriterion="Mode" MatchesWhen="Is" Value="InCsvCall"/>
+                <SelectionCriterionRule SelectionCriterion="ModemAudioAvailable" MatchesWhen="Is" Value="True"/>
+              </CompoundRule>
+            </CompoundRule>
+            <CompoundRule Type="Any">
+              <SelectionCriterionRule SelectionCriterion="SelectedOutputDevices" MatchesWhen="Includes" Value="Headphones"/>
+              <SelectionCriterionRule SelectionCriterion="SelectedOutputDevices" MatchesWhen="Includes" Value="Ihf"/>
+            </CompoundRule>
+          </CompoundRule>
+          <CompoundRule Type="All">
+            <SelectionCriterionRule SelectionCriterion="SelectedInputDevices" MatchesWhen="Includes" Value="Back"/>
+            <CompoundRule Type="Any">
+              <SelectionCriterionRule SelectionCriterion="Mode" MatchesWhen="Is" Value="Normal"/>
+              <SelectionCriterionRule SelectionCriterion="Mode" MatchesWhen="Is" Value="RingTone"/>
+            </CompoundRule>
+          </CompoundRule>
+        </CompoundRule>
+      </Configuration>
+      <Configuration Name="NotSelected">
+        <CompoundRule Type="All"/>
+      </Configuration>
+    </Configurations>
+    <ConfigurableElements>
+      <ConfigurableElement Path="/Route/route_mgr/criteria/input_devices/mask/Back"/>
+    </ConfigurableElements>
+    <Settings>
+      <Configuration Name="Selected">
+        <ConfigurableElement Path="/Route/route_mgr/criteria/input_devices/mask/Back">
+          <BitParameter Name="Back">1</BitParameter>
+        </ConfigurableElement>
+      </Configuration>
+      <Configuration Name="NotSelected">
+        <ConfigurableElement Path="/Route/route_mgr/criteria/input_devices/mask/Back">
+          <BitParameter Name="Back">0</BitParameter>
+        </ConfigurableElement>
+      </Configuration>
+    </Settings>
+  </ConfigurableDomain>
+  <ConfigurableDomain Name="Parameter.InputDevice.Ambient" SequenceAware="false">
+    <Configurations>
+      <Configuration Name="Selected">
+        <CompoundRule Type="Any">
+          <CompoundRule Type="All">
+            <CompoundRule Type="Any">
+              <SelectionCriterionRule SelectionCriterion="SelectedOutputDevices" MatchesWhen="Includes" Value="Earpiece"/>
+              <SelectionCriterionRule SelectionCriterion="SelectedOutputDevices" MatchesWhen="Includes" Value="Ihf"/>
+              <SelectionCriterionRule SelectionCriterion="SelectedOutputDevices" MatchesWhen="Includes" Value="Headphones"/>
+            </CompoundRule>
+            <CompoundRule Type="Any">
+              <SelectionCriterionRule SelectionCriterion="Mode" MatchesWhen="Is" Value="InVoipCall"/>
+              <CompoundRule Type="All">
+                <SelectionCriterionRule SelectionCriterion="Mode" MatchesWhen="Is" Value="InCsvCall"/>
+                <SelectionCriterionRule SelectionCriterion="ModemAudioAvailable" MatchesWhen="Is" Value="True"/>
+              </CompoundRule>
+            </CompoundRule>
+          </CompoundRule>
+          <CompoundRule Type="All">
+            <SelectionCriterionRule SelectionCriterion="SelectedInputDevices" MatchesWhen="Includes" Value="Ambient"/>
+            <CompoundRule Type="Any">
+              <SelectionCriterionRule SelectionCriterion="Mode" MatchesWhen="Is" Value="Normal"/>
+              <SelectionCriterionRule SelectionCriterion="Mode" MatchesWhen="Is" Value="RingTone"/>
+            </CompoundRule>
+          </CompoundRule>
+        </CompoundRule>
+      </Configuration>
+      <Configuration Name="NotSelected">
+        <CompoundRule Type="All"/>
+      </Configuration>
+    </Configurations>
+    <ConfigurableElements>
+      <ConfigurableElement Path="/Route/route_mgr/criteria/input_devices/mask/Ambient"/>
+    </ConfigurableElements>
+    <Settings>
+      <Configuration Name="Selected">
+        <ConfigurableElement Path="/Route/route_mgr/criteria/input_devices/mask/Ambient">
+          <BitParameter Name="Ambient">1</BitParameter>
+        </ConfigurableElement>
+      </Configuration>
+      <Configuration Name="NotSelected">
+        <ConfigurableElement Path="/Route/route_mgr/criteria/input_devices/mask/Ambient">
+          <BitParameter Name="Ambient">0</BitParameter>
+        </ConfigurableElement>
+      </Configuration>
+    </Settings>
+  </ConfigurableDomain>
+  <ConfigurableDomain Name="Parameter.InputDevice.Communication" SequenceAware="false">
+    <Configurations>
+      <Configuration Name="Selected">
+        <CompoundRule Type="All">
+          <SelectionCriterionRule SelectionCriterion="SelectedInputDevices" MatchesWhen="Includes" Value="Communication"/>
+        </CompoundRule>
+      </Configuration>
+      <Configuration Name="NotSelected">
+        <CompoundRule Type="All"/>
+      </Configuration>
+    </Configurations>
+    <ConfigurableElements>
+      <ConfigurableElement Path="/Route/route_mgr/criteria/input_devices/mask/Communication"/>
+    </ConfigurableElements>
+    <Settings>
+      <Configuration Name="Selected">
+        <ConfigurableElement Path="/Route/route_mgr/criteria/input_devices/mask/Communication">
+          <BitParameter Name="Communication">1</BitParameter>
+        </ConfigurableElement>
+      </Configuration>
+      <Configuration Name="NotSelected">
+        <ConfigurableElement Path="/Route/route_mgr/criteria/input_devices/mask/Communication">
+          <BitParameter Name="Communication">0</BitParameter>
+        </ConfigurableElement>
+      </Configuration>
+    </Settings>
+  </ConfigurableDomain>
+  <ConfigurableDomain Name="Parameter.InputDevice.AuxDigital" SequenceAware="false">
+    <Configurations>
+      <Configuration Name="Selected">
+        <CompoundRule Type="All">
+          <SelectionCriterionRule SelectionCriterion="SelectedInputDevices" MatchesWhen="Includes" Value="AuxDigital"/>
+        </CompoundRule>
+      </Configuration>
+      <Configuration Name="NotSelected">
+        <CompoundRule Type="All"/>
+      </Configuration>
+    </Configurations>
+    <ConfigurableElements>
+      <ConfigurableElement Path="/Route/route_mgr/criteria/input_devices/mask/AuxDigital"/>
+    </ConfigurableElements>
+    <Settings>
+      <Configuration Name="Selected">
+        <ConfigurableElement Path="/Route/route_mgr/criteria/input_devices/mask/AuxDigital">
+          <BitParameter Name="AuxDigital">1</BitParameter>
+        </ConfigurableElement>
+      </Configuration>
+      <Configuration Name="NotSelected">
+        <ConfigurableElement Path="/Route/route_mgr/criteria/input_devices/mask/AuxDigital">
+          <BitParameter Name="AuxDigital">0</BitParameter>
+        </ConfigurableElement>
+      </Configuration>
+    </Settings>
+  </ConfigurableDomain>
+  <ConfigurableDomain Name="Parameter.InputDevice.AnlgDockHeadset" SequenceAware="false">
+    <Configurations>
+      <Configuration Name="Selected">
+        <CompoundRule Type="All">
+          <SelectionCriterionRule SelectionCriterion="SelectedInputDevices" MatchesWhen="Includes" Value="AnlgDockHeadset"/>
+        </CompoundRule>
+      </Configuration>
+      <Configuration Name="NotSelected">
+        <CompoundRule Type="All"/>
+      </Configuration>
+    </Configurations>
+    <ConfigurableElements>
+      <ConfigurableElement Path="/Route/route_mgr/criteria/input_devices/mask/AnlgDockHeadset"/>
+    </ConfigurableElements>
+    <Settings>
+      <Configuration Name="Selected">
+        <ConfigurableElement Path="/Route/route_mgr/criteria/input_devices/mask/AnlgDockHeadset">
+          <BitParameter Name="AnlgDockHeadset">1</BitParameter>
+        </ConfigurableElement>
+      </Configuration>
+      <Configuration Name="NotSelected">
+        <ConfigurableElement Path="/Route/route_mgr/criteria/input_devices/mask/AnlgDockHeadset">
+          <BitParameter Name="AnlgDockHeadset">0</BitParameter>
+        </ConfigurableElement>
+      </Configuration>
+    </Settings>
+  </ConfigurableDomain>
+  <ConfigurableDomain Name="Parameter.InputDevice.DgtlDockHeadset" SequenceAware="false">
+    <Configurations>
+      <Configuration Name="Selected">
+        <CompoundRule Type="All">
+          <SelectionCriterionRule SelectionCriterion="SelectedInputDevices" MatchesWhen="Includes" Value="DgtlDockHeadset"/>
+        </CompoundRule>
+      </Configuration>
+      <Configuration Name="NotSelected">
+        <CompoundRule Type="All"/>
+      </Configuration>
+    </Configurations>
+    <ConfigurableElements>
+      <ConfigurableElement Path="/Route/route_mgr/criteria/input_devices/mask/DgtlDockHeadset"/>
+    </ConfigurableElements>
+    <Settings>
+      <Configuration Name="Selected">
+        <ConfigurableElement Path="/Route/route_mgr/criteria/input_devices/mask/DgtlDockHeadset">
+          <BitParameter Name="DgtlDockHeadset">1</BitParameter>
+        </ConfigurableElement>
+      </Configuration>
+      <Configuration Name="NotSelected">
+        <ConfigurableElement Path="/Route/route_mgr/criteria/input_devices/mask/DgtlDockHeadset">
+          <BitParameter Name="DgtlDockHeadset">0</BitParameter>
+        </ConfigurableElement>
+      </Configuration>
+    </Settings>
+  </ConfigurableDomain>
+  <ConfigurableDomain Name="Parameter.InputDevice.UsbAccessory" SequenceAware="false">
+    <Configurations>
+      <Configuration Name="Selected">
+        <CompoundRule Type="All">
+          <SelectionCriterionRule SelectionCriterion="SelectedInputDevices" MatchesWhen="Includes" Value="UsbAccessory"/>
+        </CompoundRule>
+      </Configuration>
+      <Configuration Name="NotSelected">
+        <CompoundRule Type="All"/>
+      </Configuration>
+    </Configurations>
+    <ConfigurableElements>
+      <ConfigurableElement Path="/Route/route_mgr/criteria/input_devices/mask/UsbAccessory"/>
+    </ConfigurableElements>
+    <Settings>
+      <Configuration Name="Selected">
+        <ConfigurableElement Path="/Route/route_mgr/criteria/input_devices/mask/UsbAccessory">
+          <BitParameter Name="UsbAccessory">1</BitParameter>
+        </ConfigurableElement>
+      </Configuration>
+      <Configuration Name="NotSelected">
+        <ConfigurableElement Path="/Route/route_mgr/criteria/input_devices/mask/UsbAccessory">
+          <BitParameter Name="UsbAccessory">0</BitParameter>
+        </ConfigurableElement>
+      </Configuration>
+    </Settings>
+  </ConfigurableDomain>
+  <ConfigurableDomain Name="Parameter.InputDevice.FmTuner" SequenceAware="false">
+    <Configurations>
+      <Configuration Name="Selected">
+        <CompoundRule Type="All">
+          <SelectionCriterionRule SelectionCriterion="SelectedInputDevices" MatchesWhen="Includes" Value="FmTuner"/>
+        </CompoundRule>
+      </Configuration>
+      <Configuration Name="NotSelected">
+        <CompoundRule Type="All"/>
+      </Configuration>
+    </Configurations>
+    <ConfigurableElements>
+      <ConfigurableElement Path="/Route/route_mgr/criteria/input_devices/mask/FmTuner"/>
+    </ConfigurableElements>
+    <Settings>
+      <Configuration Name="Selected">
+        <ConfigurableElement Path="/Route/route_mgr/criteria/input_devices/mask/FmTuner">
+          <BitParameter Name="FmTuner">1</BitParameter>
+        </ConfigurableElement>
+      </Configuration>
+      <Configuration Name="NotSelected">
+        <ConfigurableElement Path="/Route/route_mgr/criteria/input_devices/mask/FmTuner">
+          <BitParameter Name="FmTuner">0</BitParameter>
+        </ConfigurableElement>
+      </Configuration>
+    </Settings>
+  </ConfigurableDomain>
+  <ConfigurableDomain Name="Parameter.InputDevice.TvTuner" SequenceAware="false">
+    <Configurations>
+      <Configuration Name="Selected">
+        <CompoundRule Type="All">
+          <SelectionCriterionRule SelectionCriterion="SelectedInputDevices" MatchesWhen="Includes" Value="AuxDigital"/>
+        </CompoundRule>
+      </Configuration>
+      <Configuration Name="NotSelected">
+        <CompoundRule Type="All"/>
+      </Configuration>
+    </Configurations>
+    <ConfigurableElements>
+      <ConfigurableElement Path="/Route/route_mgr/criteria/input_devices/mask/TvTuner"/>
+    </ConfigurableElements>
+    <Settings>
+      <Configuration Name="Selected">
+        <ConfigurableElement Path="/Route/route_mgr/criteria/input_devices/mask/TvTuner">
+          <BitParameter Name="TvTuner">1</BitParameter>
+        </ConfigurableElement>
+      </Configuration>
+      <Configuration Name="NotSelected">
+        <ConfigurableElement Path="/Route/route_mgr/criteria/input_devices/mask/TvTuner">
+          <BitParameter Name="TvTuner">0</BitParameter>
+        </ConfigurableElement>
+      </Configuration>
+    </Settings>
+  </ConfigurableDomain>
+  <ConfigurableDomain Name="Parameter.InputDevice.Line" SequenceAware="false">
+    <Configurations>
+      <Configuration Name="Selected">
+        <CompoundRule Type="All">
+          <SelectionCriterionRule SelectionCriterion="SelectedInputDevices" MatchesWhen="Includes" Value="Line"/>
+        </CompoundRule>
+      </Configuration>
+      <Configuration Name="NotSelected">
+        <CompoundRule Type="All"/>
+      </Configuration>
+    </Configurations>
+    <ConfigurableElements>
+      <ConfigurableElement Path="/Route/route_mgr/criteria/input_devices/mask/Line"/>
+    </ConfigurableElements>
+    <Settings>
+      <Configuration Name="Selected">
+        <ConfigurableElement Path="/Route/route_mgr/criteria/input_devices/mask/Line">
+          <BitParameter Name="Line">1</BitParameter>
+        </ConfigurableElement>
+      </Configuration>
+      <Configuration Name="NotSelected">
+        <ConfigurableElement Path="/Route/route_mgr/criteria/input_devices/mask/Line">
+          <BitParameter Name="Line">0</BitParameter>
+        </ConfigurableElement>
+      </Configuration>
+    </Settings>
+  </ConfigurableDomain>
+  <ConfigurableDomain Name="Parameter.InputDevice.Spdif" SequenceAware="false">
+    <Configurations>
+      <Configuration Name="Selected">
+        <CompoundRule Type="All">
+          <SelectionCriterionRule SelectionCriterion="SelectedInputDevices" MatchesWhen="Includes" Value="Spdif"/>
+        </CompoundRule>
+      </Configuration>
+      <Configuration Name="NotSelected">
+        <CompoundRule Type="All"/>
+      </Configuration>
+    </Configurations>
+    <ConfigurableElements>
+      <ConfigurableElement Path="/Route/route_mgr/criteria/input_devices/mask/Spdif"/>
+    </ConfigurableElements>
+    <Settings>
+      <Configuration Name="Selected">
+        <ConfigurableElement Path="/Route/route_mgr/criteria/input_devices/mask/Spdif">
+          <BitParameter Name="Spdif">1</BitParameter>
+        </ConfigurableElement>
+      </Configuration>
+      <Configuration Name="NotSelected">
+        <ConfigurableElement Path="/Route/route_mgr/criteria/input_devices/mask/Spdif">
+          <BitParameter Name="Spdif">0</BitParameter>
+        </ConfigurableElement>
+      </Configuration>
+    </Settings>
+  </ConfigurableDomain>
+  <ConfigurableDomain Name="Parameter.InputDevice.BluetoothA2dp" SequenceAware="false">
+    <Configurations>
+      <Configuration Name="Selected">
+        <CompoundRule Type="All">
+          <SelectionCriterionRule SelectionCriterion="SelectedInputDevices" MatchesWhen="Includes" Value="BluetoothA2dp"/>
+        </CompoundRule>
+      </Configuration>
+      <Configuration Name="NotSelected">
+        <CompoundRule Type="All"/>
+      </Configuration>
+    </Configurations>
+    <ConfigurableElements>
+      <ConfigurableElement Path="/Route/route_mgr/criteria/input_devices/mask/BluetoothA2dp"/>
+    </ConfigurableElements>
+    <Settings>
+      <Configuration Name="Selected">
+        <ConfigurableElement Path="/Route/route_mgr/criteria/input_devices/mask/BluetoothA2dp">
+          <BitParameter Name="BluetoothA2dp">1</BitParameter>
+        </ConfigurableElement>
+      </Configuration>
+      <Configuration Name="NotSelected">
+        <ConfigurableElement Path="/Route/route_mgr/criteria/input_devices/mask/BluetoothA2dp">
+          <BitParameter Name="BluetoothA2dp">0</BitParameter>
+        </ConfigurableElement>
+      </Configuration>
+    </Settings>
+  </ConfigurableDomain>
+  <ConfigurableDomain Name="Parameter.InputDevice.Loopback" SequenceAware="false">
+    <Configurations>
+      <Configuration Name="Selected">
+        <CompoundRule Type="All">
+          <SelectionCriterionRule SelectionCriterion="SelectedInputDevices" MatchesWhen="Includes" Value="Loopback"/>
+        </CompoundRule>
+      </Configuration>
+      <Configuration Name="NotSelected">
+        <CompoundRule Type="All"/>
+      </Configuration>
+    </Configurations>
+    <ConfigurableElements>
+      <ConfigurableElement Path="/Route/route_mgr/criteria/input_devices/mask/Loopback"/>
+    </ConfigurableElements>
+    <Settings>
+      <Configuration Name="Selected">
+        <ConfigurableElement Path="/Route/route_mgr/criteria/input_devices/mask/Loopback">
+          <BitParameter Name="Loopback">1</BitParameter>
+        </ConfigurableElement>
+      </Configuration>
+      <Configuration Name="NotSelected">
+        <ConfigurableElement Path="/Route/route_mgr/criteria/input_devices/mask/Loopback">
+          <BitParameter Name="Loopback">0</BitParameter>
+        </ConfigurableElement>
+      </Configuration>
+    </Settings>
+  </ConfigurableDomain>
+  <ConfigurableDomain Name="Parameter.Mode" SequenceAware="false">
+    <Configurations>
+      <Configuration Name="RingTone">
+        <CompoundRule Type="All">
+          <SelectionCriterionRule SelectionCriterion="Mode" MatchesWhen="Is" Value="RingTone"/>
+        </CompoundRule>
+      </Configuration>
+      <Configuration Name="InCall">
+        <CompoundRule Type="All">
+          <SelectionCriterionRule SelectionCriterion="Mode" MatchesWhen="Is" Value="InCsvCall"/>
+          <SelectionCriterionRule SelectionCriterion="ModemState" MatchesWhen="Is" Value="True"/>
+          <SelectionCriterionRule SelectionCriterion="ModemAudioAvailable" MatchesWhen="Is" Value="True"/>
+        </CompoundRule>
+      </Configuration>
+      <Configuration Name="InIms">
+        <CompoundRule Type="All">
+          <SelectionCriterionRule SelectionCriterion="Mode" MatchesWhen="Is" Value="InCsvCall"/>
+          <SelectionCriterionRule SelectionCriterion="ModemAudioAvailable" MatchesWhen="IsNot" Value="True"/>
+          <CompoundRule Type="Any">
+            <SelectionCriterionRule SelectionCriterion="SelectedOutputDevices" MatchesWhen="Is" Value="Ihf"/>
+            <SelectionCriterionRule SelectionCriterion="SelectedOutputDevices" MatchesWhen="Is" Value="Headset"/>
+            <SelectionCriterionRule SelectionCriterion="SelectedOutputDevices" MatchesWhen="Is" Value="Headphones"/>
+            <SelectionCriterionRule SelectionCriterion="SelectedOutputDevices" MatchesWhen="Is" Value="Earpiece"/>
+            <SelectionCriterionRule SelectionCriterion="SelectedOutputDevices" MatchesWhen="Is" Value="Sco"/>
+            <SelectionCriterionRule SelectionCriterion="SelectedOutputDevices" MatchesWhen="Is" Value="ScoHeadset"/>
+            <SelectionCriterionRule SelectionCriterion="SelectedOutputDevices" MatchesWhen="Is" Value="ScoCarkit"/>
+          </CompoundRule>
+        </CompoundRule>
+      </Configuration>
+      <Configuration Name="InCommunication">
+        <CompoundRule Type="All">
+          <SelectionCriterionRule SelectionCriterion="Mode" MatchesWhen="Is" Value="InVoipCall"/>
+          <CompoundRule Type="Any">
+            <SelectionCriterionRule SelectionCriterion="SelectedOutputDevices" MatchesWhen="Is" Value="Ihf"/>
+            <SelectionCriterionRule SelectionCriterion="SelectedOutputDevices" MatchesWhen="Is" Value="Headset"/>
+            <SelectionCriterionRule SelectionCriterion="SelectedOutputDevices" MatchesWhen="Is" Value="Headphones"/>
+            <SelectionCriterionRule SelectionCriterion="SelectedOutputDevices" MatchesWhen="Is" Value="Earpiece"/>
+            <SelectionCriterionRule SelectionCriterion="SelectedOutputDevices" MatchesWhen="Is" Value="Sco"/>
+            <SelectionCriterionRule SelectionCriterion="SelectedOutputDevices" MatchesWhen="Is" Value="ScoHeadset"/>
+            <SelectionCriterionRule SelectionCriterion="SelectedOutputDevices" MatchesWhen="Is" Value="ScoCarkit"/>
+          </CompoundRule>
+        </CompoundRule>
+      </Configuration>
+      <Configuration Name="Normal">
+        <CompoundRule Type="All"/>
+      </Configuration>
+    </Configurations>
+    <ConfigurableElements>
+      <ConfigurableElement Path="/Route/route_mgr/criteria/mode/mode"/>
+    </ConfigurableElements>
+    <Settings>
+      <Configuration Name="RingTone">
+        <ConfigurableElement Path="/Route/route_mgr/criteria/mode/mode">
+          <EnumParameter Name="mode">RingTone</EnumParameter>
+        </ConfigurableElement>
+      </Configuration>
+      <Configuration Name="InCall">
+        <ConfigurableElement Path="/Route/route_mgr/criteria/mode/mode">
+          <EnumParameter Name="mode">InCsvCall</EnumParameter>
+        </ConfigurableElement>
+      </Configuration>
+      <Configuration Name="InIms">
+        <ConfigurableElement Path="/Route/route_mgr/criteria/mode/mode">
+          <EnumParameter Name="mode">InImsCall</EnumParameter>
+        </ConfigurableElement>
+      </Configuration>
+      <Configuration Name="InCommunication">
+        <ConfigurableElement Path="/Route/route_mgr/criteria/mode/mode">
+          <EnumParameter Name="mode">InVoipCall</EnumParameter>
+        </ConfigurableElement>
+      </Configuration>
+      <Configuration Name="Normal">
+        <ConfigurableElement Path="/Route/route_mgr/criteria/mode/mode">
+          <EnumParameter Name="mode">Normal</EnumParameter>
+        </ConfigurableElement>
+      </Configuration>
+    </Settings>
+  </ConfigurableDomain>
+  <ConfigurableDomain Name="Parameter.Band" SequenceAware="false">
+    <Configurations>
+      <Configuration Name="NB">
+        <CompoundRule Type="Any">
+          <CompoundRule Type="All">
+            <SelectionCriterionRule SelectionCriterion="Mode" MatchesWhen="Is" Value="InCsvCall"/>
+            <CompoundRule Type="Any">
+              <SelectionCriterionRule SelectionCriterion="ImsBandType" MatchesWhen="Is" Value="NB"/>
+              <CompoundRule Type="All">
+                <SelectionCriterionRule SelectionCriterion="ModemAudioAvailable" MatchesWhen="Is" Value="True"/>
+                <SelectionCriterionRule SelectionCriterion="CsvBandType" MatchesWhen="Is" Value="NB"/>
+              </CompoundRule>
+            </CompoundRule>
+          </CompoundRule>
+          <CompoundRule Type="All">
+            <SelectionCriterionRule SelectionCriterion="VoIPBandType" MatchesWhen="Is" Value="NB"/>
+            <SelectionCriterionRule SelectionCriterion="Mode" MatchesWhen="IsNot" Value="InCsvCall"/>
+          </CompoundRule>
+          <CompoundRule Type="All">
+            <SelectionCriterionRule SelectionCriterion="HfpClientEnable" MatchesWhen="Is" Value="True"/>
+            <SelectionCriterionRule SelectionCriterion="HfpClientBandType" MatchesWhen="Is" Value="NB"/>
+          </CompoundRule>
+        </CompoundRule>
+      </Configuration>
+      <Configuration Name="WB">
+        <CompoundRule Type="Any">
+          <CompoundRule Type="All">
+            <SelectionCriterionRule SelectionCriterion="Mode" MatchesWhen="Is" Value="InCsvCall"/>
+            <CompoundRule Type="Any">
+              <SelectionCriterionRule SelectionCriterion="ImsBandType" MatchesWhen="Is" Value="WB"/>
+              <CompoundRule Type="All">
+                <SelectionCriterionRule SelectionCriterion="ModemAudioAvailable" MatchesWhen="Is" Value="True"/>
+                <SelectionCriterionRule SelectionCriterion="CsvBandType" MatchesWhen="Is" Value="WB"/>
+              </CompoundRule>
+            </CompoundRule>
+          </CompoundRule>
+          <CompoundRule Type="All">
+            <SelectionCriterionRule SelectionCriterion="VoIPBandType" MatchesWhen="Is" Value="WB"/>
+            <SelectionCriterionRule SelectionCriterion="Mode" MatchesWhen="IsNot" Value="InCsvCall"/>
+          </CompoundRule>
+          <CompoundRule Type="All">
+            <SelectionCriterionRule SelectionCriterion="HfpClientEnable" MatchesWhen="Is" Value="True"/>
+            <SelectionCriterionRule SelectionCriterion="HfpClientBandType" MatchesWhen="Is" Value="WB"/>
+          </CompoundRule>
+        </CompoundRule>
+      </Configuration>
+      <Configuration Name="SuperWB">
+        <CompoundRule Type="Any">
+          <CompoundRule Type="All">
+            <SelectionCriterionRule SelectionCriterion="Mode" MatchesWhen="Is" Value="InCsvCall"/>
+            <CompoundRule Type="Any">
+              <SelectionCriterionRule SelectionCriterion="ImsBandType" MatchesWhen="Is" Value="SuperWB"/>
+              <CompoundRule Type="All">
+                <SelectionCriterionRule SelectionCriterion="ModemAudioAvailable" MatchesWhen="Is" Value="True"/>
+                <SelectionCriterionRule SelectionCriterion="CsvBandType" MatchesWhen="Is" Value="SuperWB"/>
+              </CompoundRule>
+            </CompoundRule>
+          </CompoundRule>
+          <CompoundRule Type="All">
+            <SelectionCriterionRule SelectionCriterion="VoIPBandType" MatchesWhen="Is" Value="SuperWB"/>
+            <SelectionCriterionRule SelectionCriterion="Mode" MatchesWhen="IsNot" Value="InCsvCall"/>
+          </CompoundRule>
+        </CompoundRule>
+      </Configuration>
+      <Configuration Name="Unknown">
+        <CompoundRule Type="All"/>
+      </Configuration>
+    </Configurations>
+    <ConfigurableElements>
+      <ConfigurableElement Path="/Route/route_mgr/criteria/band_type/band"/>
+    </ConfigurableElements>
+    <Settings>
+      <Configuration Name="NB">
+        <ConfigurableElement Path="/Route/route_mgr/criteria/band_type/band">
+          <EnumParameter Name="band">NB</EnumParameter>
+        </ConfigurableElement>
+      </Configuration>
+      <Configuration Name="WB">
+        <ConfigurableElement Path="/Route/route_mgr/criteria/band_type/band">
+          <EnumParameter Name="band">WB</EnumParameter>
+        </ConfigurableElement>
+      </Configuration>
+      <Configuration Name="SuperWB">
+        <ConfigurableElement Path="/Route/route_mgr/criteria/band_type/band">
+          <EnumParameter Name="band">SuperWB</EnumParameter>
+        </ConfigurableElement>
+      </Configuration>
+      <Configuration Name="Unknown">
+        <ConfigurableElement Path="/Route/route_mgr/criteria/band_type/band">
+          <EnumParameter Name="band">Unknown</EnumParameter>
+        </ConfigurableElement>
+      </Configuration>
+    </Settings>
+  </ConfigurableDomain>
+</ConfigurableDomains>

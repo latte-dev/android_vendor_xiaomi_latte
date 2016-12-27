@@ -1,0 +1,16 @@
+FOWARD_movdetectionwindowsize=10
+FOWARD_amplitudeAvgThresholdMoveToNotMove=100
+FOWARD_amplitudeStdDevThresholdMoveToNotMove=-1
+FOWARD_amplitudeAvgThresholdNotMoveToMove=250
+FOWARD_amplitudeStdDevThresholdNotMoveToMove=-1
+FOWARD_aCount=2
+FOWARD_pCount=17
+FOWARD_useAvg=true
+FOWARD_useStd=false
+FOWARD_movdetectionwindowsize_H=10
+FOWARD_amplitudeAvgThresholdMoveToNotMove_H=100
+FOWARD_amplitudeStdDevThresholdMoveToNotMove_H=-1
+FOWARD_amplitudeAvgThresholdNotMoveToMove_H=250
+FOWARD_amplitudeStdDevThresholdNotMoveToMove_H=-1
+FOWARD_aCount_H=2
+FOWARD_pCount_H=17
