@@ -82,8 +82,8 @@
 			<ZoneThresholdNormal1>41500</ZoneThresholdNormal1>
 			<ZoneThresholdNormal2>43000</ZoneThresholdNormal2>
 			<ZoneThresholdNormal3>44000</ZoneThresholdNormal3>
-			<ZoneThresholdWarning>45000</ZoneThresholdWarning>
-			<ZoneThresholdAlert>68000</ZoneThresholdAlert>
+			<ZoneThresholdWarning>50000</ZoneThresholdWarning>
+			<ZoneThresholdAlert>60000</ZoneThresholdAlert>
 		</ZoneThreshold>
 		<SensorAttrib>
 			<SensorName>STR0</SensorName>
@@ -119,8 +119,8 @@
 			<ZoneThresholdNormal1>44000</ZoneThresholdNormal1>
 			<ZoneThresholdNormal2>45000</ZoneThresholdNormal2>
 			<ZoneThresholdNormal3>46000</ZoneThresholdNormal3>
-			<ZoneThresholdWarning>47000</ZoneThresholdWarning>
-			<ZoneThresholdAlert>68000</ZoneThresholdAlert>
+			<ZoneThresholdWarning>50000</ZoneThresholdWarning>
+			<ZoneThresholdAlert>60000</ZoneThresholdAlert>
 		</ZoneThreshold>
 		<SensorAttrib>
 			<SensorName>STR0</SensorName>
@@ -148,8 +148,8 @@
 			<ZoneThresholdNormal>44000</ZoneThresholdNormal>
 			<ZoneThresholdNormal1>45000</ZoneThresholdNormal1>
 			<ZoneThresholdNormal2>47000</ZoneThresholdNormal2>
-			<ZoneThresholdWarning>49000</ZoneThresholdWarning>
-			<ZoneThresholdAlert>68000</ZoneThresholdAlert>
+			<ZoneThresholdWarning>50000</ZoneThresholdWarning>
+			<ZoneThresholdAlert>60000</ZoneThresholdAlert>
 		</ZoneThreshold>
 		<SensorAttrib>
 			<SensorName>STR2</SensorName>
@@ -188,7 +188,7 @@
 			<ZoneThresholdNormal2>43000</ZoneThresholdNormal2>
 			<ZoneThresholdNormal3>44000</ZoneThresholdNormal3>
 			<ZoneThresholdWarning>45000</ZoneThresholdWarning>
-			<ZoneThresholdAlert>68000</ZoneThresholdAlert>
+			<ZoneThresholdAlert>60000</ZoneThresholdAlert>
 		</ZoneThreshold>
 		<SensorAttrib>
 			<SensorName>STR0</SensorName>
@@ -226,7 +226,7 @@
 			<ZoneThresholdNormal2>43000</ZoneThresholdNormal2>
 			<ZoneThresholdNormal3>44000</ZoneThresholdNormal3>
 			<ZoneThresholdWarning>45000</ZoneThresholdWarning>
-			<ZoneThresholdAlert>68000</ZoneThresholdAlert>
+			<ZoneThresholdAlert>60000</ZoneThresholdAlert>
 		</ZoneThreshold>
 		<SensorAttrib>
 			<SensorName>STR0</SensorName>
@@ -252,7 +252,7 @@
 			<ZoneThresholdNormal1>45000</ZoneThresholdNormal1>
 			<ZoneThresholdNormal2>47000</ZoneThresholdNormal2>
 			<ZoneThresholdWarning>49000</ZoneThresholdWarning>
-			<ZoneThresholdAlert>68000</ZoneThresholdAlert>
+			<ZoneThresholdAlert>60000</ZoneThresholdAlert>
 		</ZoneThreshold>
 		<SensorAttrib>
 			<SensorName>STR2</SensorName>
@@ -291,7 +291,7 @@
 			<ZoneThresholdNormal2>47000</ZoneThresholdNormal2>
 			<ZoneThresholdNormal3>48000</ZoneThresholdNormal3>
 			<ZoneThresholdWarning>50000</ZoneThresholdWarning>
-			<ZoneThresholdAlert>68000</ZoneThresholdAlert>
+			<ZoneThresholdAlert>60000</ZoneThresholdAlert>
 		</ZoneThreshold>
 		<SensorAttrib>
 			<SensorName>STR0</SensorName>
@@ -329,7 +329,7 @@
 			<ZoneThresholdNormal2>47000</ZoneThresholdNormal2>
 			<ZoneThresholdNormal3>48000</ZoneThresholdNormal3>
 			<ZoneThresholdWarning>50000</ZoneThresholdWarning>
-			<ZoneThresholdAlert>68000</ZoneThresholdAlert>
+			<ZoneThresholdAlert>60000</ZoneThresholdAlert>
 		</ZoneThreshold>
 		<SensorAttrib>
 			<SensorName>STR0</SensorName>
@@ -355,7 +355,7 @@
 			<ZoneThresholdNormal1>46000</ZoneThresholdNormal1>
 			<ZoneThresholdNormal2>48000</ZoneThresholdNormal2>
 			<ZoneThresholdWarning>50000</ZoneThresholdWarning>
-			<ZoneThresholdAlert>68000</ZoneThresholdAlert>
+			<ZoneThresholdAlert>60000</ZoneThresholdAlert>
 		</ZoneThreshold>
 		<SensorAttrib>
 			<SensorName>STR2</SensorName>
