@@ -7,6 +7,7 @@
 # make a request_firmware call from its module init function, which
 # init won't service until the module load completes!
 modules=`getprop ro.modules.location`
+insmod $modules/snd-soc-tfa98xx.ko
 insmod $modules/videobuf-core.ko
 insmod $modules/videobuf-vmalloc.ko
 insmod $modules/s5k4h8drv.ko
