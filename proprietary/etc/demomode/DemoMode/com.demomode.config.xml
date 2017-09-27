@@ -1,0 +1,18 @@
+<configs>
+    <!-- This config is prerequisite.
+    "true" means will launch ePOS app to auto loop the brand video. And need to config "epos_package_name" and "epos_class_name".
+    "false" means will auto loop preloaded video in system/etc/demomode/DemoMode/DemoMode.mp4. And need to config "preloaded_video_orientation" -->
+    <config name="demo_mode_launch_epos">true</config>
+
+    <!-- These two configs are necessary when "demo_mode_launch_epos" is true.
+    "epos_package_name" is ePOS app's package name, "epos_class_name" is ePOS app's main class name. -->
+    <config name="epos_package_name">com.lenovo.yogabook</config>
+    <config name="epos_class_name">com.lenovo.yogabook.MainActivity</config>
+
+    <!-- This config lists the browsers' package name that will be clear data by demo mode. -->
+    <config name="browser_package_name">com.android.chrome, com.chaozhuo.browser.x86</config>
+
+    <!-- This config is necessary when "demo_mode_launch_epos" is false.
+    This config linked activity attribute android.R.attr#screenOrientation. "landscape" is 0, "portrait" is 1 -->
+    <config name="preloaded_video_orientation">1</config>
+</configs>

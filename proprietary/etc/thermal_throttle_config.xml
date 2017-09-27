@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--  Thermal Management Configuration File  -->
+<!--  Intel Corporation 2011-2014  -->
+<thermalthrottleconfig>
+	<!-- Config xml file version should be in sync with iTUX version number-->
+	<ConfigFileVersion>4.0</ConfigFileVersion>
+
+	<!--Platform Parameters-->
+	<PlatformInfo>
+		<!--PlatformName reference. In future will be compared against ro.board.platform-->
+		<PlatformName>cht</PlatformName>
+		<!--standard cooling devices register in /sys/class/thermal/cooling_deviceX/ Herein
+		referred as 'Path Enumerated at Runtime by Framework in Kernel Thermal' or PERFKT-->
+	</PlatformInfo>
+
+	<!--Cooling Devices-->
+	<ContributingDeviceInfo>
+		<CDeviceName>intel-rapl</CDeviceName>
+		<CDeviceID>1</CDeviceID>
+		<!--CDeviceClassPath: pluggable custom class path name or "auto" meaning
+		no separate plugin required-->
+		<CDeviceClassPath>auto</CDeviceClassPath>
+		<!--CDevicethrottlePath: "auto" means lookin PERFTK path.
+		"none" means implemented inside plugin -->
+		<CDeviceThrottlePath>/sys/class/powercap/intel-rapl/intel-rapl:0/constraint_0_power_limit_uw</CDeviceThrottlePath>
+		<!--Throttle values are written to cooling device throttle path
+		values can be a absolute target unit (eg cpu frequencies) or
+		relative levels (e.g 0,1,2 for charge level or brightness limit percentage) -->
+		<ThrottleValues>
+			<ThrottleNormal>8000000</ThrottleNormal>
+			<ThrottleNormal1>6000000</ThrottleNormal1>
+         		<ThrottleNormal2>4000000</ThrottleNormal2>
+                        <ThrottleNormal3>3000000</ThrottleNormal3>
+			<ThrottleWarning>2500000</ThrottleWarning>
+			<ThrottleAlert>2000000</ThrottleAlert>
+		</ThrottleValues>
+	</ContributingDeviceInfo>
+
+
+        <ContributingDeviceInfo>
+		<CDeviceName>usb-main</CDeviceName>
+		<CDeviceID>2</CDeviceID>
+		<CDeviceClassPath>auto</CDeviceClassPath>
+		<CDeviceThrottlePath>auto</CDeviceThrottlePath>
+		<ThrottleValues>
+
+			<!-- Setting the Charge Current Throttle Limits as below,
+                        For CHT FFD, /sys/class/power_supply/usb-main/max_charge_current=4200 mA (at normal boot)
+			max_charge_current=4200 mA and
+			max_state (throttle level) would be the platform supported
+			(max_charge_current/100mA)+1 -> max_state=43.
+			i.e. for level 13 => CC=(43-13-1)*100 => 2900 mA
+			-->
+                        <!-- For Normal, setting Charge Current to 4200 mA -->
+			<ThrottleNormal>0</ThrottleNormal>
+                        <!-- For Normal1, setting Charge Current to 3000 mA -->
+			<ThrottleNormal1>12</ThrottleNormal1>
+                        <!-- For Normal2, setting Charge Current to 2000 mA -->
+			<ThrottleNormal2>22</ThrottleNormal2>
+                        <!-- For Warning, setting Charge Current to 1000 mA -->
+			<ThrottleWarning>32</ThrottleWarning>
+                        <!-- For Alert, setting Charge Current to 1000 mA -->
+			<ThrottleAlert>32</ThrottleAlert>
+		</ThrottleValues>
+        </ContributingDeviceInfo>
+
+        <ContributingDeviceInfo>
+                <CDeviceName>vbus_control</CDeviceName>
+                <CDeviceID>3</CDeviceID>
+                <CDeviceClassPath>auto</CDeviceClassPath>
+                <CDeviceThrottlePath>auto</CDeviceThrottlePath>
+                <ThrottleValues>
+			<ThrottleNormal>0</ThrottleNormal>
+			<ThrottleWarning>1</ThrottleWarning>
+			<ThrottleAlert>1</ThrottleAlert>
+		</ThrottleValues>
+	</ContributingDeviceInfo>
+
+	<ContributingDeviceInfo>
+		<CDeviceName>CameraFlash</CDeviceName>
+		<CDeviceID>4</CDeviceID>
+		<CDeviceClassPath>com.intel.thermal.CameraFlashControl</CDeviceClassPath>
+		<ThrottleValues>
+			<ThrottleNormal>0</ThrottleNormal>
+			<ThrottleWarning>3</ThrottleWarning>
+			<ThrottleAlert>3</ThrottleAlert>
+		</ThrottleValues>
+	</ContributingDeviceInfo>
+
+	<ContributingDeviceInfo>
+		<CDeviceName>Display</CDeviceName>
+		<CDeviceID>5</CDeviceID>
+		<CDeviceClassPath>com.intel.thermal.BrightnessControl</CDeviceClassPath>
+		<ThrottleValues>
+			<ThrottleNormal>100</ThrottleNormal>
+			<ThrottleNormal1>100</ThrottleNormal1>
+			<ThrottleNormal2>80</ThrottleNormal2>
+                        <ThrottleNormal3>60</ThrottleNormal3>
+			<ThrottleWarning>60</ThrottleWarning>
+			<ThrottleAlert>50</ThrottleAlert>
+		</ThrottleValues>
+	</ContributingDeviceInfo>
+
+	<ContributingDeviceInfo>
+		<CDeviceName>Modem</CDeviceName>
+		<CDeviceID>6</CDeviceID>
+		<CDeviceClassPath>com.intel.thermal.ModemCooling</CDeviceClassPath>
+	</ContributingDeviceInfo>
+
+	<ContributingDeviceInfo>
+		<CDeviceName>ModemAirplane</CDeviceName>
+		<CDeviceID>7</CDeviceID>
+		<CDeviceClassPath>none</CDeviceClassPath>
+	</ContributingDeviceInfo>
+<!--
+        <ContributingDeviceInfo>
+                <CDeviceName>Wifi</CDeviceName>
+                <CDeviceID>8</CDeviceID>
+                <CDeviceClassPath>com.intel.thermal.WifiControl</CDeviceClassPath>
+                <ThrottleValues>
+                        <ThrottleNormal>0</ThrottleNormal>
+                        <ThrottleWarning>1</ThrottleWarning>
+                        <ThrottleAlert>1</ThrottleAlert>
+                </ThrottleValues>
+        </ContributingDeviceInfo>
+-->
+<Profile>
+	<Name>Default</Name>
+	<ZoneThrottleInfo>
+		<ZoneID>1</ZoneID>
+		<CriticalShutDown>1</CriticalShutDown>
+		<CoolingDeviceInfo>
+                        <CoolingDeviceStates>6</CoolingDeviceStates>
+			<CoolingDevId>1</CoolingDevId>
+		</CoolingDeviceInfo>
+	</ZoneThrottleInfo>
+	
+        <ZoneThrottleInfo>
+		<ZoneID>2</ZoneID>
+		<CriticalShutDown>1</CriticalShutDown>
+		<CoolingDeviceInfo>
+                        <CoolingDeviceStates>5</CoolingDeviceStates>
+			<CoolingDevId>2</CoolingDevId>
+		</CoolingDeviceInfo>
+	</ZoneThrottleInfo>
+
+	<ZoneThrottleInfo>
+		<ZoneID>4</ZoneID>
+		<CriticalShutDown>1</CriticalShutDown>
+        <!-- Chatacterization in progress, Brightness control to be added after evaluation
+		<CoolingDeviceInfo>
+			<CoolingDevId>5</CoolingDevId>
+		</CoolingDeviceInfo>
+        -->
+		<CoolingDeviceInfo>
+		<CoolingDevId>7</CoolingDevId>
+		<ThrottleDeviceMask>
+			<Normal>0</Normal>
+			<Warning>0</Warning>
+			<Alert>1</Alert>
+		</ThrottleDeviceMask>
+		</CoolingDeviceInfo>
+	</ZoneThrottleInfo>
+</Profile>
+
+</thermalthrottleconfig>

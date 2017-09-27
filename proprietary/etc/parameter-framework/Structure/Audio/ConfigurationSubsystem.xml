@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Subsystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../Schemas/Subsystem.xsd" Name="CONFIGURATION" Type="Virtual">
+	<ComponentLibrary/>
+	<InstanceDefinition>
+		<StringParameter Name="VOICE_VOLUME_CTRL_PARAMETER" MaxLength="256"/>
+	</InstanceDefinition>
+</Subsystem>

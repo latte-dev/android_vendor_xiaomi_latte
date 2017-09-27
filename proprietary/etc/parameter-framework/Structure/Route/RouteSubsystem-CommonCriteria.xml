@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ComponentLibrary>
+    <ComponentTypeSet>
+
+        <ComponentType Name="Mode" Mapping="Type:ModeType,Inclusive:0">
+            <EnumParameter Name="mode" Size="32" Mapping="Criterion">
+                <ValuePair Literal="Normal" Numerical="0"/>
+                <ValuePair Literal="RingTone" Numerical="1"/>
+                <ValuePair Literal="InCsvCall" Numerical="2"/>
+                <ValuePair Literal="InVoipCall" Numerical="3"/>
+                <ValuePair Literal="InImsCall" Numerical="4"/>
+            </EnumParameter>
+        </ComponentType>
+
+        <!-- The name of each device must match the name of the Audio PFW input device
+        criterion as this parameter will feed the associated criterion. -->
+        <ComponentType Name="InputDevices" Mapping="Type:InputDevicesType,Inclusive:1">
+            <BitParameterBlock Name="mask" Size="32" Mapping="Criterion">
+                <BitParameter Name="Communication" Size="1" Pos="0"/>
+                <BitParameter Name="Ambient" Size="1" Pos="1"/>
+                <BitParameter Name="Main" Size="1" Pos="2"/>
+                <BitParameter Name="ScoHeadset" Size="1" Pos="3"/>
+                <BitParameter Name="Headset" Size="1" Pos="4"/>
+                <BitParameter Name="AuxDigital" Size="1" Pos="5"/>
+                <BitParameter Name="VoiceCall" Size="1" Pos="6"/>
+                <BitParameter Name="Back" Size="1" Pos="7"/>
+                <BitParameter Name="RemoteSubmix" Size="1" Pos="8"/>
+                <BitParameter Name="AnlgDockHeadset" Size="1" Pos="9"/>
+                <BitParameter Name="DgtlDockHeadset" Size="1" Pos="10"/>
+                <BitParameter Name="UsbAccessory" Size="1" Pos="11"/>
+                <BitParameter Name="UsbDevice" Size="1" Pos="12"/>
+                <BitParameter Name="FmTuner" Size="1" Pos="13"/>
+                <BitParameter Name="TvTuner" Size="1" Pos="14"/>
+                <BitParameter Name="Line" Size="1" Pos="15"/>
+                <BitParameter Name="Spdif" Size="1" Pos="16"/>
+                <BitParameter Name="BluetoothA2dp" Size="1" Pos="17"/>
+                <BitParameter Name="Loopback" Size="1" Pos="18"/>
+            </BitParameterBlock>
+        </ComponentType>
+
+        <ComponentType Name="Band" Mapping="Type:BandType,Inclusive:0">
+            <EnumParameter Name="band" Size="32" Mapping="Criterion">
+                <ValuePair Literal="Unknown" Numerical="0"/>
+                <ValuePair Literal="NB" Numerical="1"/>
+                <ValuePair Literal="WB" Numerical="2"/>
+                <ValuePair Literal="SuperWB" Numerical="3"/>
+            </EnumParameter>
+        </ComponentType>
+
+    </ComponentTypeSet>
+</ComponentLibrary>

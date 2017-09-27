@@ -1,0 +1,29 @@
+function find_all_thread_stack(){
+    for file in ` ls $1 `
+    do
+        name=$1"/"$file"/stack"
+        #echo $name
+        if [ -e $name ]
+        then
+            echo "PID:"$file >> $2
+            cat $name >> $2
+
+            for thread in ` ls $1"/"$file"/task" `
+            do
+                thread_name=$1"/"$file"/task/"$thread"/stack"
+                #echo $thread_name
+                if [ -e $thread_name ]
+                then
+                    echo "TID:"$thread >> $2
+                    cat $thread_name >> $2
+                fi
+            done
+        fi
+    done
+}
+
+INIT_PATH="/proc"
+OUTPUT="stacks"
+
+rm $OUTPUT
+find_all_thread_stack $INIT_PATH $OUTPUT

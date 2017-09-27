@@ -1,0 +1,821 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<sensor_hub_config>
+  <ish_sensors>
+    <sensor type="accelerometer">
+      <device> <!-- for Android mandatory sensor informations -->
+        <name>ISH Accelerometer Sensor</name>
+        <vendor>Intel Inc.</vendor>
+        <version>1</version>
+        <type>1</type> <!-- SENSOR_TYPE_ACCELEROMETER, optinal -->
+        <stringType>android.sensor.accelerometer</stringType> <!-- optinal -->
+        <maxRange unit="GRAVITY_EARTH">4</maxRange>
+        <resolution unit="GRAVITY_EARTH">0.000976562</resolution>
+        <power>0.006</power>
+        <minDelay>5000</minDelay> <!-- micro-seconds, default 0 -->
+        <maxDelay>1000000</maxDelay> <!-- micro-seconds, default 0 -->
+        <fifoReservedEventCount>0</fifoReservedEventCount> <!-- default 0 -->
+        <fifoMaxEventCount>2048</fifoMaxEventCount> <!-- default 0 -->
+        <requiredPermission></requiredPermission> <!-- optinal, default none -->
+        <wakeup>0</wakeup> <!-- non-wakeup -->
+        <report_mode>continuous</report_mode> <!-- for Android defined sensor, it will be over written with default value; for OEM sensors, default is continous -->
+        <prefered_wakeup_mode>0</prefered_wakeup_mode> <!-- for Android defined sensor, it will be over written with default value; for OEM sensors, default is 0 (non-wakeup) -->
+      </device>
+      <additional_information>
+        <expose_to_android>1</expose_to_android>
+        <expose_to_csdk>1</expose_to_csdk>
+        <scale_android axis_x="-0.000001" axis_y="-0.000001" axis_z="-0.000001" unit="GRAVITY_EARTH"></scale_android> <!-- default 1 -->
+        <scale_csdk axis_0="-0.000001" axis_1="-0.000001" axis_2="-0.000001" unit="GRAVITY_EARTH"></scale_csdk> <!-- axis_0 is equal to axis_x, for those sensors which have more than 3 axises -->
+        <axis_map axis_x="X" axis_y="Y" axis_z="Z"></axis_map> <!-- Axis map only for physical sensors, so it is 3-axis. optinal, default none -->
+      </additional_information>
+      <private_data> <!-- for special sensor interface config, this sample is for ISH sensor collection -->
+        <luid_string>0073000000000000</luid_string> <!-- hexadecimal, must 16 characteres -->
+      </private_data>
+    </sensor>
+    <sensor type="magnetic_field">
+      <device>
+        <name>ISH Magnetic Field Sensor</name>
+        <vendor>Intel Inc.</vendor>
+        <version>1</version>
+        <maxRange>2000.0</maxRange>
+        <resolution>0.1</resolution>
+        <power>0.35</power>
+        <minDelay>5000</minDelay>
+        <maxDelay>1000000</maxDelay>
+        <fifoReservedEventCount>0</fifoReservedEventCount>
+        <fifoMaxEventCount>2048</fifoMaxEventCount>
+        <requiredPermission></requiredPermission>
+        <wakeup>0</wakeup>
+        <report_mode>continuous</report_mode>
+        <prefered_wakeup_mode>0</prefered_wakeup_mode>
+      </device>
+      <additional_information>
+        <expose_to_android>1</expose_to_android>
+        <expose_to_csdk>1</expose_to_csdk>
+        <scale_android axis_x="0.0001" axis_y="0.0001" axis_z="0.0001"></scale_android>
+        <axis_map axis_x="X" axis_y="Y" axis_z="Z"></axis_map>
+      </additional_information>
+      <private_data>
+        <luid_string>020F000000000001</luid_string>
+      </private_data>
+    </sensor>
+    <sensor type="gyroscope">
+      <device>
+        <name>ISH Gyroscope Sensor</name>
+        <vendor>Intel Inc.</vendor>
+        <version>1</version>
+        <maxRange unit="M_PI">11.111111</maxRange>
+        <resolution unit="M_PI">0.00555556</resolution>
+        <power>6.1</power>
+        <minDelay>5000</minDelay>
+        <maxDelay>1000000</maxDelay>
+        <fifoReservedEventCount>0</fifoReservedEventCount>
+        <fifoMaxEventCount>2048</fifoMaxEventCount>
+        <requiredPermission></requiredPermission>
+        <wakeup>0</wakeup>
+        <report_mode>continuous</report_mode>
+        <prefered_wakeup_mode>0</prefered_wakeup_mode>
+      </device>
+      <additional_information>
+        <expose_to_android>1</expose_to_android>
+        <expose_to_csdk>1</expose_to_csdk>
+        <scale_android axis_x="0.0000000555556" axis_y="0.0000000555556" axis_z="0.0000000555556" unit="M_PI"></scale_android>
+        <axis_map axis_x="X" axis_y="Y" axis_z="Z"></axis_map>
+      </additional_information>
+      <private_data>
+        <luid_string>0076000000000001</luid_string>
+      </private_data>
+    </sensor>
+    <sensor type="magnetic_field_uncalibrated">
+      <device>
+        <name>ISH Magnetic Field Uncalibrated Sensor</name>
+        <vendor>Intel Inc.</vendor>
+        <version>1</version>
+        <maxRange>2000.0</maxRange>
+        <resolution>0.1</resolution>
+        <power>0.35</power>
+        <minDelay>5000</minDelay>
+        <maxDelay>1000000</maxDelay>
+        <fifoReservedEventCount>0</fifoReservedEventCount>
+        <fifoMaxEventCount>2048</fifoMaxEventCount>
+        <requiredPermission></requiredPermission>
+        <wakeup>0</wakeup>
+        <report_mode>continuous</report_mode>
+        <prefered_wakeup_mode>0</prefered_wakeup_mode>
+      </device>
+      <additional_information>
+        <expose_to_android>1</expose_to_android>
+        <expose_to_csdk>1</expose_to_csdk>
+        <scale_android axis_0="0.0001" axis_1="0.0001" axis_2="0.0001" axis_3="0.0001" axis_4="0.0001" axis_5="0.0001"></scale_android>
+      </additional_information>
+      <private_data>
+        <luid_string>0242000000000000</luid_string>
+      </private_data>
+    </sensor>
+    <sensor type="gyroscope_uncalibrated">
+      <device>
+        <name>ISH Gyroscope Uncalibrated Sensor</name>
+        <vendor>Intel Inc.</vendor>
+        <version>1</version>
+        <maxRange unit="M_PI">11.111111</maxRange>
+        <resolution unit="M_PI">0.00555556</resolution>
+        <power>6.1</power>
+        <minDelay>5000</minDelay>
+        <maxDelay>1000000</maxDelay>
+        <fifoReservedEventCount>0</fifoReservedEventCount>
+        <fifoMaxEventCount>2048</fifoMaxEventCount>
+        <requiredPermission></requiredPermission>
+        <wakeup>0</wakeup>
+        <report_mode>continuous</report_mode>
+        <prefered_wakeup_mode>0</prefered_wakeup_mode>
+      </device>
+      <additional_information>
+        <expose_to_android>1</expose_to_android>
+        <expose_to_csdk>1</expose_to_csdk>
+        <scale_android axis_0="0.0000000555556" axis_1="0.0000000555556" axis_2="0.0000000555556" axis_3="0.0000000555556" axis_4="0.0000000555556" axis_5="0.0000000555556" unit="M_PI"></scale_android>
+      </additional_information>
+      <private_data>
+        <luid_string>0241000000000000</luid_string>
+      </private_data>
+    </sensor>
+    <sensor type="light">
+      <device>
+        <name>ISH Ambient Light Sensor</name>
+        <vendor>Intel Inc.</vendor>
+        <version>1</version>
+        <maxRange>2147483.647</maxRange>
+        <resolution>0.1</resolution>
+        <power>0.35</power>
+        <minDelay>0</minDelay>
+        <maxDelay>0</maxDelay>
+        <fifoReservedEventCount>0</fifoReservedEventCount>
+        <fifoMaxEventCount>2048</fifoMaxEventCount>
+        <requiredPermission></requiredPermission>
+        <wakeup>0</wakeup>
+        <report_mode>on_change</report_mode>
+        <prefered_wakeup_mode>0</prefered_wakeup_mode>
+      </device>
+      <additional_information>
+        <expose_to_android>1</expose_to_android>
+        <expose_to_csdk>1</expose_to_csdk>
+        <scale_android axis_x="0.001"></scale_android>
+      </additional_information>
+      <private_data>
+        <luid_string>0041000200010002</luid_string>
+        <sensitivity>500</sensitivity> <!-- May have special meanings, DO NOT change if you don't know the details -->
+      </private_data>
+    </sensor>
+    <sensor type="proximity">
+      <device>
+        <name>ISH Proximity Sensor</name>
+        <vendor>Intel Inc.</vendor>
+        <version>1</version>
+        <maxRange>5.0</maxRange>
+        <resolution>5.0</resolution>
+        <power>0.35</power>
+        <minDelay>0</minDelay>
+        <maxDelay>0</maxDelay>
+        <fifoReservedEventCount>0</fifoReservedEventCount>
+        <fifoMaxEventCount>2048</fifoMaxEventCount>
+        <requiredPermission></requiredPermission>
+        <wakeup>1</wakeup>
+        <report_mode>on_change</report_mode>
+        <prefered_wakeup_mode>1</prefered_wakeup_mode>
+      </device>
+      <additional_information>
+        <expose_to_android>1</expose_to_android>
+        <expose_to_csdk>1</expose_to_csdk>
+        <scale_android axis_x="5.0"></scale_android>
+      </additional_information>
+      <private_data>
+        <luid_string>0011001400000002</luid_string>
+      </private_data>
+    </sensor>
+    <sensor type="pressure">
+      <device>
+        <name>ISH Pressure Sensor</name>
+        <vendor>Intel Inc.</vendor>
+        <version>1</version>
+        <maxRange>2000</maxRange>
+        <resolution>0.01</resolution>
+        <power>0.006</power>
+        <minDelay>5000</minDelay>
+        <maxDelay>1000000</maxDelay>
+        <fifoReservedEventCount>0</fifoReservedEventCount>
+        <fifoMaxEventCount>2048</fifoMaxEventCount>
+        <requiredPermission></requiredPermission>
+        <wakeup>0</wakeup>
+        <report_mode>continuous</report_mode>
+        <prefered_wakeup_mode>0</prefered_wakeup_mode>
+      </device>
+      <additional_information>
+        <expose_to_android>1</expose_to_android>
+        <expose_to_csdk>1</expose_to_csdk>
+        <scale_android axis_x="0.01"></scale_android>
+      </additional_information>
+      <private_data>
+        <luid_string>0031000900050002</luid_string>
+      </private_data>
+    </sensor>
+    <sensor type="orientation">
+      <device>
+        <name>ISH Orientation Sensor</name>
+        <vendor>Intel Inc.</vendor>
+        <version>1</version>
+        <maxRange>360</maxRange>
+        <resolution>0.1</resolution>
+        <power>0.106</power>
+        <minDelay>5000</minDelay>
+        <maxDelay>1000000</maxDelay>
+        <fifoReservedEventCount>0</fifoReservedEventCount>
+        <fifoMaxEventCount>2048</fifoMaxEventCount>
+        <requiredPermission></requiredPermission>
+        <wakeup>0</wakeup>
+        <report_mode>continuous</report_mode>
+        <prefered_wakeup_mode>0</prefered_wakeup_mode>
+      </device>
+      <additional_information>
+        <expose_to_android>1</expose_to_android>
+        <expose_to_csdk>1</expose_to_csdk>
+        <scale_android axis_x="0.00001" axis_y="0.00001" axis_z="0.00001"></scale_android>
+      </additional_information>
+      <private_data>
+        <luid_string>0086000000000000</luid_string>
+      </private_data>
+    </sensor>
+    <sensor type="gravity">
+      <device>
+        <name>ISH Gravity Sensor</name>
+        <vendor>Intel Inc.</vendor>
+        <version>1</version>
+        <maxRange unit="GRAVITY_EARTH">2</maxRange>
+        <resolution unit="GRAVITY_EARTH">0.000488281</resolution>
+        <power>0.006</power>
+        <minDelay>5000</minDelay>
+        <maxDelay>1000000</maxDelay>
+        <fifoReservedEventCount>0</fifoReservedEventCount>
+        <fifoMaxEventCount>2048</fifoMaxEventCount>
+        <requiredPermission></requiredPermission>
+        <wakeup>0</wakeup>
+        <report_mode>continuous</report_mode>
+        <prefered_wakeup_mode>0</prefered_wakeup_mode>
+      </device>
+      <additional_information>
+        <expose_to_android>1</expose_to_android>
+        <expose_to_csdk>1</expose_to_csdk>
+        <scale_android axis_x="0.000001" axis_y="0.000001" axis_z="0.000001" unit="GRAVITY_EARTH"></scale_android>
+      </additional_information>
+      <private_data>
+        <luid_string>0209000000000000</luid_string>
+      </private_data>
+    </sensor>
+    <sensor type="linear_acceleration">
+      <device>
+        <name>ISH Linear Acceleration Sensor</name>
+        <vendor>Intel Inc.</vendor>
+        <version>1</version>
+        <maxRange unit="GRAVITY_EARTH">4</maxRange>
+        <resolution unit="GRAVITY_EARTH">0.000488281</resolution>
+        <power>0.006</power>
+        <minDelay>5000</minDelay>
+        <maxDelay>1000000</maxDelay>
+        <fifoReservedEventCount>0</fifoReservedEventCount>
+        <fifoMaxEventCount>2048</fifoMaxEventCount>
+        <requiredPermission></requiredPermission>
+        <wakeup>0</wakeup>
+        <report_mode>continuous</report_mode>
+        <prefered_wakeup_mode>0</prefered_wakeup_mode>
+      </device>
+      <additional_information>
+        <expose_to_android>1</expose_to_android>
+        <expose_to_csdk>1</expose_to_csdk>
+        <scale_android axis_x="-0.000001" axis_y="-0.000001" axis_z="-0.000001" unit="GRAVITY_EARTH"></scale_android>
+      </additional_information>
+      <private_data>
+        <luid_string>0202000000000000</luid_string>
+      </private_data>
+    </sensor>
+    <sensor type="rotation_vector">
+      <device>
+        <name>ISH Rotation Vector Sensor</name>
+        <vendor>Intel Inc.</vendor>
+        <version>1</version>
+        <maxRange>1</maxRange>
+        <resolution>0.1</resolution>
+        <power>0.106</power>
+        <minDelay>5000</minDelay>
+        <maxDelay>1000000</maxDelay>
+        <fifoReservedEventCount>0</fifoReservedEventCount>
+        <fifoMaxEventCount>2048</fifoMaxEventCount>
+        <requiredPermission></requiredPermission>
+        <wakeup>0</wakeup>
+        <report_mode>continuous</report_mode>
+        <prefered_wakeup_mode>0</prefered_wakeup_mode>
+      </device>
+      <additional_information>
+        <expose_to_android>1</expose_to_android>
+        <expose_to_csdk>1</expose_to_csdk>
+        <scale_android axis_0="0.0001" axis_1="0.0001" axis_2="0.0001" axis_3="0.0001"></scale_android>
+      </additional_information>
+      <private_data>
+        <luid_string>008A000000000000</luid_string>
+      </private_data>
+    </sensor>
+    <sensor type="game_rotation_vector">
+      <device>
+        <name>ISH Game Rotation Vector Sensor</name>
+        <vendor>Intel Inc.</vendor>
+        <version>1</version>
+        <maxRange>2</maxRange>
+        <resolution>0.1</resolution>
+        <power>0.006</power>
+        <minDelay>5000</minDelay>
+        <maxDelay>1000000</maxDelay>
+        <fifoReservedEventCount>0</fifoReservedEventCount>
+        <fifoMaxEventCount>2048</fifoMaxEventCount>
+        <requiredPermission></requiredPermission>
+        <wakeup>0</wakeup>
+        <report_mode>continuous</report_mode>
+        <prefered_wakeup_mode>0</prefered_wakeup_mode>
+      </device>
+      <additional_information>
+        <expose_to_android>1</expose_to_android>
+        <expose_to_csdk>1</expose_to_csdk>
+        <scale_android axis_0="0.0001" axis_1="0.0001" axis_2="0.0001" axis_3="0.0001"></scale_android>
+      </additional_information>
+      <private_data>
+        <luid_string>0200000000000000</luid_string>
+      </private_data>
+    </sensor>
+    <sensor type="geomagnetic_rotation_vector">
+      <device>
+        <name>ISH Geomagnetic Rotation Vector Sensor</name>
+        <vendor>Intel Inc.</vendor>
+        <version>1</version>
+        <maxRange>1</maxRange>
+        <resolution>0.00001</resolution>
+        <power>0.006</power>
+        <minDelay>5000</minDelay>
+        <maxDelay>1000000</maxDelay>
+        <fifoReservedEventCount>0</fifoReservedEventCount>
+        <fifoMaxEventCount>2048</fifoMaxEventCount>
+        <requiredPermission></requiredPermission>
+        <wakeup>0</wakeup>
+        <report_mode>continuous</report_mode>
+        <prefered_wakeup_mode>0</prefered_wakeup_mode>
+      </device>
+      <additional_information>
+        <expose_to_android>1</expose_to_android>
+        <expose_to_csdk>1</expose_to_csdk>
+        <scale_android axis_0="0.0001" axis_1="0.0001" axis_2="0.0001" axis_3="0.0001"></scale_android>
+      </additional_information>
+      <private_data>
+        <luid_string>0201000000000000</luid_string>
+      </private_data>
+    </sensor>
+    <sensor type="step_detector">
+      <device>
+        <name>ISH Step Detector Sensor</name>
+        <vendor>Intel Inc.</vendor>
+        <version>1</version>
+        <maxRange>1</maxRange>
+        <resolution>1</resolution>
+        <power>0.006</power>
+        <minDelay>0</minDelay>
+        <maxDelay>0</maxDelay>
+        <fifoReservedEventCount>0</fifoReservedEventCount>
+        <fifoMaxEventCount>2048</fifoMaxEventCount>
+        <requiredPermission></requiredPermission>
+        <wakeup>0</wakeup>
+        <report_mode>special_reporting</report_mode>
+        <prefered_wakeup_mode>0</prefered_wakeup_mode>
+      </device>
+      <additional_information>
+        <expose_to_android>1</expose_to_android>
+        <expose_to_csdk>1</expose_to_csdk>
+      </additional_information>
+      <private_data>
+        <luid_string>0234000000000000</luid_string>
+      </private_data>
+    </sensor>
+    <sensor type="step_counter">
+      <device>
+        <name>ISH Step Counter Sensor</name>
+        <vendor>Intel Inc.</vendor>
+        <version>1</version>
+        <maxRange>4294967295</maxRange>
+        <resolution>1</resolution>
+        <power>0.006</power>
+        <minDelay>0</minDelay>
+        <maxDelay>0</maxDelay>
+        <fifoReservedEventCount>0</fifoReservedEventCount>
+        <fifoMaxEventCount>2048</fifoMaxEventCount>
+        <requiredPermission></requiredPermission>
+        <wakeup>0</wakeup>
+        <report_mode>on_change</report_mode>
+        <prefered_wakeup_mode>0</prefered_wakeup_mode>
+      </device>
+      <additional_information>
+        <expose_to_android>1</expose_to_android>
+        <expose_to_csdk>1</expose_to_csdk>
+      </additional_information>
+      <private_data>
+        <luid_string>0230000000000000</luid_string>
+      </private_data>
+    </sensor>
+    <sensor type="tilt_detector">
+      <device>
+        <name>ISH Tilt Detector Sensor</name>
+        <vendor>Intel Inc.</vendor>
+        <version>1</version>
+        <maxRange>1</maxRange>
+        <resolution>1</resolution>
+        <power>0.006</power>
+        <minDelay>0</minDelay>
+        <maxDelay>0</maxDelay>
+        <fifoReservedEventCount>0</fifoReservedEventCount>
+        <fifoMaxEventCount>2048</fifoMaxEventCount>
+        <requiredPermission></requiredPermission>
+        <wakeup>1</wakeup>
+        <report_mode>special_reporting</report_mode>
+        <prefered_wakeup_mode>1</prefered_wakeup_mode>
+      </device>
+      <additional_information>
+        <expose_to_android>1</expose_to_android>
+        <expose_to_csdk>1</expose_to_csdk>
+      </additional_information>
+      <private_data>
+        <luid_string>0214000000000000</luid_string>
+      </private_data>
+    </sensor>
+    <sensor type="significant_motion">
+      <device>
+        <name>ISH Significant Motion Sensor</name>
+        <vendor>Intel Inc.</vendor>
+        <version>1</version>
+        <maxRange>1</maxRange>
+        <resolution>1</resolution>
+        <power>0.006</power>
+        <minDelay>-1</minDelay>
+        <maxDelay>0</maxDelay>
+        <fifoReservedEventCount>0</fifoReservedEventCount>
+        <fifoMaxEventCount>0</fifoMaxEventCount>
+        <requiredPermission></requiredPermission>
+        <wakeup>1</wakeup>
+        <report_mode>one_shot</report_mode>
+        <prefered_wakeup_mode>1</prefered_wakeup_mode>
+      </device>
+      <additional_information>
+        <expose_to_android>1</expose_to_android>
+        <expose_to_csdk>0</expose_to_csdk>
+      </additional_information>
+      <private_data>
+        <luid_string>0236000000000000</luid_string>
+      </private_data>
+    </sensor>
+    <sensor type="wake_gesture">
+      <device>
+        <name>ISH Wake Gesture Sensor</name>
+        <vendor>Intel Inc.</vendor>
+        <version>1</version>
+        <maxRange>1</maxRange>
+        <resolution>1</resolution>
+        <power>0.006</power>
+        <minDelay>-1</minDelay>
+        <maxDelay>0</maxDelay>
+        <fifoReservedEventCount>0</fifoReservedEventCount>
+        <fifoMaxEventCount>0</fifoMaxEventCount>
+        <requiredPermission></requiredPermission>
+        <wakeup>1</wakeup>
+        <report_mode>one_shot</report_mode>
+        <prefered_wakeup_mode>1</prefered_wakeup_mode>
+      </device>
+      <additional_information>
+        <expose_to_android>1</expose_to_android>
+        <expose_to_csdk>0</expose_to_csdk>
+      </additional_information>
+      <private_data>
+        <luid_string>0211000000000000</luid_string>
+      </private_data>
+    </sensor>
+    <sensor type="glance_gesture">
+      <device>
+        <name>ISH Glance Gesture Sensor</name>
+        <vendor>Intel Inc.</vendor>
+        <version>1</version>
+        <maxRange>1</maxRange>
+        <resolution>1</resolution>
+        <power>0.006</power>
+        <minDelay>-1</minDelay>
+        <maxDelay>0</maxDelay>
+        <fifoReservedEventCount>0</fifoReservedEventCount>
+        <fifoMaxEventCount>0</fifoMaxEventCount>
+        <requiredPermission></requiredPermission>
+        <wakeup>1</wakeup>
+        <report_mode>one_shot</report_mode>
+        <prefered_wakeup_mode>1</prefered_wakeup_mode>
+      </device>
+      <additional_information>
+        <expose_to_android>1</expose_to_android>
+        <expose_to_csdk>1</expose_to_csdk>
+      </additional_information>
+      <private_data>
+        <luid_string>0210000000000000</luid_string>
+      </private_data>
+    </sensor>
+    <sensor type="pick_up_gesture">
+      <device>
+        <name>ISH Pick Up Gesture Sensor</name>
+        <vendor>Intel Inc.</vendor>
+        <version>1</version>
+        <maxRange>1</maxRange>
+        <resolution>1</resolution>
+        <power>0.006</power>
+        <minDelay>-1</minDelay>
+        <maxDelay>0</maxDelay>
+        <fifoReservedEventCount>0</fifoReservedEventCount>
+        <fifoMaxEventCount>0</fifoMaxEventCount>
+        <requiredPermission></requiredPermission>
+        <wakeup>1</wakeup>
+        <report_mode>one_shot</report_mode>
+        <prefered_wakeup_mode>1</prefered_wakeup_mode>
+      </device>
+      <additional_information>
+        <expose_to_android>1</expose_to_android>
+        <expose_to_csdk>1</expose_to_csdk>
+      </additional_information>
+      <private_data>
+        <luid_string>0215000000000000</luid_string>
+      </private_data>
+    </sensor>
+    <sensor type="terminal">
+      <device>
+        <name>ISH Terminal Sensor</name>
+        <vendor>Intel Inc.</vendor>
+        <version>1</version>
+        <maxRange>1</maxRange>
+        <resolution>1</resolution>
+        <power>0.006</power>
+        <minDelay>0</minDelay>
+        <maxDelay>0</maxDelay>
+        <requiredPermission></requiredPermission>
+        <report_mode>on_change</report_mode>
+        <prefered_wakeup_mode>1</prefered_wakeup_mode>
+      </device>
+      <additional_information>
+        <expose_to_android>1</expose_to_android>
+        <expose_to_csdk>1</expose_to_csdk>
+      </additional_information>
+      <private_data>
+        <luid_string>0205000000000000</luid_string>
+      </private_data>
+    </sensor>
+    <sensor type="move_detector">
+      <device>
+        <name>ISH Move Detector Sensor</name>
+        <vendor>Intel Inc.</vendor>
+        <version>1</version>
+        <maxRange>1</maxRange>
+        <resolution>1</resolution>
+        <power>0.006</power>
+        <minDelay>0</minDelay>
+        <maxDelay>0</maxDelay>
+        <requiredPermission></requiredPermission>
+        <report_mode>on_change</report_mode>
+        <prefered_wakeup_mode>1</prefered_wakeup_mode>
+      </device>
+      <additional_information>
+        <expose_to_android>1</expose_to_android>
+        <expose_to_csdk>1</expose_to_csdk>
+      </additional_information>
+      <private_data>
+        <luid_string>0204000000000000</luid_string>
+      </private_data>
+    </sensor>
+    <sensor type="tapping">
+      <device>
+        <name>ISH Tapping Sensor</name>
+        <vendor>Intel Inc.</vendor>
+        <version>1</version>
+        <maxRange>1</maxRange>
+        <resolution>1</resolution>
+        <power>0.006</power>
+        <minDelay>0</minDelay>
+        <maxDelay>0</maxDelay>
+        <requiredPermission></requiredPermission>
+        <report_mode>special_reporting</report_mode>
+        <prefered_wakeup_mode>1</prefered_wakeup_mode>
+      </device>
+      <additional_information>
+        <expose_to_android>1</expose_to_android>
+        <expose_to_csdk>1</expose_to_csdk>
+      </additional_information>
+      <private_data>
+        <luid_string>0210000000000000</luid_string>
+      </private_data>
+    </sensor>
+    <sensor type="lift">
+      <device>
+        <name>ISH Lift Sensor</name>
+        <vendor>Intel Inc.</vendor>
+        <version>1</version>
+        <maxRange>1</maxRange>
+        <resolution>1</resolution>
+        <power>0.006</power>
+        <minDelay>0</minDelay>
+        <maxDelay>0</maxDelay>
+        <requiredPermission></requiredPermission>
+        <report_mode>special_reporting</report_mode>
+        <prefered_wakeup_mode>1</prefered_wakeup_mode>
+      </device>
+      <additional_information>
+        <expose_to_android>1</expose_to_android>
+        <expose_to_csdk>1</expose_to_csdk>
+      </additional_information>
+      <private_data>
+        <luid_string>0211000000000000</luid_string>
+      </private_data>
+    </sensor>
+    <sensor type="shake">
+      <device>
+        <name>ISH Shake Sensor</name>
+        <vendor>Intel Inc.</vendor>
+        <version>1</version>
+        <maxRange>1</maxRange>
+        <resolution>1</resolution>
+        <power>0.006</power>
+        <minDelay>0</minDelay>
+        <maxDelay>0</maxDelay>
+        <requiredPermission></requiredPermission>
+        <report_mode>special_reporting</report_mode>
+        <prefered_wakeup_mode>1</prefered_wakeup_mode>
+      </device>
+      <additional_information>
+        <expose_to_android>1</expose_to_android>
+        <expose_to_csdk>1</expose_to_csdk>
+      </additional_information>
+      <private_data>
+        <luid_string>0233000000000000</luid_string>
+      </private_data>
+    </sensor>
+    <sensor type="gesture_flick">
+      <device>
+        <name>ISH Gesture Flick Sensor</name>
+        <vendor>Intel Inc.</vendor>
+        <version>1</version>
+        <maxRange>1</maxRange>
+        <resolution>1</resolution>
+        <power>0.006</power>
+        <minDelay>0</minDelay>
+        <maxDelay>0</maxDelay>
+        <requiredPermission></requiredPermission>
+        <report_mode>special_reporting</report_mode>
+        <prefered_wakeup_mode>1</prefered_wakeup_mode>
+      </device>
+      <additional_information>
+        <expose_to_android>1</expose_to_android>
+        <expose_to_csdk>1</expose_to_csdk>
+      </additional_information>
+      <private_data>
+        <luid_string>0213000000000080</luid_string>
+      </private_data>
+    </sensor>
+    <sensor type="pan_zoom">
+      <device>
+        <name>ISH Pan Zoom Sensor</name>
+        <vendor>Intel Inc.</vendor>
+        <version>1</version>
+        <maxRange>1</maxRange>
+        <resolution>1</resolution>
+        <power>0.006</power>
+        <minDelay>5000</minDelay>
+        <maxDelay>1000000</maxDelay>
+        <requiredPermission></requiredPermission>
+        <report_mode>continuous</report_mode>
+        <prefered_wakeup_mode>1</prefered_wakeup_mode>
+      </device>
+      <additional_information>
+        <expose_to_android>1</expose_to_android>
+        <expose_to_csdk>1</expose_to_csdk>
+      </additional_information>
+      <private_data>
+        <luid_string>0212000000000000</luid_string>
+      </private_data>
+    </sensor>
+    <sensor type="sar">
+      <device>
+        <name>ISH SAR Sensor</name>
+        <vendor>Intel Inc.</vendor>
+        <version>1</version>
+        <maxRange>1</maxRange>
+        <resolution>1</resolution>
+        <power>0.006</power>
+        <minDelay>0</minDelay>
+        <maxDelay>0</maxDelay>
+        <requiredPermission></requiredPermission>
+        <report_mode>on_change</report_mode>
+        <prefered_wakeup_mode>1</prefered_wakeup_mode>
+      </device>
+      <additional_information>
+        <expose_to_android>1</expose_to_android>
+        <expose_to_csdk>1</expose_to_csdk>
+        <scale_android axis_x="5.0"></scale_android>
+      </additional_information>
+      <private_data>
+        <luid_string>0266000E00000002</luid_string>
+      </private_data>
+    </sensor>
+    <sensor type="instant_activity">
+      <device>
+        <name>ISH Instant Activity Sensor</name>
+        <vendor>Intel Inc.</vendor>
+        <version>1</version>
+        <maxRange>1</maxRange>
+        <resolution>1</resolution>
+        <power>0.006</power>
+        <minDelay>0</minDelay>
+        <maxDelay>0</maxDelay>
+        <requiredPermission></requiredPermission>
+        <report_mode>special_reporting</report_mode>
+        <prefered_wakeup_mode>1</prefered_wakeup_mode>
+      </device>
+      <additional_information>
+        <expose_to_android>1</expose_to_android>
+        <expose_to_csdk>1</expose_to_csdk>
+      </additional_information>
+      <private_data>
+        <luid_string>0237000000000080</luid_string>
+      </private_data>
+    </sensor>
+    <sensor type="physical_accelerometer">
+      <device>
+        <name>ISH Physical Accelerometer Sensor</name>
+        <vendor>Intel Inc.</vendor>
+        <version>1</version>
+        <maxRange unit="GRAVITY_EARTH">4</maxRange>
+        <resolution unit="GRAVITY_EARTH">0.000976562</resolution>
+        <power>0.006</power>
+        <minDelay>5000</minDelay>
+        <maxDelay>1000000</maxDelay>
+        <fifoReservedEventCount>0</fifoReservedEventCount>
+        <fifoMaxEventCount>2048</fifoMaxEventCount>
+        <wakeup>0</wakeup>
+        <report_mode>continuous</report_mode>
+        <prefered_wakeup_mode>0</prefered_wakeup_mode>
+      </device>
+      <additional_information>
+        <expose_to_android>1</expose_to_android>
+        <expose_to_csdk>1</expose_to_csdk>
+        <scale_android axis_x="0.000001" axis_y="0.000001" axis_z="0.000001" unit="GRAVITY_EARTH"></scale_android>
+        <scale_csdk axis_0="0.000001" axis_1="0.000001" axis_2="0.000001" unit="GRAVITY_EARTH"></scale_csdk>
+      </additional_information>
+      <private_data>
+        <luid_string>0073000100010002</luid_string>
+      </private_data>
+    </sensor>
+    <sensor type="physical_activity">
+      <device>
+        <name>ISH Physical Activity Sensor</name>
+        <vendor>Intel Inc.</vendor>
+        <version>1</version>
+        <maxRange>1</maxRange>
+        <resolution>1</resolution>
+        <power>0.006</power>
+        <minDelay>0</minDelay>
+        <maxDelay>0</maxDelay>
+        <requiredPermission></requiredPermission>
+        <report_mode>special_reporting</report_mode>
+        <prefered_wakeup_mode>1</prefered_wakeup_mode>
+      </device>
+      <additional_information>
+        <expose_to_android>0</expose_to_android>
+        <expose_to_csdk>1</expose_to_csdk>
+      </additional_information>
+      <private_data>
+        <luid_string>0232000000000080</luid_string>
+      </private_data>
+    </sensor>
+    <sensor type="pdr">
+      <device>
+        <name>ISH PDR Sensor</name>
+        <vendor>Intel Inc.</vendor>
+        <version>1</version>
+        <maxRange>1</maxRange>
+        <resolution>1</resolution>
+        <power>0.006</power>
+        <minDelay>0</minDelay>
+        <maxDelay>0</maxDelay>
+        <requiredPermission></requiredPermission>
+        <report_mode>special_reporting</report_mode>
+        <prefered_wakeup_mode>1</prefered_wakeup_mode>
+      </device>
+      <additional_information>
+        <expose_to_android>0</expose_to_android>
+        <expose_to_csdk>1</expose_to_csdk>
+      </additional_information>
+      <private_data>
+        <luid_string>0231000000000080</luid_string>
+      </private_data>
+    </sensor>
+  </ish_sensors>
+</sensor_hub_config>

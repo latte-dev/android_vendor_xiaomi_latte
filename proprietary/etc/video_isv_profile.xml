@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- Copyright (C) 2012 The Android Open Source Project
+     Copyright (c) 2014 Intel Corporation
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+
+<IntelSmartVideoSettings>
+
+<CommonSettings>
+	<!-- the ISV feature is ON/OFF -->
+	<ISVEnabled value="1"/>
+	<!--
+	<DefaultVPPStatus value="0"/>
+	<DefaultFRCStatus value="0"/>
+	-->
+	<!-- the max supported resolution is 4096x2160 -->
+	<SupportedMaxResolution value="8847360"/>
+</CommonSettings>
+
+<PolicySettings>
+	<!-- the total number of FRC Rule. It should be defined before "PolicyFRCRule" -->
+	<PolicyFRCRuleNumber value="4"/>
+	<PolicyFRCRule index="0" input="15" output="30" rate="2"/>
+	<PolicyFRCRule index="1" input="25" output="60" rate="2"/>
+	<PolicyFRCRule index="2" input="30" output="60" rate="2"/>
+	<PolicyFRCRule index="3" input="24" output="60" rate="2.5"/>
+
+	<!-- For Scene difinition:
+		name                   = name of scene
+		ScenePriority          = priority of scene
+		SceneCondition         = condition string
+		SceneClipResolution    = resolution of clip
+		SceneDisplayResolution = resolution of display
+		SceneRuleIndex         = index of Rule
+	    note:
+		176x144 = 25344
+		320x240 = 76800
+		352x288 = 101376
+		640x480 = 307200
+		1280x720 = 921600
+		1920x1080 = 2073600
+		2560x1440 = 3686400
+		4096x2160 = 8847360
+	-->
+	<!-- the total number of Scene. It should be defined before "PolicyScene" -->
+	<PolicySceneNumber value="5"/>
+
+	<PolicyScene index="0" name="sfc_only">
+		<ScenePriority value="10"/>
+                <SceneCondition value="sfc=1"/>
+		<SceneClipResolution    min="3686400" max="8847360"/>
+		<SceneDisplayResolution min="0" max="2073600"/>
+		<SceneRuleIndex value="2"/>
+	</PolicyScene>
+
+	<PolicyScene index="1" name="extMode_only">
+		<ScenePriority value="100"/>
+                <SceneCondition value="disp.extMode=1"/>
+		<SceneClipResolution    min="0" max="8847360"/>
+		<SceneDisplayResolution min="0" max="8847360"/>
+		<SceneRuleIndex value="0"/>
+	</PolicyScene>
+
+	<PolicyScene index="2" name="extMode_plus_vp">
+		<ScenePriority value="50"/>
+        <SceneCondition value="disp.extMode=1 disp.widi=0 vp.filter=1"/>
+		<SceneClipResolution    min="0" max="2088960"/>
+		<SceneDisplayResolution min="0" max="8847360"/>
+		<SceneRuleIndex value="1"/>
+	</PolicyScene>
+
+	<PolicyScene index="3" name="vp_only">
+		<ScenePriority value="60"/>
+                <SceneCondition value="vp.filter=1"/>
+		<SceneClipResolution    min="0" max="2088960"/>
+		<SceneDisplayResolution min="0" max="8847360"/>
+		<SceneRuleIndex value="3"/>
+	</PolicyScene>
+
+    <PolicyScene index="4" name="extMode_plus_widi">
+		<ScenePriority value="20"/>
+        <SceneCondition value="disp.extMode=1 disp.widi=1"/>
+		<SceneClipResolution    min="0" max="2088960"/>
+		<SceneDisplayResolution min="0" max="8847360"/>
+		<SceneRuleIndex value="4"/>
+	</PolicyScene>
+
+
+
+	<!-- the definition for filters' value:
+	    Deinterlacing:
+		the value will be the algorithm:
+		1 = DeinterlacingBob,
+		2 = DeinterlacingWeave,
+		3 = DeinterlacingMotionAdaptive,
+		4 = DeinterlacingMotionCompensated
+
+	    ColorBalance:
+		The value will be saved as "1:2:3:4:5:6:7":
+		H =  VAProcColorBalanceHue,
+		S =  VAProcColorBalanceSaturation,
+		B =  VAProcColorBalanceBrightness,
+		C =  VAProcColorBalanceContrast,
+		AS = VAProcColorBalanceAutoSaturation,
+		AB = VAProcColorBalanceAutoBrightness,
+		AC = VAProcColorBalanceAutoContrast
+
+	    ColorCorrect:
+		The value will be saved as "1:2:3:4:5:6":
+		R = VAProcTotalColorCorrectionRed,
+		G = VAProcTotalColorCorrectionGreen,
+		B = VAProcTotalColorCorrectionBlue,
+		C = VAProcTotalColorCorrectionCyan,
+		M = VAProcTotalColorCorrectionMagenta,
+		Y = VAProcTotalColorCorrectionYellow
+
+	    NonLinearAnamorphicScaling:
+		The value will be saved as "vertical_crop:horizontal_linear_region:nonlinear_crop".
+
+	    ImageStabilization:
+		The value will be saved as "mode:crop:perf_type". The "mode will be the following:
+		1 = VAProcImageStabilizationTypeCrop,
+		2 = VAProcImageStabilizationTypeMinZoom,
+		3 = VAProcImageStabilizationTypeFullZoom
+
+	    "value", "values" and "algorithm":
+		"value":     Only one parameter is used for filter. It'll be parsed to float type
+		"values":    More than one parameters are used and the format is "1:2:3: ... :N". They'll be parsed to float type
+		"algorithm": The parameter is about Algorithm and will be parsed to int type.
+	-->
+	<!-- the total number of VPP Rule. It should defined before "PolicyRule" -->
+	<PolicyRuleNumber value="5"/>
+	<PolicyRule index="0" name="ExtMode-only" result="disp.extMode=1 disp.autohdmi=1 vp.filter=0 vp.frc=0 sfc=0">
+	</PolicyRule>
+	<PolicyRule index="1" name="EXTMode-VP" result="disp.extMode=1 disp.autohdmi=1 vp.filter=1 vp.frc=0 sfc=0">
+		<UsedFilter name="ProcFilterNoiseReduction" value="64.0"/>
+		<UsedFilter name="ProcFilterDeinterlacing" algorithm="1"/>
+		<UsedFilter name="ProcFilterSharpening" value="8.0"/>
+		<UsedFilter name="ProcFilterSkinToneEnhancement" value="8.0"/>
+	</PolicyRule>
+	<PolicyRule index="2" name="sfc-only" result="disp.extMode=0 disp.autohdmi=0 vp.filter=0 vp.frc=0 sfc=1">
+	</PolicyRule>
+	<PolicyRule index="3" name="VP-only" result="disp.extMode=0 disp.autohdmi=0 vp.filter=1 vp.frc=0 sfc=0">
+		<UsedFilter name="ProcFilterNoiseReduction" value="64.0"/>
+		<UsedFilter name="ProcFilterDeinterlacing" algorithm="1"/>
+		<UsedFilter name="ProcFilterSharpening" value="8.0"/>
+		<UsedFilter name="ProcFilterSkinToneEnhancement" value="8.0"/>
+	</PolicyRule>
+	<PolicyRule index="4" name="ExtMode-widi" result="disp.extMode=1 disp.autohdmi=0 vp.filter=0 vp.frc=0 sfc=0">
+	</PolicyRule>
+
+</PolicySettings>
+
+<SFCSettings>
+	<SFCEnabled value="0"/>
+</SFCSettings>
+
+<DisplaySettings>
+	<HdmiAutoSetting value="1"/>
+	<MipiAutoSetting value="1"/>
+</DisplaySettings>
+
+<FilterSettings>
+	<!-- This component will save the filters' capability.
+	     Please refer to the libva va_vpp.h for more detailed definition.
+	Note:
+	     1. If the "max" is set to "FFFFFFFF" or "MAX", the value will be "SupportedMaxResolution".
+	     2. If filter's parameter is related to Algorithm, please use "FilterAlgorithm" component.
+	     3. If number of filter's parameter is more than one, please list them with "FilterParameter" component
+	 -->
+
+	<Filter name="ProcFilterNoiseReduction" enabled="true">
+		<!-- 0 ~ 4K -->
+		<SupportResolution min="0" max="MAX"/>
+		<FilterParameter index="0" min="0.0" max="64.0" default="0.0" step="1.0"/>
+	</Filter>
+
+	<Filter name="ProcFilterDeinterlacing" enabled="true">
+		<!-- 0 ~ 4K -->
+		<SupportResolution min="0" max="MAX"/>
+		<!-- the "value" mean Deinterlacing algorithm -->
+		<!-- 1=DeinterlacingBob, 2=DeinterlacingWeave -->
+		<!-- 3=DeinterlacingMotionAdaptive, 4=cDeinterlacingMotionCompensated  -->
+		<FilterAlgorithm min="1" max="4" default="1" step="1"/>
+	</Filter>
+
+	<Filter name="ProcFilterSharpening" enabled="true">
+		<!-- 0 ~ 4K -->
+		<SupportResolution min="0" max="MAX"/>
+		<FilterParameter index="0" min="0.0" max="64.0" default="44.0" step="1.0"/>
+	</Filter>
+
+	<Filter name="ProcFilterColorBalance" enabled="false">
+		<SupportResolution min="0" max="MAX"/>
+		<!--
+			0 - VAProcColorBalanceHue
+			1 - VAProcColorBalanceSaturation
+			2 - VAProcColorBalanceBrightness
+			3 - VAProcColorBalanceContrast
+			4 - VAProcColorBalanceAutoSaturation
+			5 - VAProcColorBalanceAutoBrightness
+			6 - VAProcColorBalanceAutoContrast
+		-->
+		<FilterParameter index="0" min="-180.0" max="180.0" default="0" step="0.1"/>
+		<FilterParameter index="1" min="0" max="10.0" default="1.0" step="0.01"/>
+		<FilterParameter index="2" min="-100.0" max="100.0" default="0" step="0.1"/>
+		<FilterParameter index="3" min="0" max="10.0" default="1.0" step="0.1"/>
+	</Filter>
+
+	<Filter name="ProcFilterDeblocking" enabled="false">
+		<!-- 176x144 ~ 320x240 -->
+		<SupportResolution min="25344" max="76800"/>
+		<FilterParameter index="0" min="0" max="0" default="0" step="0"/>
+	</Filter>
+
+	<Filter name="ProcFilterFrameRateConversion" enabled="false">
+		<!-- 176x144 ~ 1920x1080 -->
+		<SupportResolution min="25344" max="2073600"/>
+		<!-- the supported FRC rate -->
+		<!-- 0=1X, 1=2X, 2=2.5X, 4=4X -->
+		<FilterAlgorithm min="1" max="3" default="3" step="1"/>
+	</Filter>
+
+	<Filter name="ProcFilterSkinToneEnhancement" enabled="true">
+		<!-- 0 ~ 4K -->
+		<SupportResolution min="0" max="MAX"/>
+		<FilterParameter index="0" min="0" max="9.0" default="3.0" step="1.0"/>
+	</Filter>
+
+	<Filter name="ProcFilterTotalColorCorrection" enabled="false">
+		<SupportResolution min="0" max="MAX"/>
+		<!--
+			0 - VAProcTotalColorCorrectionRed
+			1 - VAProcTotalColorCorrectionGreen
+			2 - VAProcTotalColorCorrectionBlue
+			3 - VAProcTotalColorCorrectionCyan
+			4 - VAProcTotalColorCorrectionMagenta
+			5 - VAProcTotalColorCorrectionYellow
+		-->
+		<FilterParameter index="0" min="0" max="255.0" default="160.0" step="1.0"/>
+	</Filter>
+
+	<Filter name="ProcFilterNonLinearAnamorphicScaling" enabled="false">
+		<SupportResolution min="0" max="MAX"/>
+		<FilterParameter index="0" min="0" max="1.0" default="0" step="0.001"/>
+		<FilterParameter index="1" min="0" max="1.0" default="1.0" step="0.001"/>
+		<FilterParameter index="2" min="0" max="1.0" default="0" step="0.001"/>
+	</Filter>
+
+	<Filter name="ProcFilterImageStabilization" enabled="false">
+		<SupportResolution min="0" max="MAX"/>
+		<FilterParameter index="0" min="0.01" max="0.15" default="0.05" step="0.01"/>
+	</Filter>
+</FilterSettings>
+
+</IntelSmartVideoSettings>
